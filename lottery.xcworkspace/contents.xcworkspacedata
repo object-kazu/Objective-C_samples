@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Lot6"
+      name = "Lot6">
+      <Group
+         location = "group:Lot6"
+         name = "Lot6">
+         <FileRef
+            location = "group:AppDelegate.swift">
+         </FileRef>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:LaunchScreen.xib">
+            </FileRef>
+            <FileRef
+               location = "group:Main.storyboard">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Images.xcassets"
+            name = "Images.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+         </Group>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:ViewController.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Lot6.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:Lot6Tests"
+         name = "Lot6Tests">
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:Lot6Tests.swift">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:LOTO6.2"
+      name = "LOTO6.2">
+      <FileRef
+         location = "group:baseDesign2.ai">
+      </FileRef>
+      <FileRef
+         location = "group:baseDesign3.ai">
+      </FileRef>
+      <FileRef
+         location = "group:baseDesign4.ai">
+      </FileRef>
+      <Group
+         location = "group:build"
+         name = "build">
+         <Group
+            location = "group:Debug-iphoneos"
+            name = "Debug-iphoneos">
+            <FileRef
+               location = "group:LOTO6.app">
+            </FileRef>
+            <FileRef
+               location = "group:LOTO6.app.dSYM">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Debug-iphonesimulator"
+            name = "Debug-iphonesimulator">
+            <FileRef
+               location = "group:LOTO6.app">
+            </FileRef>
+            <FileRef
+               location = "group:LOTO6.app.dSYM">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Distribution-iphoneos"
+            name = "Distribution-iphoneos">
+            <FileRef
+               location = "group:LOTO6.app">
+            </FileRef>
+            <FileRef
+               location = "group:LOTO6.app.dSYM">
+            </FileRef>
+            <FileRef
+               location = "group:LOTO6.app.zip">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Distribution-iphoneosv1.0"
+            name = "Distribution-iphoneosv1.0">
+            <FileRef
+               location = "group:LOTO6.app">
+            </FileRef>
+            <FileRef
+               location = "group:LOTO6.app.dSYM">
+            </FileRef>
+            <FileRef
+               location = "group:LOTO6.app.zip">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Distribution-iphonesimulator"
+            name = "Distribution-iphonesimulator">
+            <FileRef
+               location = "group:LOTO6.app">
+            </FileRef>
+            <FileRef
+               location = "group:LOTO6.app.dSYM">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:LOTO6.build"
+            name = "LOTO6.build">
+            <Group
+               location = "group:Debug-iphoneos"
+               name = "Debug-iphoneos">
+               <Group
+                  location = "group:LOTO6.build"
+                  name = "LOTO6.build">
+                  <FileRef
+                     location = "group:build-state.dat">
+                  </FileRef>
+                  <FileRef
+                     location = "group:build-state~.dat">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6-all-target-headers.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6-generated-files.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6-own-target-headers.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6-project-headers.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6.dep">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6.xcent">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6~.dep">
+                  </FileRef>
+                  <Group
+                     location = "group:Objects-normal"
+                     name = "Objects-normal">
+                     <Group
+                        location = "group:armv6"
+                        name = "armv6">
+                        <FileRef
+                           location = "group:calculation.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6.LinkFileList">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6AppDelegate.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6ViewController.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:main.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:resultsSubViewController.o">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:armv7"
+                        name = "armv7">
+                        <FileRef
+                           location = "group:calculation.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6.LinkFileList">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6AppDelegate.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6ViewController.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:main.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:resultsSubViewController.o">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+            </Group>
+            <Group
+               location = "group:Debug-iphonesimulator"
+               name = "Debug-iphonesimulator">
+               <Group
+                  location = "group:LOTO6.build"
+                  name = "LOTO6.build">
+                  <FileRef
+                     location = "group:build-state.dat">
+                  </FileRef>
+                  <FileRef
+                     location = "group:build-state~.dat">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6-all-target-headers.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6-generated-files.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6-own-target-headers.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6-project-headers.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6.dep">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6~.dep">
+                  </FileRef>
+                  <Group
+                     location = "group:Objects-normal"
+                     name = "Objects-normal">
+                     <Group
+                        location = "group:i386"
+                        name = "i386">
+                        <FileRef
+                           location = "group:calculation.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6.LinkFileList">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6AppDelegate.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6ViewController.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:main.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:resultsSubViewController.o">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+            </Group>
+            <Group
+               location = "group:Distribution-iphoneos"
+               name = "Distribution-iphoneos">
+               <Group
+                  location = "group:LOTO6.build"
+                  name = "LOTO6.build">
+                  <FileRef
+                     location = "group:build-state.dat">
+                  </FileRef>
+                  <FileRef
+                     location = "group:build-state~.dat">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6-all-target-headers.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6-generated-files.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6-own-target-headers.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6-project-headers.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6.dep">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6.xcent">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6~.dep">
+                  </FileRef>
+                  <Group
+                     location = "group:Objects-normal"
+                     name = "Objects-normal">
+                     <Group
+                        location = "group:armv6"
+                        name = "armv6">
+                        <FileRef
+                           location = "group:calculation.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6.LinkFileList">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6AppDelegate.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6ViewController.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:main.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:resultsSubViewController.o">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:armv7"
+                        name = "armv7">
+                        <FileRef
+                           location = "group:calculation.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6.LinkFileList">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6AppDelegate.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6ViewController.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:main.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:resultsSubViewController.o">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+            </Group>
+            <Group
+               location = "group:Distribution-iphonesimulator"
+               name = "Distribution-iphonesimulator">
+               <Group
+                  location = "group:LOTO6.build"
+                  name = "LOTO6.build">
+                  <FileRef
+                     location = "group:build-state.dat">
+                  </FileRef>
+                  <FileRef
+                     location = "group:build-state~.dat">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6-all-target-headers.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6-generated-files.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6-own-target-headers.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6-project-headers.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6.dep">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6.hmap">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LOTO6~.dep">
+                  </FileRef>
+                  <Group
+                     location = "group:Objects-normal"
+                     name = "Objects-normal">
+                     <Group
+                        location = "group:i386"
+                        name = "i386">
+                        <FileRef
+                           location = "group:calculation.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6.LinkFileList">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6AppDelegate.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:LOTO6ViewController.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:main.o">
+                        </FileRef>
+                        <FileRef
+                           location = "group:resultsSubViewController.o">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+            </Group>
+            <Group
+               location = "group:LOTO6.pbxindex"
+               name = "LOTO6.pbxindex">
+               <FileRef
+                  location = "group:categories.pbxbtree">
+               </FileRef>
+               <FileRef
+                  location = "group:cdecls.pbxbtree">
+               </FileRef>
+               <FileRef
+                  location = "group:decls.pbxbtree">
+               </FileRef>
+               <FileRef
+                  location = "group:files.pbxbtree">
+               </FileRef>
+               <FileRef
+                  location = "group:imports.pbxbtree">
+               </FileRef>
+               <FileRef
+                  location = "group:pbxindex.header">
+               </FileRef>
+               <FileRef
+                  location = "group:protocols.pbxbtree">
+               </FileRef>
+               <FileRef
+                  location = "group:refs.pbxbtree">
+               </FileRef>
+               <Group
+                  location = "group:strings.pbxstrings"
+                  name = "strings.pbxstrings">
+                  <FileRef
+                     location = "group:control">
+                  </FileRef>
+                  <FileRef
+                     location = "group:strings">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:subclasses.pbxbtree">
+               </FileRef>
+               <FileRef
+                  location = "group:symbols0.pbxsymbols">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Classes"
+         name = "Classes">
+         <FileRef
+            location = "group:calculation.h">
+         </FileRef>
+         <FileRef
+            location = "group:calculation.m">
+         </FileRef>
+         <FileRef
+            location = "group:KSDeviceHelper.h">
+         </FileRef>
+         <FileRef
+            location = "group:KSDeviceHelper.m">
+         </FileRef>
+         <FileRef
+            location = "group:LOTO6AppDelegate.h">
+         </FileRef>
+         <FileRef
+            location = "group:LOTO6AppDelegate.m">
+         </FileRef>
+         <FileRef
+            location = "group:LOTO6ViewController.h">
+         </FileRef>
+         <FileRef
+            location = "group:LOTO6ViewController.m">
+         </FileRef>
+         <FileRef
+            location = "group:resultsSubViewController.h">
+         </FileRef>
+         <FileRef
+            location = "group:resultsSubViewController.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:def.h">
+      </FileRef>
+      <FileRef
+         location = "group:Default-568h@2x.png">
+      </FileRef>
+      <FileRef
+         location = "group:default.png">
+      </FileRef>
+      <FileRef
+         location = "group:default2.png">
+      </FileRef>
+      <FileRef
+         location = "group:Default@2x.png">
+      </FileRef>
+      <FileRef
+         location = "group:doneButton.ai">
+      </FileRef>
+      <FileRef
+         location = "group:doneButton.png">
+      </FileRef>
+      <FileRef
+         location = "group:iAdBanner.ai">
+      </FileRef>
+      <FileRef
+         location = "group:iAdBanner_all.png">
+      </FileRef>
+      <FileRef
+         location = "group:iAdBanner_haiku.png">
+      </FileRef>
+      <FileRef
+         location = "group:iAdBanner_last.png">
+      </FileRef>
+      <FileRef
+         location = "group:iAdBanner_loto.png">
+      </FileRef>
+      <FileRef
+         location = "group:iAdBanner_title.png">
+      </FileRef>
+      <FileRef
+         location = "group:iAdBanner_todo.png">
+      </FileRef>
+      <FileRef
+         location = "group:icon.ai">
+      </FileRef>
+      <FileRef
+         location = "group:icon512.ai">
+      </FileRef>
+      <FileRef
+         location = "group:iconV2.ai">
+      </FileRef>
+      <FileRef
+         location = "group:iPhone_design.ait">
+      </FileRef>
+      <FileRef
+         location = "group:iTuneArtwork">
+      </FileRef>
+      <Group
+         location = "group:LOTO6"
+         name = "LOTO6">
+         <Group
+            location = "group:Images.xcassets"
+            name = "Images.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-120.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-iOS7@2x.png">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:LaunchImage.launchimage"
+               name = "LaunchImage.launchimage">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:Default-568h@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Default@2x.png">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:LOTO6-Info.plist">
+      </FileRef>
+      <FileRef
+         location = "group:LOTO6.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:LOTO6_Prefix.pch">
+      </FileRef>
+      <FileRef
+         location = "group:loto6sheet.ai">
+      </FileRef>
+      <Group
+         location = "group:Loto6Test"
+         name = "Loto6Test">
+         <Group
+            location = "group:en.lproj"
+            name = "en.lproj">
+            <FileRef
+               location = "group:InfoPlist.strings">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Loto6Test-Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:Loto6Test-Prefix.pch">
+         </FileRef>
+         <FileRef
+            location = "group:Loto6Test.h">
+         </FileRef>
+         <FileRef
+            location = "group:Loto6Test.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Loto6V3"
+         name = "Loto6V3">
+         <FileRef
+            location = "group:Icon-72.png">
+         </FileRef>
+         <FileRef
+            location = "group:Icon-72@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:Icon-76.png">
+         </FileRef>
+         <FileRef
+            location = "group:Icon-76@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:Icon-iPad-Spotlight-iOS7@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:Icon-Small-50.png">
+         </FileRef>
+         <FileRef
+            location = "group:Icon-Small.png">
+         </FileRef>
+         <FileRef
+            location = "group:Icon-Small@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:Icon-Spotlight-iOS7.png">
+         </FileRef>
+         <FileRef
+            location = "group:Icon.png">
+         </FileRef>
+         <FileRef
+            location = "group:Icon@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:Icon@2x~iphone.png">
+         </FileRef>
+         <FileRef
+            location = "group:iconV2.png">
+         </FileRef>
+         <FileRef
+            location = "group:iconV2@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:Icon~iphone.png">
+         </FileRef>
+         <FileRef
+            location = "group:iTunesArtwork">
+         </FileRef>
+         <FileRef
+            location = "group:iTunesArtwork@2x">
+         </FileRef>
+         <Group
+            location = "group:Screenshots"
+            name = "Screenshots">
+            <FileRef
+               location = "group:iconV2.png">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:LOTO6ViewController.xib">
+      </FileRef>
+      <FileRef
+         location = "group:main.m">
+      </FileRef>
+      <FileRef
+         location = "group:MainWindow.xib">
+      </FileRef>
+      <FileRef
+         location = "group:push1.png">
+      </FileRef>
+      <FileRef
+         location = "group:push3.png">
+      </FileRef>
+      <FileRef
+         location = "group:push5.png">
+      </FileRef>
+      <FileRef
+         location = "group:pushButton.png">
+      </FileRef>
+      <FileRef
+         location = "group:pushButton_hightlight.png">
+      </FileRef>
+      <FileRef
+         location = "group:results.xib">
+      </FileRef>
+      <FileRef
+         location = "group:resultsDisplay.png">
+      </FileRef>
+      <FileRef
+         location = "group:settingButton.ai">
+      </FileRef>
+      <FileRef
+         location = "group:settingButton.png">
+      </FileRef>
+      <FileRef
+         location = "group:settingButtonBack.png">
+      </FileRef>
+      <FileRef
+         location = "group:settingSheen.png">
+      </FileRef>
+      <FileRef
+         location = "group:settingSheen2.png">
+      </FileRef>
+      <FileRef
+         location = "group:sheetDesign.png">
+      </FileRef>
+      <FileRef
+         location = "group:sheetDesign@2x.png">
+      </FileRef>
+      <FileRef
+         location = "group:sheetDesign_4s@2x.png">
+      </FileRef>
+      <FileRef
+         location = "group:slide-network.aif">
+      </FileRef>
+      <FileRef
+         location = "group:slide-network.caf">
+      </FileRef>
+      <FileRef
+         location = "group:tap-sizzle.aif">
+      </FileRef>
+      <FileRef
+         location = "group:tap-sizzle.caf">
+      </FileRef>
+      <FileRef
+         location = "group:temp_sheet.png">
+      </FileRef>
+      <FileRef
+         location = "group:title.png">
+      </FileRef>
+   </Group>
+</Workspace>
