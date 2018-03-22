@@ -1,0 +1,1371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>VirusCrusader concept</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2011-05-20 06:43:59 JST"/>
+<meta name="author" content="清水 一征"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">VirusCrusader concept</h1>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<tbody>
+<tr><td>2011/03/15</td><td>ver1.0</td><td>たたき台    　</td></tr>
+<tr><td>2011/4/1</td><td>ver1.1</td><td>直し</td></tr>
+<tr><td>2011/4/10</td><td>ver1.2</td><td>追加</td></tr>
+<tr><td>2011/4/14</td><td>ver1.3</td><td>表示設定変更</td></tr>
+<tr><td>2011/4/18</td><td>ver1.4</td><td>一部訂正　</td></tr>
+<tr><td>2011/4/24</td><td>ver1.5</td><td>計算式追加　</td></tr>
+<tr><td>2011/5/5</td><td>ver1.6</td><td>rule改訂&amp;graphic view追加</td></tr>
+<tr><td>2011/5/7</td><td>ver1.7</td><td>help機能の追加、wash out(refresh)</td></tr>
+<tr><td>2011/5/15</td><td>ver 1.8</td><td>view 整理</td></tr>
+</tbody>
+</table>
+
+
+
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 view </a>
+<ul>
+<li><a href="#sec-1.1">1.1 start view </a></li>
+<li><a href="#sec-1.2">1.2 setting view </a>
+<ul>
+<li><a href="#sec-1.2.1">1.2.1 game speed </a></li>
+<li><a href="#sec-1.2.2">1.2.2 game level </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.3">1.3 game main view </a></li>
+<li><a href="#sec-1.4">1.4 Report list view </a></li>
+<li><a href="#sec-1.5">1.5 medicine making view </a></li>
+<li><a href="#sec-1.6">1.6 medicine conc view </a></li>
+<li><a href="#sec-1.7">1.7 analyze setting view </a></li>
+<li><a href="#sec-1.8">1.8 record view </a></li>
+<li><a href="#sec-1.9">1.9 result view </a></li>
+<li><a href="#sec-1.10">1.10 game end view </a></li>
+<li><a href="#sec-1.11">1.11 help view </a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 Rule </a>
+<ul>
+<li><a href="#sec-2.1">2.1 game clear and end </a></li>
+<li><a href="#sec-2.2">2.2 kinに関して </a>
+<ul>
+<li><a href="#sec-2.2.1">2.2.1 変異には2種類ある </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.3">2.3 medicineに関して </a></li>
+<li><a href="#sec-2.4">2.4 reportに関して </a>
+<ul>
+<li><a href="#sec-2.4.1">2.4.1 report作成には時間とcostが掛かる </a></li>
+<li><a href="#sec-2.4.2">2.4.2 reportはレポート形式で表示する </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.5">2.5 analyzeに関して </a>
+<ul>
+<li><a href="#sec-2.5.1">2.5.1 analyzeはresearcher(キャラクター)に大きく依存する </a></li>
+<li><a href="#sec-2.5.2">2.5.2 researcherには得意なことがある </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-3">3 Medicine </a>
+<ul>
+<li><a href="#sec-3.1">3.1 medicine type </a></li>
+<li><a href="#sec-3.2">3.2 medicine level </a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4 kin(菌) </a>
+<ul>
+<li><a href="#sec-4.1">4.1 菌のタイプ(5つ) </a></li>
+<li><a href="#sec-4.2">4.2 タイプによって薬剤耐性が異なる </a></li>
+<li><a href="#sec-4.3">4.3 菌同士の相性 </a></li>
+<li><a href="#sec-4.4">4.4 菌の表示方法 </a></li>
+</ul>
+</li>
+<li><a href="#sec-5">5 calculate </a>
+<ul>
+<li><a href="#sec-5.1">5.1 菌の増加曲線 </a></li>
+<li><a href="#sec-5.2">5.2 菌の相性計算 </a></li>
+<li><a href="#sec-5.3">5.3 菌の変異確率計算 </a></li>
+<li><a href="#sec-5.4">5.4 medicineによる菌の減少曲線 </a></li>
+<li><a href="#sec-5.5">5.5 medicineのFlow rate(洗い流しの影響) </a></li>
+<li><a href="#sec-5.6">5.6 report graph </a></li>
+</ul>
+</li>
+<li><a href="#sec-6">6 Class </a>
+<ul>
+<li><a href="#sec-6.1">6.1 kin Class </a></li>
+<li><a href="#sec-6.2">6.2 medicine Class </a></li>
+<li><a href="#sec-6.3">6.3 viewContorller Class </a></li>
+<li><a href="#sec-6.4">6.4 kinController Class </a></li>
+<li><a href="#sec-6.5">6.5 experimental Class </a></li>
+<li><a href="#sec-6.6">6.6 medicinceControll Class </a></li>
+<li><a href="#sec-6.7">6.7 report Class </a></li>
+<li><a href="#sec-6.8">6.8 researcher Class </a></li>
+</ul>
+</li>
+<li><a href="#sec-7">7 idea 保留 </a>
+<ul>
+<li><a href="#sec-7.1">7.1 title 候補 </a></li>
+<li><a href="#sec-7.2">7.2 Description </a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> view </h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1"><span class="section-number-3">1.1</span> start view </h3>
+<div class="outline-text-3" id="text-1.1">
+
+<ul>
+<li>
+title
+</li>
+<li>
+button
+<ul>
+<li>
+Setting : move setting view
+</li>
+<li>
+Play :start game
+</li>
+<li>
+Record: show record
+
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.2" class="outline-3">
+<h3 id="sec-1.2"><span class="section-number-3">1.2</span> setting view </h3>
+<div class="outline-text-3" id="text-1.2">
+
+<ul>
+<li>
+button
+<ul>
+<li>
+Set:setting value
+</li>
+<li>
+Play :start game
+</li>
+<li>
+Record: show record
+
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+<div id="outline-container-1.2.1" class="outline-4">
+<h4 id="sec-1.2.1"><span class="section-number-4">1.2.1</span> game speed </h4>
+<div class="outline-text-4" id="text-1.2.1">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" />
+</colgroup>
+<tbody>
+<tr><td>slow</td><td>1 splitting / min</td></tr>
+<tr><td>normal</td><td>2 splitting / min</td></tr>
+<tr><td>fast</td><td>3 splitting / min</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1.2.2" class="outline-4">
+<h4 id="sec-1.2.2"><span class="section-number-4">1.2.2</span> game level </h4>
+<div class="outline-text-4" id="text-1.2.2">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">level</th><th scope="col">speed</th><th scope="col">stage</th><th scope="col">variant</th></tr>
+</thead>
+<tbody>
+<tr><td>practice</td><td>slow</td><td>1</td><td>none</td></tr>
+<tr><td>normal</td><td>slow and normal</td><td>2</td><td>+</td></tr>
+<tr><td>random</td><td>normal and fast</td><td>10</td><td>++</td></tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.3" class="outline-3">
+<h3 id="sec-1.3"><span class="section-number-3">1.3</span> game main view </h3>
+<div class="outline-text-3" id="text-1.3">
+
+<ul>
+<li>
+イベント・行動履歴を記録する.
+何時、何をしたかを表示する.
+
+</li>
+<li>
+report形式で進行させる.
+reportは一定時間ごとにアップする形式とする.
+
+</li>
+<li>
+message windowを設置する 
+<ul>
+<li>
+new report up
+</li>
+<li>
+new medicine comes
+</li>
+<li>
+worning:variant was raiseなど
+
+</li>
+</ul>
+</li>
+<li>
+色を変える、点滅させる
+
+</li>
+<li>
+button
+<ul>
+<li>
+Medicin:move medicin making view
+</li>
+<li>
+Report :move Report list view
+</li>
+<li>
+Analuze: move Analze setting view
+
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.4" class="outline-3">
+<h3 id="sec-1.4"><span class="section-number-3">1.4</span> Report list view </h3>
+<div class="outline-text-3" id="text-1.4">
+
+<ul>
+<li>
+デフォルトの表示
+</li>
+<li>
+table view形式で菌の状態を表示する(縦横をきちんと整列させること!)
+
+</li>
+<li>
+button
+<ul>
+<li>
+Medicin:move medicin making view
+</li>
+<li>
+Main :move game main view
+</li>
+<li>
+Analuze: move Analze setting view
+
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.5" class="outline-3">
+<h3 id="sec-1.5"><span class="section-number-3">1.5</span> medicine making view </h3>
+<div class="outline-text-3" id="text-1.5">
+
+<p>medicine making
+</p>
+<ul>
+<li>
+button
+<ul>
+<li>
+Refresh:Mediun all refresh(すべての薬物濃度を0にする)　=&gt;　必ずアラートを出す
+</li>
+<li>
+Amount: amount setting
+</li>
+<li>
+Kind: setting kind of medicin:
+S,P,C,L,K
+</li>
+<li>
+Make: make medicine following setting
+</li>
+<li>
+State: move medicin conc view
+</li>
+<li>
+Done: move game main view
+
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.6" class="outline-3">
+<h3 id="sec-1.6"><span class="section-number-3">1.6</span> medicine conc view </h3>
+<div class="outline-text-3" id="text-1.6">
+
+<p>display medicin conc list (Graphical?)
+</p>
+<ul>
+<li>
+button
+<ul>
+<li>
+ Back: move medicin making view
+
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.7" class="outline-3">
+<h3 id="sec-1.7"><span class="section-number-3">1.7</span> analyze setting view </h3>
+<div class="outline-text-3" id="text-1.7">
+
+<p>analyze setting
+</p>
+<ul>
+<li>
+button
+<ul>
+<li>
+researcher:
+</li>
+<li>
+report level:depend on report level %
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" /><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">name</th><th scope="col">cost</th><th scope="col">rest time</th><th scope="col">speed %</th><th scope="col">report level %</th><th scope="col">description</th></tr>
+</thead>
+<tbody>
+<tr><td>susumu</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>hideki</td><td></td><td></td><td></td><td></td><td>normal</td></tr>
+<tr><td>shin</td><td></td><td></td><td></td><td></td><td>normal</td></tr>
+<tr><td>reo</td><td></td><td></td><td></td><td></td><td>normal</td></tr>
+<tr><td>makoto</td><td></td><td></td><td></td><td></td><td>normal</td></tr>
+<tr><td>masu</td><td></td><td></td><td></td><td></td><td>rand</td></tr>
+<tr><td>ken</td><td></td><td></td><td></td><td></td><td>rand</td></tr>
+<tr><td>ryou</td><td></td><td></td><td></td><td></td><td>rand</td></tr>
+<tr><td>kou</td><td></td><td></td><td></td><td></td><td>rand</td></tr>
+<tr><td>akira</td><td></td><td></td><td></td><td></td><td>rand</td></tr>
+<tr><td>eichi</td><td></td><td></td><td></td><td></td><td>rand</td></tr>
+</tbody>
+</table>
+
+
+
+</li>
+<li>
+Report grade: basic, advance, entiry
+</li>
+<li>
+set:set researcher
+</li>
+<li>
+Done:move game main view
+
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.8" class="outline-3">
+<h3 id="sec-1.8"><span class="section-number-3">1.8</span> record view </h3>
+<div class="outline-text-3" id="text-1.8">
+
+
+<ul>
+<li>
+Longest play time
+<ul>
+<li>
+play level
+</li>
+<li>
+play speed
+</li>
+<li>
+time
+</li>
+<li>
+ date
+
+</li>
+</ul>
+</li>
+<li>
+Lowest cost play
+<ul>
+<li>
+play level
+</li>
+<li>
+play speed
+</li>
+<li>
+cost
+</li>
+<li>
+ date
+
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.9" class="outline-3">
+<h3 id="sec-1.9"><span class="section-number-3">1.9</span> result view </h3>
+<div class="outline-text-3" id="text-1.9">
+
+<ul>
+<li>
+game level
+</li>
+<li>
+game speed
+</li>
+<li>
+play time
+</li>
+<li>
+play cost
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1.10" class="outline-3">
+<h3 id="sec-1.10"><span class="section-number-3">1.10</span> game end view </h3>
+<div class="outline-text-3" id="text-1.10">
+
+<p>Display "game over" 
+and " game clear"
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1.11" class="outline-3">
+<h3 id="sec-1.11"><span class="section-number-3">1.11</span> help view </h3>
+<div class="outline-text-3" id="text-1.11">
+
+<p>各viewに合わせたヘルプを表示する
+そのためにはstateを設定する。
+stateによって表示内容を変更する
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Rule </h2>
+<div class="outline-text-2" id="text-2">
+
+
+</div>
+
+<div id="outline-container-2.1" class="outline-3">
+<h3 id="sec-2.1"><span class="section-number-3">2.1</span> game clear and end </h3>
+<div class="outline-text-3" id="text-2.1">
+
+<ol>
+<li>
+菌数0でGame Clear
+</li>
+<li>
+すべてのkinが耐性を得た場合Game Over
+</li>
+<li>
+予算が0になったらGame Over
+</li>
+<li>
+kin数の上限10＾9個以上になったらGame Over
+
+</li>
+</ol>
+</div>
+
+</div>
+
+<div id="outline-container-2.2" class="outline-3">
+<h3 id="sec-2.2"><span class="section-number-3">2.2</span> kinに関して </h3>
+<div class="outline-text-3" id="text-2.2">
+
+<ol>
+<li>
+菌数の上限は10＾9個
+</li>
+<li>
+菌数減少でcost get
+</li>
+<li>
+菌は時間経過によって指数対数的に増加する
+</li>
+<li>
+菌は一定の確率で薬剤耐性を得る(変異)
+
+</li>
+</ol>
+
+</div>
+
+<div id="outline-container-2.2.1" class="outline-4">
+<h4 id="sec-2.2.1"><span class="section-number-4">2.2.1</span> 変異には2種類ある </h4>
+<div class="outline-text-4" id="text-2.2.1">
+
+
+<dl>
+<dt>増殖速度変異(gv)</dt><dd>
+増殖速度が増加する
+</dd>
+<dt>薬剤耐性変異(rv)</dt><dd>
+薬剤耐性を獲得する確率が変化する 
+
+</dd>
+</dl>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.3" class="outline-3">
+<h3 id="sec-2.3"><span class="section-number-3">2.3</span> medicineに関して </h3>
+<div class="outline-text-3" id="text-2.3">
+
+<ol>
+<li>
+medicineの投入によって菌数は減少
+</li>
+<li>
+medicineには種類(type)と強さ(level)が有る
+</li>
+<li>
+medicineにはcostと時間が必要
+</li>
+<li>
+medicineには相互作用があり、medicineを増強減弱する(Player unknown)
+</li>
+<li>
+medicineは一定時間ごとに洗い流され濃度が減少する(効果減)
+</li>
+<li>
+medicineのトータルは100%(無効になった薬物はGarbageと表現)
+</li>
+<li>
+すべての薬物濃度を０にする
+</li>
+<li>
+medicineは5つまでしか作れない(消費するまで)
+
+
+</li>
+</ol>
+<dl>
+<dt>ex</dt><dd>
+
+<ul>
+<li>
+S.vw 10%, P.s 10% Garbage 80%
+</li>
+<li>
+一定時間後
+</li>
+<li>
+S.vw 5%, P.s 5% Garbage 90%  
+
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+
+</div>
+
+<div id="outline-container-2.4" class="outline-3">
+<h3 id="sec-2.4"><span class="section-number-3">2.4</span> reportに関して </h3>
+<div class="outline-text-3" id="text-2.4">
+
+
+</div>
+
+<div id="outline-container-2.4.1" class="outline-4">
+<h4 id="sec-2.4.1"><span class="section-number-4">2.4.1</span> report作成には時間とcostが掛かる </h4>
+<div class="outline-text-4" id="text-2.4.1">
+
+<p>reportにはgradeがある
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="right" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">grade</th><th scope="col">cost</th><th scope="col">time</th></tr>
+</thead>
+<tbody>
+<tr><td>basic</td><td>10</td><td>1</td></tr>
+<tr><td>advance</td><td>20</td><td>10</td></tr>
+<tr><td>entirely</td><td>40</td><td>100</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.4.2" class="outline-4">
+<h4 id="sec-2.4.2"><span class="section-number-4">2.4.2</span> reportはレポート形式で表示する </h4>
+<div class="outline-text-4" id="text-2.4.2">
+
+<ul>
+<li>
+グラフ表示を入れる
+</li>
+<li>
+レポートには時刻と菌のmedicinを表示する
+
+</li>
+<li id="sec-2.4.2.1">list view <br/>
+<ul>
+<li id="sec-2.4.2.1.1">list viewにはgradeがある <br/>
+<dl>
+<dt>非表示項目は*</dt><dd>
+
+</dd>
+</dl>
+
+<p>shape(gv%,rv%):菌数
+(S<sub>P</sub><sub>C</sub><sub>L</sub><sub>K</sub>)
+</p>
+<dl>
+<dt>basic(basic<sub>grade</sub>)</dt><dd>
+
+</dd>
+</dl>
+
+<p>shape(<b>):number       (****</b>)
+</p>
+<dl>
+<dt>advance(advanve<sub>grade</sub>)</dt><dd>
+
+</dd>
+</dl>
+
+<p>shape(gv%,rv%):number
+(*****)
+</p>
+<dl>
+<dt>entirely(entirely<sub>grade</sub>)</dt><dd>
+
+</dd>
+</dl>
+
+<p>shape(gv%,rv%):number
+(S<sub>P</sub><sub>C</sub><sub>L</sub><sub>K</sub>)
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.5" class="outline-3">
+<h3 id="sec-2.5"><span class="section-number-3">2.5</span> analyzeに関して </h3>
+<div class="outline-text-3" id="text-2.5">
+
+
+</div>
+
+<div id="outline-container-2.5.1" class="outline-4">
+<h4 id="sec-2.5.1"><span class="section-number-4">2.5.1</span> analyzeはresearcher(キャラクター)に大きく依存する </h4>
+<div class="outline-text-4" id="text-2.5.1">
+
+<ul>
+<li>
+researcherを何人か用意する。
+</li>
+<li>
+researcherにはレベルがある。
+</li>
+<li>
+researcher によってコストと時間と情報量が異なる。
+</li>
+<li>
+一度reportを作成したresearcherは少し休暇が必要。
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-2.5.2" class="outline-4">
+<h4 id="sec-2.5.2"><span class="section-number-4">2.5.2</span> researcherには得意なことがある </h4>
+<div class="outline-text-4" id="text-2.5.2">
+
+<p>つまり、report Gradeによって作業とコストが変化する
+</p>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Medicine </h2>
+<div class="outline-text-2" id="text-3">
+
+
+</div>
+
+<div id="outline-container-3.1" class="outline-3">
+<h3 id="sec-3.1"><span class="section-number-3">3.1</span> medicine type </h3>
+<div class="outline-text-3" id="text-3.1">
+
+<ul>
+<li>
+シリン系(S)
+</li>
+<li>
+ポリン系(P)
+</li>
+<li>
+コシド系(C)
+</li>
+<li>
+ライド系(L)
+</li>
+<li>
+クリン系(K)
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.2" class="outline-3">
+<h3 id="sec-3.2"><span class="section-number-3">3.2</span> medicine level </h3>
+<div class="outline-text-3" id="text-3.2">
+
+<p>Researcher classがアルゴリズムに従って決定する
+</p><ul>
+<li>
+very weak(vw)
+</li>
+<li>
+weak(w)
+</li>
+<li>
+moderate(m)
+</li>
+<li>
+strong(s)
+</li>
+<li>
+very strong(vs)
+
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> kin(菌) </h2>
+<div class="outline-text-2" id="text-4">
+
+
+</div>
+
+<div id="outline-container-4.1" class="outline-3">
+<h3 id="sec-4.1"><span class="section-number-3">4.1</span> 菌のタイプ(5つ) </h3>
+<div class="outline-text-3" id="text-4.1">
+
+<ul>
+<li>
+丸型(round,RO)
+</li>
+<li>
+三角型(triangle,TR)
+</li>
+<li>
+四角型(squre,SQ)
+</li>
+<li>
+楕円型(ellipse,EL)
+</li>
+<li>
+星形型(star,ST)
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-4.2" class="outline-3">
+<h3 id="sec-4.2"><span class="section-number-3">4.2</span> タイプによって薬剤耐性が異なる </h3>
+<div class="outline-text-3" id="text-4.2">
+
+<p>良く効く&gt;普通&gt;効きにくい 
+</p>
+<dl>
+<dt>round</dt><dd>
+S&gt;P&gt;C&gt;L&gt;K
+</dd>
+<dt>triangle</dt><dd>
+P&gt;C&gt;L&gt;K&gt;S
+</dd>
+<dt>squre</dt><dd>
+C&gt;L&gt;K&gt;S&gt;P
+</dd>
+<dt>ellipse</dt><dd>
+L&gt;K&gt;S&gt;P&gt;C
+</dd>
+<dt>star</dt><dd>
+K&gt;S&gt;P&gt;C&gt;L
+
+</dd>
+</dl>
+</div>
+
+</div>
+
+<div id="outline-container-4.3" class="outline-3">
+<h3 id="sec-4.3"><span class="section-number-3">4.3</span> 菌同士の相性 </h3>
+<div class="outline-text-3" id="text-4.3">
+
+<p>隣り合わせの相性
+</p><ul>
+<li>
+R&gt;&gt;T&gt;&gt;SQ&gt;&gt;E&gt;&gt;ST
+</li>
+</ul>
+
+<p>例)　R1個あると一定時間ごとにT10を減らす
+</p>
+<ul>
+<li>
+一つ置きの相性
+<ul>
+<li>
+R&gt;SQ
+</li>
+<li>
+T&gt;E
+</li>
+<li>
+SQ&gt;ST
+</li>
+<li>
+E&gt;R
+</li>
+<li>
+ST&gt;T
+
+</li>
+</ul>
+</li>
+</ul>
+
+<p>例)
+R1個あると一定時間ごとにSQ5個減らす
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-4.4" class="outline-3">
+<h3 id="sec-4.4"><span class="section-number-3">4.4</span> 菌の表示方法 </h3>
+<div class="outline-text-3" id="text-4.4">
+
+<ul>
+<li>
+shape(gv%,rv%):菌数
+</li>
+</ul>
+
+<p>(S<sub>P</sub><sub>C</sub><sub>L</sub><sub>K</sub>)
+</p>
+<dl>
+<dt>例1) 丸型タイプでシリン系耐性が50％,100個の場合</dt><dd>
+
+</dd>
+</dl>
+
+<p>round(0,0)：100
+(50<sub>00</sub><sub>00</sub><sub>00</sub><sub>00</sub>)
+</p>
+<dl>
+<dt>例2）丸型タイプでシリン系耐性50％で増殖速度変異30%upの場合</dt><dd>
+
+</dd>
+</dl>
+
+<p>round(gv30):1000
+(50<sub>00</sub><sub>00</sub><sub>00</sub><sub>00</sub>)
+</p>
+<dl>
+<dt>例3）丸型タイプでシリン系耐性50％で増殖速度変異30%upが10000個ある場合</dt><dd>
+
+</dd>
+</dl>
+
+<p>round(gv50):10<sup>4</sup>
+(50<sub>00</sub><sub>00</sub><sub>00</sub><sub>00</sub>)
+</p>
+<dl>
+<dt>例4）丸型タイプで全薬剤耐性が10％で増殖変異10%が10000個の場合</dt><dd>
+
+</dd>
+</dl>
+
+<p>round(gv10):10<sup>4</sup>
+(10<sub>10</sub><sub>10</sub><sub>10</sub><sub>10</sub>)
+</p>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> calculate </h2>
+<div class="outline-text-2" id="text-5">
+
+<p>gv,rvの最大値は99%
+</p>
+<p>
+薬剤耐性の最大値は99%
+</p>
+<dl>
+<dt>殺菌力　基本(sakin)</dt><dd>
+medicin 1mol = kin 10 /sec ↓
+</dd>
+<dt>KGU　　　　</dt><dd>
+kin grow up
+</dd>
+<dt>ME       </dt><dd>
+medicine effect
+
+</dd>
+<dt>time t to t'</dt><dd>
+
+<p>
+kin(x) の個数 = kin#(t) x KGU x sigma(ME)
+</p>
+<p>
+KGU = GrowUp(x) x (kin-kin)inter
+</p>
+<p>
+ME = 　sakin x {(kin-med)inter x 薬剤耐性} x (med-med)inter　x level x amount(t-t')　
+</p>
+</dd>
+</dl>
+
+<p>薬剤耐性をどのように表現するか？
+</p>
+
+</div>
+
+<div id="outline-container-5.1" class="outline-3">
+<h3 id="sec-5.1"><span class="section-number-3">5.1</span> 菌の増加曲線 </h3>
+<div class="outline-text-3" id="text-5.1">
+
+
+</div>
+
+</div>
+
+<div id="outline-container-5.2" class="outline-3">
+<h3 id="sec-5.2"><span class="section-number-3">5.2</span> 菌の相性計算 </h3>
+<div class="outline-text-3" id="text-5.2">
+
+
+</div>
+
+</div>
+
+<div id="outline-container-5.3" class="outline-3">
+<h3 id="sec-5.3"><span class="section-number-3">5.3</span> 菌の変異確率計算 </h3>
+<div class="outline-text-3" id="text-5.3">
+
+
+</div>
+
+</div>
+
+<div id="outline-container-5.4" class="outline-3">
+<h3 id="sec-5.4"><span class="section-number-3">5.4</span> medicineによる菌の減少曲線 </h3>
+<div class="outline-text-3" id="text-5.4">
+
+<p>菌数減少量(KDR)
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-5.5" class="outline-3">
+<h3 id="sec-5.5"><span class="section-number-3">5.5</span> medicineのFlow rate(洗い流しの影響) </h3>
+<div class="outline-text-3" id="text-5.5">
+
+
+</div>
+
+</div>
+
+<div id="outline-container-5.6" class="outline-3">
+<h3 id="sec-5.6"><span class="section-number-3">5.6</span> report graph </h3>
+<div class="outline-text-3" id="text-5.6">
+
+<p>UIColor* colorRed:green:blue:alpha
+Red &amp; alpha:amount of kin
+10<sup>3個以上で</sup>
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Class </h2>
+<div class="outline-text-2" id="text-6">
+
+
+</div>
+
+<div id="outline-container-6.1" class="outline-3">
+<h3 id="sec-6.1"><span class="section-number-3">6.1</span> kin Class </h3>
+<div class="outline-text-3" id="text-6.1">
+
+<p>kinの生成
+</p>
+<dl>
+<dt>type</dt><dd>
+kin種(RO, TR, SQ,  EL, ST)
+</dd>
+<dt>resist</dt><dd>
+菌の薬剤耐性
+</dd>
+<dt>growthRate</dt><dd>
+増殖速度
+</dd>
+<dt>mutateFrequency</dt><dd>
+変異確率
+
+<p>
+Growth variant (gv)
+Resistance variant (rv)
+</p>
+</dd>
+</dl>
+</div>
+
+</div>
+
+<div id="outline-container-6.2" class="outline-3">
+<h3 id="sec-6.2"><span class="section-number-3">6.2</span> medicine Class </h3>
+<div class="outline-text-3" id="text-6.2">
+
+<p>medicineの生成
+</p><dl>
+<dt>kind</dt><dd>
+S, P, C ,L, K
+</dd>
+<dt>medicin-level(m-level)</dt><dd>
+vw, w, m, s, vs
+</dd>
+<dt>product<sub>cost</sub></dt><dd>
+基本の製造コスト
+</dd>
+<dt>product<sub>time</sub></dt><dd>
+基本の製造時間 
+
+</dd>
+</dl>
+</div>
+
+</div>
+
+<div id="outline-container-6.3" class="outline-3">
+<h3 id="sec-6.3"><span class="section-number-3">6.3</span> viewContorller Class </h3>
+<div class="outline-text-3" id="text-6.3">
+
+<p>各viewを制御する
+</p>
+<p>
+　+ help<sub>index</sub> :: help表示のため
+　+ view<sub>index</sub> :: view 切り替えのため
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-6.4" class="outline-3">
+<h3 id="sec-6.4"><span class="section-number-3">6.4</span> kinController Class </h3>
+<div class="outline-text-3" id="text-6.4">
+
+<p>kinの状態を管理する
+菌の種類、菌数を保持する
+菌の相性を計算する
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-6.5" class="outline-3">
+<h3 id="sec-6.5"><span class="section-number-3">6.5</span> experimental Class </h3>
+<div class="outline-text-3" id="text-6.5">
+
+<p>kinとmedicinの時間的、空間的相互作用を管理、計算する
+時間、コストを計算する
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-6.6" class="outline-3">
+<h3 id="sec-6.6"><span class="section-number-3">6.6</span> medicinceControll Class </h3>
+<div class="outline-text-3" id="text-6.6">
+
+<p>medicinの状態を管理する
+medicinの種類、濃度を保持する
+medicineの相性を計算する
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-6.7" class="outline-3">
+<h3 id="sec-6.7"><span class="section-number-3">6.7</span> report Class </h3>
+<div class="outline-text-3" id="text-6.7">
+
+<p>結果、条件を表示する
+時間、コストを表示する
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-6.8" class="outline-3">
+<h3 id="sec-6.8"><span class="section-number-3">6.8</span> researcher Class </h3>
+<div class="outline-text-3" id="text-6.8">
+
+<ul>
+<li>
+レベル
+</li>
+<li>
+コスト
+</li>
+<li>
+合成時間
+</li>
+</ul>
+
+<p>　　　 - 報告技能
+　　　 - 報告時間
+</p><ul>
+<li>
+復帰時間
+</li>
+<li>
+speciality 
+(ex.sの合成速度は速くなる)
+
+
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> idea 保留 </h2>
+<div class="outline-text-2" id="text-7">
+
+
+</div>
+
+<div id="outline-container-7.1" class="outline-3">
+<h3 id="sec-7.1"><span class="section-number-3">7.1</span> title 候補 </h3>
+<div class="outline-text-3" id="text-7.1">
+
+<p>virus Crisis
+Virus lab crisis
+Out Break
+</p></div>
+
+</div>
+
+<div id="outline-container-7.2" class="outline-3">
+<h3 id="sec-7.2"><span class="section-number-3">7.2</span> Description </h3>
+<div class="outline-text-3" id="text-7.2">
+
+<p>テキストシュミレーションゲーム
+</p><ul>
+<li>
+Level: medicine level setting:
+vw &lt; w &lt; m &lt; s &lt; vs
+</li>
+<li id="sec-7.2.1">graphic view <br/>
+<ul>
+<li>
+表示画面の大きさ：310ｘ256 pixl
+</li>
+<li>
+total pixl = 79360
+</li>
+<li>
+kinの上限10＾9コ
+
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: 清水 一征
+<a href="mailto:shimizukazuyuki@kazuyuki.local">&lt;shimizukazuyuki@kazuyuki.local&gt;</a>
+</p>
+<p class="date"> Date: 2011-05-20 06:43:59 JST</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

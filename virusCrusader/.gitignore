@@ -1,0 +1,16 @@
+#xcodeprojec　を管理から外す
+*.xcodeproj/*.*
+*.xcodeproj/**
+*.xcodoproj/**/*
+
+#build以下のファイルを管理から外す
+build
+build/*
+build/*/*
+build/**/**/*
+
+#.DS file を管理から外す
+.DS_S*
+
+#design fileのテンプレートを管理から外す
+design/*.tmp

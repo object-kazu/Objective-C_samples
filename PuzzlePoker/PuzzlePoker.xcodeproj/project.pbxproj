@@ -1,0 +1,827 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B0BBED017D6021600CD8C75 /* KSDiviceStateContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BBECF17D6021600CD8C75 /* KSDiviceStateContext.m */; };
+		1B0BBED417D6023600CD8C75 /* KSDiveState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BBED317D6023600CD8C75 /* KSDiveState.m */; };
+		1B0BBED717D6025000CD8C75 /* KSButtonDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BBED617D6025000CD8C75 /* KSButtonDown.m */; };
+		1B0BBEDA17D6026000CD8C75 /* KSButtonTop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BBED917D6026000CD8C75 /* KSButtonTop.m */; };
+		1B0BBEDD17D6028000CD8C75 /* KSButtonLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BBEDC17D6028000CD8C75 /* KSButtonLeft.m */; };
+		1B0BBEE017D6028F00CD8C75 /* KSButtonRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BBEDF17D6028F00CD8C75 /* KSButtonRight.m */; };
+		1B367A4517C7533B009156F0 /* KSScoreItemLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B367A4417C7533B009156F0 /* KSScoreItemLabel.m */; };
+		1B4238C717D9981000EA3FD0 /* ppBGM.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1B4238C617D9981000EA3FD0 /* ppBGM.caf */; };
+		1B453A3C17C24285005D1494 /* KSRecordAnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B453A3B17C24285005D1494 /* KSRecordAnimationHelper.m */; };
+		1B5D708B17D85CB600D8A6D5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5D708A17D85CB500D8A6D5 /* AVFoundation.framework */; };
+		1B5F4B2C17C1EA0B0014093D /* KSDataFormatterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F4B2B17C1EA0B0014093D /* KSDataFormatterTest.m */; };
+		1B6EBAC417D88229007FFAFA /* ppBGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1B6EBAC317D88229007FFAFA /* ppBGM.mp3 */; };
+		1B7B7A2017C07DE100CD6B42 /* KSDataFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B7A1F17C07DE100CD6B42 /* KSDataFormatter.m */; };
+		1B7B7A2317C0AC0600CD6B42 /* KSRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B7A2217C0AC0600CD6B42 /* KSRecord.m */; };
+		1BA9916017A7C20E00B47E81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA9915F17A7C20E00B47E81 /* UIKit.framework */; };
+		1BA9916217A7C20E00B47E81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA9916117A7C20E00B47E81 /* Foundation.framework */; };
+		1BA9916417A7C20E00B47E81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA9916317A7C20E00B47E81 /* CoreGraphics.framework */; };
+		1BA9916A17A7C20E00B47E81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BA9916817A7C20E00B47E81 /* InfoPlist.strings */; };
+		1BA9916C17A7C20E00B47E81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA9916B17A7C20E00B47E81 /* main.m */; };
+		1BA9917017A7C20E00B47E81 /* KSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA9916F17A7C20E00B47E81 /* KSAppDelegate.m */; };
+		1BA9917217A7C20E00B47E81 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BA9917117A7C20E00B47E81 /* Default.png */; };
+		1BA9917417A7C20E00B47E81 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BA9917317A7C20E00B47E81 /* Default@2x.png */; };
+		1BA9917617A7C20E00B47E81 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BA9917517A7C20E00B47E81 /* Default-568h@2x.png */; };
+		1BA9917917A7C20E00B47E81 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA9917717A7C20E00B47E81 /* MainStoryboard.storyboard */; };
+		1BA9917C17A7C20E00B47E81 /* KSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA9917B17A7C20E00B47E81 /* KSMainViewController.m */; };
+		1BA9918417A7C20E00B47E81 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA9918317A7C20E00B47E81 /* SenTestingKit.framework */; };
+		1BA9918517A7C20E00B47E81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA9915F17A7C20E00B47E81 /* UIKit.framework */; };
+		1BA9918617A7C20E00B47E81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA9916117A7C20E00B47E81 /* Foundation.framework */; };
+		1BA9918E17A7C20E00B47E81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BA9918C17A7C20E00B47E81 /* InfoPlist.strings */; };
+		1BA9919117A7C20E00B47E81 /* PuzzlePokerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA9919017A7C20E00B47E81 /* PuzzlePokerTests.m */; };
+		1BAA728917C4854B001F1E7A /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA728817C4854B001F1E7A /* UIView+Addition.m */; };
+		1BB37DE017CF0940003C81D9 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB37DDF17CF0940003C81D9 /* CoreImage.framework */; };
+		1BB37DE217CF094B003C81D9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB37DE117CF094B003C81D9 /* OpenGLES.framework */; };
+		1BB37DE417CF0956003C81D9 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB37DE317CF0956003C81D9 /* GLKit.framework */; };
+		1BB37DE717CF0CCF003C81D9 /* KSMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB37DE617CF0CCF003C81D9 /* KSMenuView.m */; };
+		1BF36CB917BB47A800CE1F0E /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BF36CB717BB47A800CE1F0E /* Data.xcdatamodeld */; };
+		1BF36CDE17BB48A000CE1F0E /* KSCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF36CDD17BB48A000CE1F0E /* KSCoreDataController.m */; };
+		1BF36CE017BB4A5200CE1F0E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF36CDF17BB4A5200CE1F0E /* CoreData.framework */; };
+		1BF36CE217BB4A5D00CE1F0E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF36CE117BB4A5D00CE1F0E /* QuartzCore.framework */; };
+		1BF36CE417BB4CE200CE1F0E /* Skia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BF36CE317BB4CE200CE1F0E /* Skia.ttf */; };
+		1BF36CE617BB511300CE1F0E /* ppBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BF36CE517BB511300CE1F0E /* ppBack.png */; };
+		1BF36CEB17BB52F300CE1F0E /* bluecard.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BF36CE717BB52F300CE1F0E /* bluecard.png */; };
+		1BF36CEC17BB52F300CE1F0E /* greencard.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BF36CE817BB52F300CE1F0E /* greencard.png */; };
+		1BF36CED17BB52F300CE1F0E /* redcard.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BF36CE917BB52F300CE1F0E /* redcard.png */; };
+		1BF36CEE17BB52F300CE1F0E /* yellowcard.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BF36CEA17BB52F300CE1F0E /* yellowcard.png */; };
+		1BF8631917C9F506006745C6 /* KSCardManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF8631817C9F506006745C6 /* KSCardManagerTest.m */; };
+		1BFA5A6317BF4EED00F005F4 /* KSCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA5A5817BF4EED00F005F4 /* KSCard.m */; };
+		1BFA5A6417BF4EED00F005F4 /* KSCardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA5A5A17BF4EED00F005F4 /* KSCardManager.m */; };
+		1BFA5A6517BF4EED00F005F4 /* KSCardNumberManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA5A5C17BF4EED00F005F4 /* KSCardNumberManager.m */; };
+		1BFA5A6617BF4EED00F005F4 /* KSDiviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA5A5E17BF4EED00F005F4 /* KSDiviceHelper.m */; };
+		1BFA5A6717BF4EED00F005F4 /* KSMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA5A6017BF4EED00F005F4 /* KSMark.m */; };
+		1BFA5A6817BF4EED00F005F4 /* KSMasu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA5A6217BF4EED00F005F4 /* KSMasu.m */; };
+		1BFA5A7117BF4FCA00F005F4 /* KSMarkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA5A6E17BF4FCA00F005F4 /* KSMarkManager.m */; };
+		1BFA5A7217BF4FCA00F005F4 /* KSMasuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA5A7017BF4FCA00F005F4 /* KSMasuManager.m */; };
+		1BFA5A7517BF4FEA00F005F4 /* KSYakuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA5A7417BF4FEA00F005F4 /* KSYakuManager.m */; };
+		1BFA5A7A17BF568D00F005F4 /* KSMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA5A7917BF568D00F005F4 /* KSMenuButton.m */; };
+		1BFA5A7D17BF569E00F005F4 /* KSMenuAnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA5A7C17BF569E00F005F4 /* KSMenuAnimationHelper.m */; };
+		1BFA5A8017BF5E3400F005F4 /* KSStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA5A7F17BF5E3400F005F4 /* KSStartViewController.m */; };
+		1BFA5A8317BF82EE00F005F4 /* KSResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA5A8217BF82EE00F005F4 /* KSResultsViewController.m */; };
+		1BFA5A8617BF835100F005F4 /* KSScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA5A8517BF835100F005F4 /* KSScoreViewController.m */; };
+		1BFD0F3A17DAB33900FC925C /* KSResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD0F3917DAB33900FC925C /* KSResults.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BA9918717A7C20E00B47E81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BA9915417A7C20E00B47E81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BA9915B17A7C20E00B47E81;
+			remoteInfo = PuzzlePoker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B0BBECE17D6021600CD8C75 /* KSDiviceStateContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSDiviceStateContext.h; sourceTree = "<group>"; };
+		1B0BBECF17D6021600CD8C75 /* KSDiviceStateContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSDiviceStateContext.m; sourceTree = "<group>"; };
+		1B0BBED217D6023600CD8C75 /* KSDiveState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSDiveState.h; sourceTree = "<group>"; };
+		1B0BBED317D6023600CD8C75 /* KSDiveState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSDiveState.m; sourceTree = "<group>"; };
+		1B0BBED517D6025000CD8C75 /* KSButtonDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSButtonDown.h; sourceTree = "<group>"; };
+		1B0BBED617D6025000CD8C75 /* KSButtonDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSButtonDown.m; sourceTree = "<group>"; };
+		1B0BBED817D6026000CD8C75 /* KSButtonTop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSButtonTop.h; sourceTree = "<group>"; };
+		1B0BBED917D6026000CD8C75 /* KSButtonTop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSButtonTop.m; sourceTree = "<group>"; };
+		1B0BBEDB17D6028000CD8C75 /* KSButtonLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSButtonLeft.h; sourceTree = "<group>"; };
+		1B0BBEDC17D6028000CD8C75 /* KSButtonLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSButtonLeft.m; sourceTree = "<group>"; };
+		1B0BBEDE17D6028F00CD8C75 /* KSButtonRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSButtonRight.h; sourceTree = "<group>"; };
+		1B0BBEDF17D6028F00CD8C75 /* KSButtonRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSButtonRight.m; sourceTree = "<group>"; };
+		1B367A4317C7533B009156F0 /* KSScoreItemLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSScoreItemLabel.h; path = ../KSScoreItemLabel.h; sourceTree = "<group>"; };
+		1B367A4417C7533B009156F0 /* KSScoreItemLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSScoreItemLabel.m; path = ../KSScoreItemLabel.m; sourceTree = "<group>"; };
+		1B4238C617D9981000EA3FD0 /* ppBGM.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ppBGM.caf; path = ../ppBGM.caf; sourceTree = "<group>"; };
+		1B453A3A17C24285005D1494 /* KSRecordAnimationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSRecordAnimationHelper.h; sourceTree = "<group>"; };
+		1B453A3B17C24285005D1494 /* KSRecordAnimationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSRecordAnimationHelper.m; sourceTree = "<group>"; };
+		1B5D708A17D85CB500D8A6D5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1B5F4B2A17C1EA0B0014093D /* KSDataFormatterTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSDataFormatterTest.h; sourceTree = "<group>"; };
+		1B5F4B2B17C1EA0B0014093D /* KSDataFormatterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSDataFormatterTest.m; sourceTree = "<group>"; };
+		1B6EBAC317D88229007FFAFA /* ppBGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ppBGM.mp3; path = ../ppBGM.mp3; sourceTree = "<group>"; };
+		1B7B7A1E17C07DE000CD6B42 /* KSDataFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSDataFormatter.h; sourceTree = "<group>"; };
+		1B7B7A1F17C07DE100CD6B42 /* KSDataFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSDataFormatter.m; sourceTree = "<group>"; };
+		1B7B7A2117C0AC0600CD6B42 /* KSRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSRecord.h; sourceTree = "<group>"; };
+		1B7B7A2217C0AC0600CD6B42 /* KSRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSRecord.m; sourceTree = "<group>"; };
+		1BA9915C17A7C20E00B47E81 /* PuzzlePoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzlePoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA9915F17A7C20E00B47E81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1BA9916117A7C20E00B47E81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1BA9916317A7C20E00B47E81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1BA9916717A7C20E00B47E81 /* PuzzlePoker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PuzzlePoker-Info.plist"; sourceTree = "<group>"; };
+		1BA9916917A7C20E00B47E81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1BA9916B17A7C20E00B47E81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BA9916D17A7C20E00B47E81 /* PuzzlePoker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PuzzlePoker-Prefix.pch"; sourceTree = "<group>"; };
+		1BA9916E17A7C20E00B47E81 /* KSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSAppDelegate.h; sourceTree = "<group>"; };
+		1BA9916F17A7C20E00B47E81 /* KSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSAppDelegate.m; sourceTree = "<group>"; };
+		1BA9917117A7C20E00B47E81 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1BA9917317A7C20E00B47E81 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1BA9917517A7C20E00B47E81 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1BA9917817A7C20E00B47E81 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1BA9917A17A7C20E00B47E81 /* KSMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSMainViewController.h; sourceTree = "<group>"; };
+		1BA9917B17A7C20E00B47E81 /* KSMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSMainViewController.m; sourceTree = "<group>"; };
+		1BA9918217A7C20E00B47E81 /* PuzzlePokerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzlePokerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA9918317A7C20E00B47E81 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		1BA9918B17A7C20E00B47E81 /* PuzzlePokerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PuzzlePokerTests-Info.plist"; sourceTree = "<group>"; };
+		1BA9918D17A7C20E00B47E81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1BA9918F17A7C20E00B47E81 /* PuzzlePokerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PuzzlePokerTests.h; sourceTree = "<group>"; };
+		1BA9919017A7C20E00B47E81 /* PuzzlePokerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuzzlePokerTests.m; sourceTree = "<group>"; };
+		1BA991A217A7C36000B47E81 /* deff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deff.h; sourceTree = "<group>"; };
+		1BAA728717C4854B001F1E7A /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Addition.h"; path = "../UIView+Addition.h"; sourceTree = "<group>"; };
+		1BAA728817C4854B001F1E7A /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Addition.m"; path = "../UIView+Addition.m"; sourceTree = "<group>"; };
+		1BB37DDF17CF0940003C81D9 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		1BB37DE117CF094B003C81D9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		1BB37DE317CF0956003C81D9 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		1BB37DE517CF0CCF003C81D9 /* KSMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMenuView.h; sourceTree = "<group>"; };
+		1BB37DE617CF0CCF003C81D9 /* KSMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMenuView.m; sourceTree = "<group>"; };
+		1BF36CB817BB47A800CE1F0E /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
+		1BF36CDC17BB48A000CE1F0E /* KSCoreDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCoreDataController.h; sourceTree = "<group>"; };
+		1BF36CDD17BB48A000CE1F0E /* KSCoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCoreDataController.m; sourceTree = "<group>"; };
+		1BF36CDF17BB4A5200CE1F0E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1BF36CE117BB4A5D00CE1F0E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1BF36CE317BB4CE200CE1F0E /* Skia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skia.ttf; sourceTree = "<group>"; };
+		1BF36CE517BB511300CE1F0E /* ppBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ppBack.png; sourceTree = "<group>"; };
+		1BF36CE717BB52F300CE1F0E /* bluecard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluecard.png; sourceTree = "<group>"; };
+		1BF36CE817BB52F300CE1F0E /* greencard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greencard.png; sourceTree = "<group>"; };
+		1BF36CE917BB52F300CE1F0E /* redcard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redcard.png; sourceTree = "<group>"; };
+		1BF36CEA17BB52F300CE1F0E /* yellowcard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellowcard.png; sourceTree = "<group>"; };
+		1BF8631717C9F506006745C6 /* KSCardManagerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCardManagerTest.h; sourceTree = "<group>"; };
+		1BF8631817C9F506006745C6 /* KSCardManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCardManagerTest.m; sourceTree = "<group>"; };
+		1BFA5A5717BF4EED00F005F4 /* KSCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCard.h; sourceTree = "<group>"; };
+		1BFA5A5817BF4EED00F005F4 /* KSCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCard.m; sourceTree = "<group>"; };
+		1BFA5A5917BF4EED00F005F4 /* KSCardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCardManager.h; sourceTree = "<group>"; };
+		1BFA5A5A17BF4EED00F005F4 /* KSCardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCardManager.m; sourceTree = "<group>"; };
+		1BFA5A5B17BF4EED00F005F4 /* KSCardNumberManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCardNumberManager.h; sourceTree = "<group>"; };
+		1BFA5A5C17BF4EED00F005F4 /* KSCardNumberManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCardNumberManager.m; sourceTree = "<group>"; };
+		1BFA5A5D17BF4EED00F005F4 /* KSDiviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSDiviceHelper.h; path = ../KSDiviceHelper.h; sourceTree = "<group>"; };
+		1BFA5A5E17BF4EED00F005F4 /* KSDiviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSDiviceHelper.m; path = ../KSDiviceHelper.m; sourceTree = "<group>"; };
+		1BFA5A5F17BF4EED00F005F4 /* KSMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMark.h; sourceTree = "<group>"; };
+		1BFA5A6017BF4EED00F005F4 /* KSMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMark.m; sourceTree = "<group>"; };
+		1BFA5A6117BF4EED00F005F4 /* KSMasu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMasu.h; sourceTree = "<group>"; };
+		1BFA5A6217BF4EED00F005F4 /* KSMasu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMasu.m; sourceTree = "<group>"; };
+		1BFA5A6D17BF4FCA00F005F4 /* KSMarkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMarkManager.h; sourceTree = "<group>"; };
+		1BFA5A6E17BF4FCA00F005F4 /* KSMarkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMarkManager.m; sourceTree = "<group>"; };
+		1BFA5A6F17BF4FCA00F005F4 /* KSMasuManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMasuManager.h; sourceTree = "<group>"; };
+		1BFA5A7017BF4FCA00F005F4 /* KSMasuManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMasuManager.m; sourceTree = "<group>"; };
+		1BFA5A7317BF4FEA00F005F4 /* KSYakuManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYakuManager.h; sourceTree = "<group>"; };
+		1BFA5A7417BF4FEA00F005F4 /* KSYakuManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSYakuManager.m; sourceTree = "<group>"; };
+		1BFA5A7817BF568D00F005F4 /* KSMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMenuButton.h; sourceTree = "<group>"; };
+		1BFA5A7917BF568D00F005F4 /* KSMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMenuButton.m; sourceTree = "<group>"; };
+		1BFA5A7B17BF569E00F005F4 /* KSMenuAnimationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMenuAnimationHelper.h; sourceTree = "<group>"; };
+		1BFA5A7C17BF569E00F005F4 /* KSMenuAnimationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMenuAnimationHelper.m; sourceTree = "<group>"; };
+		1BFA5A7E17BF5E3400F005F4 /* KSStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSStartViewController.h; sourceTree = "<group>"; };
+		1BFA5A7F17BF5E3400F005F4 /* KSStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSStartViewController.m; sourceTree = "<group>"; };
+		1BFA5A8117BF82EE00F005F4 /* KSResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSResultsViewController.h; sourceTree = "<group>"; };
+		1BFA5A8217BF82EE00F005F4 /* KSResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSResultsViewController.m; sourceTree = "<group>"; };
+		1BFA5A8417BF835100F005F4 /* KSScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSScoreViewController.h; sourceTree = "<group>"; };
+		1BFA5A8517BF835100F005F4 /* KSScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSScoreViewController.m; sourceTree = "<group>"; };
+		1BFD0F3817DAB33900FC925C /* KSResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSResults.h; sourceTree = "<group>"; };
+		1BFD0F3917DAB33900FC925C /* KSResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSResults.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BA9915917A7C20E00B47E81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B5D708B17D85CB600D8A6D5 /* AVFoundation.framework in Frameworks */,
+				1BB37DE417CF0956003C81D9 /* GLKit.framework in Frameworks */,
+				1BB37DE217CF094B003C81D9 /* OpenGLES.framework in Frameworks */,
+				1BB37DE017CF0940003C81D9 /* CoreImage.framework in Frameworks */,
+				1BF36CE217BB4A5D00CE1F0E /* QuartzCore.framework in Frameworks */,
+				1BF36CE017BB4A5200CE1F0E /* CoreData.framework in Frameworks */,
+				1BA9916017A7C20E00B47E81 /* UIKit.framework in Frameworks */,
+				1BA9916217A7C20E00B47E81 /* Foundation.framework in Frameworks */,
+				1BA9916417A7C20E00B47E81 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA9917E17A7C20E00B47E81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA9918417A7C20E00B47E81 /* SenTestingKit.framework in Frameworks */,
+				1BA9918517A7C20E00B47E81 /* UIKit.framework in Frameworks */,
+				1BA9918617A7C20E00B47E81 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B0BBED117D6021B00CD8C75 /* DiveceState */ = {
+			isa = PBXGroup;
+			children = (
+				1B0BBECE17D6021600CD8C75 /* KSDiviceStateContext.h */,
+				1B0BBECF17D6021600CD8C75 /* KSDiviceStateContext.m */,
+				1B0BBED217D6023600CD8C75 /* KSDiveState.h */,
+				1B0BBED317D6023600CD8C75 /* KSDiveState.m */,
+				1B0BBED517D6025000CD8C75 /* KSButtonDown.h */,
+				1B0BBED617D6025000CD8C75 /* KSButtonDown.m */,
+				1B0BBED817D6026000CD8C75 /* KSButtonTop.h */,
+				1B0BBED917D6026000CD8C75 /* KSButtonTop.m */,
+				1B0BBEDB17D6028000CD8C75 /* KSButtonLeft.h */,
+				1B0BBEDC17D6028000CD8C75 /* KSButtonLeft.m */,
+				1B0BBEDE17D6028F00CD8C75 /* KSButtonRight.h */,
+				1B0BBEDF17D6028F00CD8C75 /* KSButtonRight.m */,
+			);
+			name = DiveceState;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		1B93E58117CD7A8B004FE702 /* DataFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				1B7B7A1E17C07DE000CD6B42 /* KSDataFormatter.h */,
+				1B7B7A1F17C07DE100CD6B42 /* KSDataFormatter.m */,
+			);
+			name = DataFormatter;
+			sourceTree = "<group>";
+		};
+		1BA9915317A7C20E00B47E81 = {
+			isa = PBXGroup;
+			children = (
+				1BA9916517A7C20E00B47E81 /* PuzzlePoker */,
+				1BA9918917A7C20E00B47E81 /* PuzzlePokerTests */,
+				1BA9915E17A7C20E00B47E81 /* Frameworks */,
+				1BA9915D17A7C20E00B47E81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BA9915D17A7C20E00B47E81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BA9915C17A7C20E00B47E81 /* PuzzlePoker.app */,
+				1BA9918217A7C20E00B47E81 /* PuzzlePokerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BA9915E17A7C20E00B47E81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B5D708A17D85CB500D8A6D5 /* AVFoundation.framework */,
+				1BB37DE317CF0956003C81D9 /* GLKit.framework */,
+				1BB37DE117CF094B003C81D9 /* OpenGLES.framework */,
+				1BB37DDF17CF0940003C81D9 /* CoreImage.framework */,
+				1BF36CE117BB4A5D00CE1F0E /* QuartzCore.framework */,
+				1BF36CDF17BB4A5200CE1F0E /* CoreData.framework */,
+				1BA9915F17A7C20E00B47E81 /* UIKit.framework */,
+				1BA9916117A7C20E00B47E81 /* Foundation.framework */,
+				1BA9916317A7C20E00B47E81 /* CoreGraphics.framework */,
+				1BA9918317A7C20E00B47E81 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BA9916517A7C20E00B47E81 /* PuzzlePoker */ = {
+			isa = PBXGroup;
+			children = (
+				1BF36CE317BB4CE200CE1F0E /* Skia.ttf */,
+				1BA991A217A7C36000B47E81 /* deff.h */,
+				1BFA5A5D17BF4EED00F005F4 /* KSDiviceHelper.h */,
+				1BFA5A5E17BF4EED00F005F4 /* KSDiviceHelper.m */,
+				1B0BBED117D6021B00CD8C75 /* DiveceState */,
+				1BFA5A7717BF566400F005F4 /* animationHelper */,
+				1BFA5A7617BF565900F005F4 /* menu */,
+				1BA991A017A7C30F00B47E81 /* img&Sound */,
+				1BA9919C17A7C2AB00B47E81 /* controller */,
+				1BA9919B17A7C29F00B47E81 /* view */,
+				1BA9919A17A7C29100B47E81 /* model */,
+				1BA9916617A7C20E00B47E81 /* Supporting Files */,
+			);
+			path = PuzzlePoker;
+			sourceTree = "<group>";
+		};
+		1BA9916617A7C20E00B47E81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BA9916E17A7C20E00B47E81 /* KSAppDelegate.h */,
+				1BA9916F17A7C20E00B47E81 /* KSAppDelegate.m */,
+				1BA9917717A7C20E00B47E81 /* MainStoryboard.storyboard */,
+				1BA9916717A7C20E00B47E81 /* PuzzlePoker-Info.plist */,
+				1BA9916817A7C20E00B47E81 /* InfoPlist.strings */,
+				1BA9916B17A7C20E00B47E81 /* main.m */,
+				1BA9916D17A7C20E00B47E81 /* PuzzlePoker-Prefix.pch */,
+				1BA9917117A7C20E00B47E81 /* Default.png */,
+				1BA9917317A7C20E00B47E81 /* Default@2x.png */,
+				1BA9917517A7C20E00B47E81 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BA9918917A7C20E00B47E81 /* PuzzlePokerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BA9918F17A7C20E00B47E81 /* PuzzlePokerTests.h */,
+				1BA9919017A7C20E00B47E81 /* PuzzlePokerTests.m */,
+				1BA9918A17A7C20E00B47E81 /* Supporting Files */,
+				1B5F4B2A17C1EA0B0014093D /* KSDataFormatterTest.h */,
+				1B5F4B2B17C1EA0B0014093D /* KSDataFormatterTest.m */,
+				1BF8631717C9F506006745C6 /* KSCardManagerTest.h */,
+				1BF8631817C9F506006745C6 /* KSCardManagerTest.m */,
+			);
+			path = PuzzlePokerTests;
+			sourceTree = "<group>";
+		};
+		1BA9918A17A7C20E00B47E81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BA9918B17A7C20E00B47E81 /* PuzzlePokerTests-Info.plist */,
+				1BA9918C17A7C20E00B47E81 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BA9919A17A7C29100B47E81 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1BF36CB717BB47A800CE1F0E /* Data.xcdatamodeld */,
+				1BFD0F3817DAB33900FC925C /* KSResults.h */,
+				1BFD0F3917DAB33900FC925C /* KSResults.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		1BA9919B17A7C29F00B47E81 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1BAA728717C4854B001F1E7A /* UIView+Addition.h */,
+				1BAA728817C4854B001F1E7A /* UIView+Addition.m */,
+				1BFA5A6C17BF4F7900F005F4 /* yaku */,
+				1BFA5A6A17BF4EFD00F005F4 /* mark */,
+				1BFA5A6917BF4EF400F005F4 /* card */,
+				1BFA5A6B17BF4F5C00F005F4 /* Masu */,
+				1B93E58117CD7A8B004FE702 /* DataFormatter */,
+				1B367A4317C7533B009156F0 /* KSScoreItemLabel.h */,
+				1B367A4417C7533B009156F0 /* KSScoreItemLabel.m */,
+				1B7B7A2117C0AC0600CD6B42 /* KSRecord.h */,
+				1B7B7A2217C0AC0600CD6B42 /* KSRecord.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		1BA9919C17A7C2AB00B47E81 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				1BFA5A7E17BF5E3400F005F4 /* KSStartViewController.h */,
+				1BFA5A7F17BF5E3400F005F4 /* KSStartViewController.m */,
+				1BF36CDC17BB48A000CE1F0E /* KSCoreDataController.h */,
+				1BF36CDD17BB48A000CE1F0E /* KSCoreDataController.m */,
+				1BA9917A17A7C20E00B47E81 /* KSMainViewController.h */,
+				1BA9917B17A7C20E00B47E81 /* KSMainViewController.m */,
+				1BFA5A8117BF82EE00F005F4 /* KSResultsViewController.h */,
+				1BFA5A8217BF82EE00F005F4 /* KSResultsViewController.m */,
+				1BFA5A8417BF835100F005F4 /* KSScoreViewController.h */,
+				1BFA5A8517BF835100F005F4 /* KSScoreViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		1BA991A017A7C30F00B47E81 /* img&Sound */ = {
+			isa = PBXGroup;
+			children = (
+				1B4238C617D9981000EA3FD0 /* ppBGM.caf */,
+				1B6EBAC317D88229007FFAFA /* ppBGM.mp3 */,
+				1BF36CE717BB52F300CE1F0E /* bluecard.png */,
+				1BF36CE817BB52F300CE1F0E /* greencard.png */,
+				1BF36CE917BB52F300CE1F0E /* redcard.png */,
+				1BF36CEA17BB52F300CE1F0E /* yellowcard.png */,
+				1BF36CE517BB511300CE1F0E /* ppBack.png */,
+			);
+			name = "img&Sound";
+			sourceTree = "<group>";
+		};
+		1BFA5A6917BF4EF400F005F4 /* card */ = {
+			isa = PBXGroup;
+			children = (
+				1BFA5A5717BF4EED00F005F4 /* KSCard.h */,
+				1BFA5A5817BF4EED00F005F4 /* KSCard.m */,
+				1BFA5A5917BF4EED00F005F4 /* KSCardManager.h */,
+				1BFA5A5A17BF4EED00F005F4 /* KSCardManager.m */,
+				1BFA5A5B17BF4EED00F005F4 /* KSCardNumberManager.h */,
+				1BFA5A5C17BF4EED00F005F4 /* KSCardNumberManager.m */,
+			);
+			name = card;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		1BFA5A6A17BF4EFD00F005F4 /* mark */ = {
+			isa = PBXGroup;
+			children = (
+				1BFA5A6D17BF4FCA00F005F4 /* KSMarkManager.h */,
+				1BFA5A6E17BF4FCA00F005F4 /* KSMarkManager.m */,
+				1BFA5A5F17BF4EED00F005F4 /* KSMark.h */,
+				1BFA5A6017BF4EED00F005F4 /* KSMark.m */,
+			);
+			name = mark;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		1BFA5A6B17BF4F5C00F005F4 /* Masu */ = {
+			isa = PBXGroup;
+			children = (
+				1BFA5A6F17BF4FCA00F005F4 /* KSMasuManager.h */,
+				1BFA5A7017BF4FCA00F005F4 /* KSMasuManager.m */,
+				1BFA5A6117BF4EED00F005F4 /* KSMasu.h */,
+				1BFA5A6217BF4EED00F005F4 /* KSMasu.m */,
+			);
+			name = Masu;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		1BFA5A6C17BF4F7900F005F4 /* yaku */ = {
+			isa = PBXGroup;
+			children = (
+				1BFA5A7317BF4FEA00F005F4 /* KSYakuManager.h */,
+				1BFA5A7417BF4FEA00F005F4 /* KSYakuManager.m */,
+			);
+			name = yaku;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		1BFA5A7617BF565900F005F4 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				1BFA5A7817BF568D00F005F4 /* KSMenuButton.h */,
+				1BFA5A7917BF568D00F005F4 /* KSMenuButton.m */,
+				1BB37DE517CF0CCF003C81D9 /* KSMenuView.h */,
+				1BB37DE617CF0CCF003C81D9 /* KSMenuView.m */,
+			);
+			name = menu;
+			sourceTree = "<group>";
+		};
+		1BFA5A7717BF566400F005F4 /* animationHelper */ = {
+			isa = PBXGroup;
+			children = (
+				1BFA5A7B17BF569E00F005F4 /* KSMenuAnimationHelper.h */,
+				1BFA5A7C17BF569E00F005F4 /* KSMenuAnimationHelper.m */,
+				1B453A3A17C24285005D1494 /* KSRecordAnimationHelper.h */,
+				1B453A3B17C24285005D1494 /* KSRecordAnimationHelper.m */,
+			);
+			name = animationHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BA9915B17A7C20E00B47E81 /* PuzzlePoker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BA9919417A7C20E00B47E81 /* Build configuration list for PBXNativeTarget "PuzzlePoker" */;
+			buildPhases = (
+				1BA9915817A7C20E00B47E81 /* Sources */,
+				1BA9915917A7C20E00B47E81 /* Frameworks */,
+				1BA9915A17A7C20E00B47E81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PuzzlePoker;
+			productName = PuzzlePoker;
+			productReference = 1BA9915C17A7C20E00B47E81 /* PuzzlePoker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BA9918117A7C20E00B47E81 /* PuzzlePokerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BA9919717A7C20E00B47E81 /* Build configuration list for PBXNativeTarget "PuzzlePokerTests" */;
+			buildPhases = (
+				1BA9917D17A7C20E00B47E81 /* Sources */,
+				1BA9917E17A7C20E00B47E81 /* Frameworks */,
+				1BA9917F17A7C20E00B47E81 /* Resources */,
+				1BA9918017A7C20E00B47E81 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BA9918817A7C20E00B47E81 /* PBXTargetDependency */,
+			);
+			name = PuzzlePokerTests;
+			productName = PuzzlePokerTests;
+			productReference = 1BA9918217A7C20E00B47E81 /* PuzzlePokerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BA9915417A7C20E00B47E81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KS;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "momiji-mac";
+			};
+			buildConfigurationList = 1BA9915717A7C20E00B47E81 /* Build configuration list for PBXProject "PuzzlePoker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1BA9915317A7C20E00B47E81;
+			productRefGroup = 1BA9915D17A7C20E00B47E81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BA9915B17A7C20E00B47E81 /* PuzzlePoker */,
+				1BA9918117A7C20E00B47E81 /* PuzzlePokerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BA9915A17A7C20E00B47E81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA9916A17A7C20E00B47E81 /* InfoPlist.strings in Resources */,
+				1BA9917217A7C20E00B47E81 /* Default.png in Resources */,
+				1BA9917417A7C20E00B47E81 /* Default@2x.png in Resources */,
+				1BA9917617A7C20E00B47E81 /* Default-568h@2x.png in Resources */,
+				1BA9917917A7C20E00B47E81 /* MainStoryboard.storyboard in Resources */,
+				1BF36CE417BB4CE200CE1F0E /* Skia.ttf in Resources */,
+				1BF36CE617BB511300CE1F0E /* ppBack.png in Resources */,
+				1BF36CEB17BB52F300CE1F0E /* bluecard.png in Resources */,
+				1BF36CEC17BB52F300CE1F0E /* greencard.png in Resources */,
+				1BF36CED17BB52F300CE1F0E /* redcard.png in Resources */,
+				1BF36CEE17BB52F300CE1F0E /* yellowcard.png in Resources */,
+				1B6EBAC417D88229007FFAFA /* ppBGM.mp3 in Resources */,
+				1B4238C717D9981000EA3FD0 /* ppBGM.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA9917F17A7C20E00B47E81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA9918E17A7C20E00B47E81 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BA9918017A7C20E00B47E81 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BA9915817A7C20E00B47E81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA9916C17A7C20E00B47E81 /* main.m in Sources */,
+				1BA9917017A7C20E00B47E81 /* KSAppDelegate.m in Sources */,
+				1BA9917C17A7C20E00B47E81 /* KSMainViewController.m in Sources */,
+				1BF36CB917BB47A800CE1F0E /* Data.xcdatamodeld in Sources */,
+				1BF36CDE17BB48A000CE1F0E /* KSCoreDataController.m in Sources */,
+				1BFA5A6317BF4EED00F005F4 /* KSCard.m in Sources */,
+				1BFA5A6417BF4EED00F005F4 /* KSCardManager.m in Sources */,
+				1BFA5A6517BF4EED00F005F4 /* KSCardNumberManager.m in Sources */,
+				1BFA5A6617BF4EED00F005F4 /* KSDiviceHelper.m in Sources */,
+				1BFA5A6717BF4EED00F005F4 /* KSMark.m in Sources */,
+				1BFA5A6817BF4EED00F005F4 /* KSMasu.m in Sources */,
+				1BFA5A7117BF4FCA00F005F4 /* KSMarkManager.m in Sources */,
+				1BFA5A7217BF4FCA00F005F4 /* KSMasuManager.m in Sources */,
+				1BFA5A7517BF4FEA00F005F4 /* KSYakuManager.m in Sources */,
+				1BFA5A7A17BF568D00F005F4 /* KSMenuButton.m in Sources */,
+				1BFA5A7D17BF569E00F005F4 /* KSMenuAnimationHelper.m in Sources */,
+				1BFA5A8017BF5E3400F005F4 /* KSStartViewController.m in Sources */,
+				1BFA5A8317BF82EE00F005F4 /* KSResultsViewController.m in Sources */,
+				1BFA5A8617BF835100F005F4 /* KSScoreViewController.m in Sources */,
+				1B7B7A2017C07DE100CD6B42 /* KSDataFormatter.m in Sources */,
+				1B7B7A2317C0AC0600CD6B42 /* KSRecord.m in Sources */,
+				1B453A3C17C24285005D1494 /* KSRecordAnimationHelper.m in Sources */,
+				1BAA728917C4854B001F1E7A /* UIView+Addition.m in Sources */,
+				1B367A4517C7533B009156F0 /* KSScoreItemLabel.m in Sources */,
+				1BB37DE717CF0CCF003C81D9 /* KSMenuView.m in Sources */,
+				1B0BBED017D6021600CD8C75 /* KSDiviceStateContext.m in Sources */,
+				1B0BBED417D6023600CD8C75 /* KSDiveState.m in Sources */,
+				1B0BBED717D6025000CD8C75 /* KSButtonDown.m in Sources */,
+				1B0BBEDA17D6026000CD8C75 /* KSButtonTop.m in Sources */,
+				1B0BBEDD17D6028000CD8C75 /* KSButtonLeft.m in Sources */,
+				1B0BBEE017D6028F00CD8C75 /* KSButtonRight.m in Sources */,
+				1BFD0F3A17DAB33900FC925C /* KSResults.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA9917D17A7C20E00B47E81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA9919117A7C20E00B47E81 /* PuzzlePokerTests.m in Sources */,
+				1B5F4B2C17C1EA0B0014093D /* KSDataFormatterTest.m in Sources */,
+				1BF8631917C9F506006745C6 /* KSCardManagerTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BA9918817A7C20E00B47E81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BA9915B17A7C20E00B47E81 /* PuzzlePoker */;
+			targetProxy = 1BA9918717A7C20E00B47E81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BA9916817A7C20E00B47E81 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BA9916917A7C20E00B47E81 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1BA9917717A7C20E00B47E81 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BA9917817A7C20E00B47E81 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		1BA9918C17A7C20E00B47E81 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BA9918D17A7C20E00B47E81 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BA9919217A7C20E00B47E81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1BA9919317A7C20E00B47E81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BA9919517A7C20E00B47E81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PuzzlePoker/PuzzlePoker-Prefix.pch";
+				INFOPLIST_FILE = "PuzzlePoker/PuzzlePoker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1BA9919617A7C20E00B47E81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PuzzlePoker/PuzzlePoker-Prefix.pch";
+				INFOPLIST_FILE = "PuzzlePoker/PuzzlePoker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1BA9919817A7C20E00B47E81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PuzzlePoker.app/PuzzlePoker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PuzzlePoker/PuzzlePoker-Prefix.pch";
+				INFOPLIST_FILE = "PuzzlePokerTests/PuzzlePokerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1BA9919917A7C20E00B47E81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PuzzlePoker.app/PuzzlePoker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PuzzlePoker/PuzzlePoker-Prefix.pch";
+				INFOPLIST_FILE = "PuzzlePokerTests/PuzzlePokerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BA9915717A7C20E00B47E81 /* Build configuration list for PBXProject "PuzzlePoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA9919217A7C20E00B47E81 /* Debug */,
+				1BA9919317A7C20E00B47E81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BA9919417A7C20E00B47E81 /* Build configuration list for PBXNativeTarget "PuzzlePoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA9919517A7C20E00B47E81 /* Debug */,
+				1BA9919617A7C20E00B47E81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BA9919717A7C20E00B47E81 /* Build configuration list for PBXNativeTarget "PuzzlePokerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA9919817A7C20E00B47E81 /* Debug */,
+				1BA9919917A7C20E00B47E81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1BF36CB717BB47A800CE1F0E /* Data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1BF36CB817BB47A800CE1F0E /* Data.xcdatamodel */,
+			);
+			currentVersion = 1BF36CB817BB47A800CE1F0E /* Data.xcdatamodel */;
+			path = Data.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1BA9915417A7C20E00B47E81 /* Project object */;
+}

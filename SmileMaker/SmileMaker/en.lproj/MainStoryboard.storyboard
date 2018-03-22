@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="KSViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ixy-1K-UkW">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="N17-2a-ixv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2013/1/1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uly-0c-wts">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Lnd-IC-LLO"/>
+                                    <constraint firstAttribute="width" constant="145" id="omV-FI-GEl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PR9-P3-Eu6">
+                                <items>
+                                    <barButtonItem title="List" id="n9b-di-TYF">
+                                        <connections>
+                                            <segue destination="xeg-Us-bXM" kind="modal" id="UNK-Iy-lv5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="qAB-1d-vSo"/>
+                                    <barButtonItem title="Edited" id="3od-tq-2wx"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="MK2-dU-9jM"/>
+                                    <barButtonItem title="Done" id="YsA-W0-BUr"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="rhp-JP-f2O"/>
+                                    <barButtonItem title="Setting" id="hfv-AQ-UUO">
+                                        <connections>
+                                            <segue destination="wpO-IM-boc" kind="modal" id="hGg-Ir-R4A"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PR9-P3-Eu6" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="CWd-9l-GYL"/>
+                            <constraint firstItem="PR9-P3-Eu6" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="CmT-rd-fJ5"/>
+                            <constraint firstItem="Ixy-1K-UkW" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="KIJ-e3-Ew9"/>
+                            <constraint firstItem="Ixy-1K-UkW" firstAttribute="top" secondItem="PR9-P3-Eu6" secondAttribute="bottom" type="default" id="YVJ-HM-XEh"/>
+                            <constraint firstItem="Ixy-1K-UkW" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="g3E-UL-hbo"/>
+                            <constraint firstItem="Uly-0c-wts" firstAttribute="top" secondItem="3" secondAttribute="top" constant="57" id="mZ3-zH-F3w"/>
+                            <constraint firstItem="PR9-P3-Eu6" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="nj0-b9-L0m"/>
+                            <constraint firstItem="Uly-0c-wts" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="13" id="nqr-J3-iJP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="editedMemo" destination="3od-tq-2wx" id="4lf-kH-b8d"/>
+                        <outlet property="faceimage" destination="Ixy-1K-UkW" id="hJz-b8-duT"/>
+                        <outlet property="today" destination="Uly-0c-wts" id="YDz-oQ-G9k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="505"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="s5x-5D-EhG">
+            <objects>
+                <viewController id="xeg-Us-bXM" customClass="KSCollectionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zlP-q1-Mh2">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uGP-Xs-X2B">
+                                <items>
+                                    <barButtonItem title="Main" id="OuW-tm-Bce">
+                                        <connections>
+                                            <action selector="back" destination="xeg-Us-bXM" id="CRv-us-AFg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="uGP-Xs-X2B" firstAttribute="bottom" secondItem="zlP-q1-Mh2" secondAttribute="bottom" type="default" id="Ur1-wU-ND3"/>
+                            <constraint firstItem="uGP-Xs-X2B" firstAttribute="leading" secondItem="zlP-q1-Mh2" secondAttribute="leading" type="default" id="cGu-Ek-ibU"/>
+                            <constraint firstItem="uGP-Xs-X2B" firstAttribute="trailing" secondItem="zlP-q1-Mh2" secondAttribute="trailing" type="default" id="cV2-1m-3jB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backbutton" destination="OuW-tm-Bce" id="GRd-ET-vl8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7fz-r7-yBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="515" y="106"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="36h-xL-Lqv">
+            <objects>
+                <viewController id="wpO-IM-boc" customClass="KSSettingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tt7-Nh-MOe" customClass="KS">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V22-YZ-noO">
+                                <items>
+                                    <barButtonItem title="Main" id="Zwl-pr-3ap">
+                                        <connections>
+                                            <action selector="back" destination="wpO-IM-boc" id="AYU-zu-Ext"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V22-YZ-noO" firstAttribute="bottom" secondItem="tt7-Nh-MOe" secondAttribute="bottom" type="default" id="2jU-gi-ZBI"/>
+                            <constraint firstItem="V22-YZ-noO" firstAttribute="leading" secondItem="tt7-Nh-MOe" secondAttribute="leading" type="default" id="Gmu-wH-dOx"/>
+                            <constraint firstItem="V22-YZ-noO" firstAttribute="trailing" secondItem="tt7-Nh-MOe" secondAttribute="trailing" type="default" id="R6T-ND-7xk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backbutton" destination="Zwl-pr-3ap" id="ndF-sj-bP4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="01y-p2-JhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="515" y="801"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

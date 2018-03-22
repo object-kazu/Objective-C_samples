@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B3A5E7317387BCC00BEC67A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3A5E7217387BCC00BEC67A /* UIKit.framework */; };
+		1B3A5E7517387BCC00BEC67A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3A5E7417387BCC00BEC67A /* Foundation.framework */; };
+		1B3A5E7717387BCC00BEC67A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3A5E7617387BCC00BEC67A /* CoreGraphics.framework */; };
+		1B3A5E7D17387BCC00BEC67A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B3A5E7B17387BCC00BEC67A /* InfoPlist.strings */; };
+		1B3A5E7F17387BCC00BEC67A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A5E7E17387BCC00BEC67A /* main.m */; };
+		1B3A5E8317387BCC00BEC67A /* KSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A5E8217387BCC00BEC67A /* KSAppDelegate.m */; };
+		1B3A5E8517387BCC00BEC67A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B3A5E8417387BCC00BEC67A /* Default.png */; };
+		1B3A5E8717387BCC00BEC67A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B3A5E8617387BCC00BEC67A /* Default@2x.png */; };
+		1B3A5E8917387BCC00BEC67A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B3A5E8817387BCC00BEC67A /* Default-568h@2x.png */; };
+		1B3A5E8C17387BCC00BEC67A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3A5E8A17387BCC00BEC67A /* MainStoryboard.storyboard */; };
+		1B3A5E8F17387BCC00BEC67A /* KSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A5E8E17387BCC00BEC67A /* KSViewController.m */; };
+		1B3A5E9D17388DBB00BEC67A /* KSCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A5E9A17388DBB00BEC67A /* KSCollectionViewController.m */; };
+		1B3A5E9E17388DBB00BEC67A /* KSSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A5E9C17388DBB00BEC67A /* KSSettingViewController.m */; };
+		1B3A5EA117388E5600BEC67A /* KSFaceDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A5EA017388E5600BEC67A /* KSFaceDataManager.m */; };
+		1B3A5EA417388E7600BEC67A /* smile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A5EA217388E7600BEC67A /* smile.xcdatamodeld */; };
+		1B3A5EA717388EF800BEC67A /* Face.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A5EA617388EF800BEC67A /* Face.m */; };
+		1B8C63DC1738C47C00F6B0D9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8C63DB1738C47C00F6B0D9 /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B3A5E6F17387BCC00BEC67A /* smileMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smileMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B3A5E7217387BCC00BEC67A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1B3A5E7417387BCC00BEC67A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1B3A5E7617387BCC00BEC67A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1B3A5E7A17387BCC00BEC67A /* smileMaker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "smileMaker-Info.plist"; sourceTree = "<group>"; };
+		1B3A5E7C17387BCC00BEC67A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1B3A5E7E17387BCC00BEC67A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B3A5E8017387BCC00BEC67A /* smileMaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smileMaker-Prefix.pch"; sourceTree = "<group>"; };
+		1B3A5E8117387BCC00BEC67A /* KSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSAppDelegate.h; sourceTree = "<group>"; };
+		1B3A5E8217387BCC00BEC67A /* KSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSAppDelegate.m; sourceTree = "<group>"; };
+		1B3A5E8417387BCC00BEC67A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1B3A5E8617387BCC00BEC67A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1B3A5E8817387BCC00BEC67A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1B3A5E8B17387BCC00BEC67A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1B3A5E8D17387BCC00BEC67A /* KSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSViewController.h; sourceTree = "<group>"; };
+		1B3A5E8E17387BCC00BEC67A /* KSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSViewController.m; sourceTree = "<group>"; };
+		1B3A5E9917388DBB00BEC67A /* KSCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCollectionViewController.h; sourceTree = "<group>"; };
+		1B3A5E9A17388DBB00BEC67A /* KSCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCollectionViewController.m; sourceTree = "<group>"; };
+		1B3A5E9B17388DBB00BEC67A /* KSSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSSettingViewController.h; sourceTree = "<group>"; };
+		1B3A5E9C17388DBB00BEC67A /* KSSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSSettingViewController.m; sourceTree = "<group>"; };
+		1B3A5E9F17388E5600BEC67A /* KSFaceDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSFaceDataManager.h; path = smileMaker/KSFaceDataManager.h; sourceTree = "<group>"; };
+		1B3A5EA017388E5600BEC67A /* KSFaceDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSFaceDataManager.m; path = smileMaker/KSFaceDataManager.m; sourceTree = "<group>"; };
+		1B3A5EA317388E7600BEC67A /* smile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = smile.xcdatamodel; sourceTree = "<group>"; };
+		1B3A5EA517388EF800BEC67A /* Face.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Face.h; sourceTree = "<group>"; };
+		1B3A5EA617388EF800BEC67A /* Face.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Face.m; sourceTree = "<group>"; };
+		1B8C63DA1738AADF00F6B0D9 /* def.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = def.h; sourceTree = "<group>"; };
+		1B8C63DB1738C47C00F6B0D9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B3A5E6C17387BCC00BEC67A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B8C63DC1738C47C00F6B0D9 /* CoreData.framework in Frameworks */,
+				1B3A5E7317387BCC00BEC67A /* UIKit.framework in Frameworks */,
+				1B3A5E7517387BCC00BEC67A /* Foundation.framework in Frameworks */,
+				1B3A5E7717387BCC00BEC67A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B3A5E6617387BCC00BEC67A = {
+			isa = PBXGroup;
+			children = (
+				1B3A5E9517387C1600BEC67A /* contollers */,
+				1B3A5E9817387C4000BEC67A /* model */,
+				1B3A5E9717387C2E00BEC67A /* imgs */,
+				1B3A5E9617387C2400BEC67A /* views */,
+				1B3A5E7817387BCC00BEC67A /* smileMaker */,
+				1B3A5E7117387BCC00BEC67A /* Frameworks */,
+				1B3A5E7017387BCC00BEC67A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B3A5E7017387BCC00BEC67A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B3A5E6F17387BCC00BEC67A /* smileMaker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B3A5E7117387BCC00BEC67A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B8C63DB1738C47C00F6B0D9 /* CoreData.framework */,
+				1B3A5E7217387BCC00BEC67A /* UIKit.framework */,
+				1B3A5E7417387BCC00BEC67A /* Foundation.framework */,
+				1B3A5E7617387BCC00BEC67A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B3A5E7817387BCC00BEC67A /* smileMaker */ = {
+			isa = PBXGroup;
+			children = (
+				1B3A5E8117387BCC00BEC67A /* KSAppDelegate.h */,
+				1B3A5E8217387BCC00BEC67A /* KSAppDelegate.m */,
+				1B8C63DA1738AADF00F6B0D9 /* def.h */,
+				1B3A5E8A17387BCC00BEC67A /* MainStoryboard.storyboard */,
+				1B3A5E7917387BCC00BEC67A /* Supporting Files */,
+			);
+			path = smileMaker;
+			sourceTree = "<group>";
+		};
+		1B3A5E7917387BCC00BEC67A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B3A5E7A17387BCC00BEC67A /* smileMaker-Info.plist */,
+				1B3A5E7B17387BCC00BEC67A /* InfoPlist.strings */,
+				1B3A5E7E17387BCC00BEC67A /* main.m */,
+				1B3A5E8017387BCC00BEC67A /* smileMaker-Prefix.pch */,
+				1B3A5E8417387BCC00BEC67A /* Default.png */,
+				1B3A5E8617387BCC00BEC67A /* Default@2x.png */,
+				1B3A5E8817387BCC00BEC67A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B3A5E9517387C1600BEC67A /* contollers */ = {
+			isa = PBXGroup;
+			children = (
+				1B3A5E8D17387BCC00BEC67A /* KSViewController.h */,
+				1B3A5E8E17387BCC00BEC67A /* KSViewController.m */,
+				1B3A5E9917388DBB00BEC67A /* KSCollectionViewController.h */,
+				1B3A5E9A17388DBB00BEC67A /* KSCollectionViewController.m */,
+				1B3A5E9B17388DBB00BEC67A /* KSSettingViewController.h */,
+				1B3A5E9C17388DBB00BEC67A /* KSSettingViewController.m */,
+			);
+			name = contollers;
+			path = smileMaker;
+			sourceTree = "<group>";
+		};
+		1B3A5E9617387C2400BEC67A /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		1B3A5E9717387C2E00BEC67A /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = imgs;
+			sourceTree = "<group>";
+		};
+		1B3A5E9817387C4000BEC67A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1B3A5E9F17388E5600BEC67A /* KSFaceDataManager.h */,
+				1B3A5EA017388E5600BEC67A /* KSFaceDataManager.m */,
+				1B3A5EA217388E7600BEC67A /* smile.xcdatamodeld */,
+				1B3A5EA517388EF800BEC67A /* Face.h */,
+				1B3A5EA617388EF800BEC67A /* Face.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B3A5E6E17387BCC00BEC67A /* smileMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B3A5E9217387BCC00BEC67A /* Build configuration list for PBXNativeTarget "smileMaker" */;
+			buildPhases = (
+				1B3A5E6B17387BCC00BEC67A /* Sources */,
+				1B3A5E6C17387BCC00BEC67A /* Frameworks */,
+				1B3A5E6D17387BCC00BEC67A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smileMaker;
+			productName = smileMaker;
+			productReference = 1B3A5E6F17387BCC00BEC67A /* smileMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B3A5E6717387BCC00BEC67A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KS;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "momiji-mac.com";
+			};
+			buildConfigurationList = 1B3A5E6A17387BCC00BEC67A /* Build configuration list for PBXProject "smileMaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1B3A5E6617387BCC00BEC67A;
+			productRefGroup = 1B3A5E7017387BCC00BEC67A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B3A5E6E17387BCC00BEC67A /* smileMaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B3A5E6D17387BCC00BEC67A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B3A5E7D17387BCC00BEC67A /* InfoPlist.strings in Resources */,
+				1B3A5E8517387BCC00BEC67A /* Default.png in Resources */,
+				1B3A5E8717387BCC00BEC67A /* Default@2x.png in Resources */,
+				1B3A5E8917387BCC00BEC67A /* Default-568h@2x.png in Resources */,
+				1B3A5E8C17387BCC00BEC67A /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B3A5E6B17387BCC00BEC67A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B3A5E7F17387BCC00BEC67A /* main.m in Sources */,
+				1B3A5E8317387BCC00BEC67A /* KSAppDelegate.m in Sources */,
+				1B3A5E8F17387BCC00BEC67A /* KSViewController.m in Sources */,
+				1B3A5E9D17388DBB00BEC67A /* KSCollectionViewController.m in Sources */,
+				1B3A5E9E17388DBB00BEC67A /* KSSettingViewController.m in Sources */,
+				1B3A5EA117388E5600BEC67A /* KSFaceDataManager.m in Sources */,
+				1B3A5EA417388E7600BEC67A /* smile.xcdatamodeld in Sources */,
+				1B3A5EA717388EF800BEC67A /* Face.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1B3A5E7B17387BCC00BEC67A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B3A5E7C17387BCC00BEC67A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1B3A5E8A17387BCC00BEC67A /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B3A5E8B17387BCC00BEC67A /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B3A5E9017387BCC00BEC67A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1B3A5E9117387BCC00BEC67A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B3A5E9317387BCC00BEC67A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "smileMaker/smileMaker-Prefix.pch";
+				INFOPLIST_FILE = "smileMaker/smileMaker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1B3A5E9417387BCC00BEC67A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "smileMaker/smileMaker-Prefix.pch";
+				INFOPLIST_FILE = "smileMaker/smileMaker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B3A5E6A17387BCC00BEC67A /* Build configuration list for PBXProject "smileMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B3A5E9017387BCC00BEC67A /* Debug */,
+				1B3A5E9117387BCC00BEC67A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B3A5E9217387BCC00BEC67A /* Build configuration list for PBXNativeTarget "smileMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B3A5E9317387BCC00BEC67A /* Debug */,
+				1B3A5E9417387BCC00BEC67A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1B3A5EA217388E7600BEC67A /* smile.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1B3A5EA317388E7600BEC67A /* smile.xcdatamodel */,
+			);
+			currentVersion = 1B3A5EA317388E7600BEC67A /* smile.xcdatamodel */;
+			path = smile.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1B3A5E6717387BCC00BEC67A /* Project object */;
+}

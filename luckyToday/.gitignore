@@ -1,0 +1,12 @@
+#xcodeprojec　を管理から外す
+*.xcodeproj/*.*
+*.xcodeproj/**
+*.xcodoproj/**/*
+
+#build以下のファイルを管理から外す
+build
+build/*
+build/*/*
+build/**/**/*
+
+.DS_S*

@@ -1,0 +1,388 @@
+VirusCrusader concept 
+| 2011/03/15 | ver1.0  | たたき台    　                    |
+| 2011/4/1   | ver1.1  | 直し                              |
+| 2011/4/10  | ver1.2  | 追加                              |
+| 2011/4/14  | ver1.3  | 表示設定変更                      |
+| 2011/4/18  | ver1.4  | 一部訂正　                        |
+| 2011/4/24  | ver1.5  | 計算式追加　                      |
+| 2011/5/5   | ver1.6  | rule改訂&graphic view追加         |
+| 2011/5/7   | ver1.7  | help機能の追加、wash out(refresh) |
+| 2011/5/15  | ver 1.8 | view 整理                         |
+|            |         |                                   |
+
+
+
+* view
+** start view
+  + title
+  + button
+   - Setting : move setting view
+   - Play :start game
+   - Record: show record
+
+** setting view
+  + button
+   - Set:setting value
+   - Play :start game
+   - Record: show record
+   
+*** game speed
+    | slow   | 1 splitting / min |
+    | normal | 2 splitting / min |
+    | fast   | 3 splitting / min |
+    
+*** game level
+    | level    | speed           | stage | variant |
+    |----------+-----------------+-------+---------|
+    | practice | slow            |     1 | none    |
+    | normal   | slow and normal |     2 | +       |
+    | random   | normal and fast |    10 | ++      |
+
+** game main view
+   + イベント・行動履歴を記録する.
+    何時、何をしたかを表示する.
+
+   + report形式で進行させる.
+    reportは一定時間ごとにアップする形式とする.
+
+   + message windowを設置する 
+     - new report up
+     - new medicine comes
+     - worning:variant was raiseなど
+   
+   + 色を変える、点滅させる
+
+   + button
+    - Medicin:move medicin making view
+    - Report :move Report list view
+    - Analuze: move Analze setting view
+
+** Report list view
+   + デフォルトの表示
+   + table view形式で菌の状態を表示する(縦横をきちんと整列させること!)
+   
+   + button
+    - Medicin:move medicin making view
+    - Main :move game main view
+    - Analuze: move Analze setting view
+    
+** medicine making view
+   medicine making
+   
+   + button
+     - Refresh:Mediun all refresh(すべての薬物濃度を0にする)　=>　必ずアラートを出す
+     - Amount: amount setting
+     - Kind: setting kind of medicin:
+       S,P,C,L,K
+     - Make: make medicine following setting
+     - State: move medicin conc view
+     - Done: move game main view
+
+** medicine conc view
+   display medicin conc list (Graphical?)
+
+   + button
+    -  Back: move medicin making view
+   
+** analyze setting view
+   analyze setting
+
+   + button
+     - researcher:
+     - report level:depend on report level %
+
+     | name   | cost | rest time | speed % | report level % | description |
+     |--------+------+-----------+---------+----------------+-------------|
+     | susumu |      |           |         |                |             |
+     | hideki |      |           |         |                | normal      |
+     | shin   |      |           |         |                | normal      |
+     | reo    |      |           |         |                | normal      |
+     | makoto |      |           |         |                | normal      |
+     | masu   |      |           |         |                | rand        |
+     | ken    |      |           |         |                | rand        |
+     | ryou   |      |           |         |                | rand        |
+     | kou    |      |           |         |                | rand        |
+     | akira  |      |           |         |                | rand        |
+     | eichi  |      |           |         |                | rand        |
+
+
+     - Report grade: basic, advance, entiry
+     - set:set researcher
+     - Done:move game main view
+
+** record view
+   
+   + Longest play time
+     - play level
+     - play speed
+     - time
+     -  date
+
+   + Lowest cost play
+     - play level
+     - play speed
+     - cost
+     -  date
+
+** result view
+  + game level
+  + game speed
+  + play time
+  + play cost
+
+** game end view
+   Display "game over" 
+   and " game clear"
+
+** help view
+   各viewに合わせたヘルプを表示する
+   そのためにはstateを設定する。
+   stateによって表示内容を変更する
+
+* Rule
+** game clear and end
+   1) 菌数0でGame Clear
+   2) すべてのkinが耐性を得た場合Game Over
+   3) 予算が0になったらGame Over
+   4) kin数の上限10＾9個以上になったらGame Over
+   
+** kinに関して
+   1. 菌数の上限は10＾9個
+   2. 菌数減少でcost get
+   3. 菌は時間経過によって指数対数的に増加する
+   4. 菌は一定の確率で薬剤耐性を得る(変異)
+
+*** 変異には2種類ある
+
+    + 増殖速度変異(gv) :: 増殖速度が増加する
+    + 薬剤耐性変異(rv) :: 薬剤耐性を獲得する確率が変化する 
+
+** medicineに関して
+   1. medicineの投入によって菌数は減少
+   2. medicineには種類(type)と強さ(level)が有る
+   3. medicineにはcostと時間が必要
+   4. medicineには相互作用があり、medicineを増強減弱する(Player unknown)
+   5. medicineは一定時間ごとに洗い流され濃度が減少する(効果減)
+   6. medicineのトータルは100%(無効になった薬物はGarbageと表現)
+   7. refresh :: すべての薬物濃度を０にする
+   8. medicineは5つまでしか作れない(消費するまで)
+
+
++ ex ::  
+          - S.vw 10%, P.s 10% Garbage 80%
+          - 一定時間後
+          - S.vw 5%, P.s 5% Garbage 90%  
+
+** reportに関して
+*** report作成には時間とcostが掛かる
+    reportにはgradeがある
+ 
+| grade    | cost | time |
+|----------+------+------|
+| basic    |   10 |    1 |
+| advance  |   20 |   10 |
+| entirely |   40 |  100 |
+
+*** reportはレポート形式で表示する
+    + グラフ表示を入れる
+    + レポートには時刻と菌のmedicinを表示する
+
+**** list view
+***** list viewにはgradeがある
+      + 非表示項目は* ::
+      shape(gv%,rv%):菌数
+      (S_P_C_L_K)
+
+      + basic(basic_grade) ::
+      shape(*):number
+      (*****)
+
+      + advance(advanve_grade) ::
+      shape(gv%,rv%):number
+      (*****)
+
+      + entirely(entirely_grade) ::
+      shape(gv%,rv%):number
+      (S_P_C_L_K)
+
+** analyzeに関して
+*** analyzeはresearcher(キャラクター)に大きく依存する
+    + researcherを何人か用意する。
+    + researcherにはレベルがある。
+    + researcher によってコストと時間と情報量が異なる。
+    + 一度reportを作成したresearcherは少し休暇が必要。
+
+*** researcherには得意なことがある
+    つまり、report Gradeによって作業とコストが変化する
+     
+* Medicine
+** medicine type
+  + シリン系(S)
+  + ポリン系(P)
+  + コシド系(C)
+  + ライド系(L)
+  + クリン系(K)
+
+** medicine level
+Researcher classがアルゴリズムに従って決定する
+  + very weak(vw)
+  + weak(w)
+  + moderate(m)
+  + strong(s)
+  + very strong(vs)
+
+* kin(菌)
+** 菌のタイプ(5つ)
+   + 丸型(round,RO)
+   + 三角型(triangle,TR)
+   + 四角型(squre,SQ)
+   + 楕円型(ellipse,EL)
+   + 星形型(star,ST)
+
+** タイプによって薬剤耐性が異なる
+   良く効く>普通>効きにくい 
+
+   + round ::   S>P>C>L>K
+   + triangle ::  P>C>L>K>S
+   + squre ::     C>L>K>S>P
+   + ellipse ::   L>K>S>P>C
+   + star ::      K>S>P>C>L
+
+** 菌同士の相性
+   隣り合わせの相性
+   + R>>T>>SQ>>E>>ST
+   例)　R1個あると一定時間ごとにT10を減らす
+   
+   + 一つ置きの相性
+    - R>SQ
+    - T>E
+    - SQ>ST
+    - E>R
+    - ST>T
+
+   例)
+   R1個あると一定時間ごとにSQ5個減らす
+
+** 菌の表示方法
+   + shape(gv%,rv%):菌数
+   (S_P_C_L_K)
+
+   + 例1) 丸型タイプでシリン系耐性が50％,100個の場合 ::
+   round(0,0)：100
+   (50_00_00_00_00)
+
+   + 例2）丸型タイプでシリン系耐性50％で増殖速度変異30%upの場合 ::
+   round(gv30):1000
+   (50_00_00_00_00)
+
+   + 例3）丸型タイプでシリン系耐性50％で増殖速度変異30%upが10000個ある場合 ::
+   round(gv50):10^4
+   (50_00_00_00_00)
+
+   + 例4）丸型タイプで全薬剤耐性が10％で増殖変異10%が10000個の場合 ::
+   round(gv10):10^4
+   (10_10_10_10_10)
+   
+
+* calculate
+  gv,rvの最大値は99%
+
+  薬剤耐性の最大値は99%
+  
+  + 殺菌力　基本(sakin) :: medicin 1mol = kin 10 /sec ↓
+  + KGU　　　　 :: kin grow up
+  + ME        :: medicine effect
+
+  + time t to t' ::
+    kin(x) の個数 = kin#(t) x KGU x sigma(ME)
+
+    KGU = GrowUp(x) x (kin-kin)inter
+
+    ME = 　sakin x {(kin-med)inter x 薬剤耐性} x (med-med)inter　x level x amount(t-t')　
+
+  薬剤耐性をどのように表現するか？
+
+** 菌の増加曲線
+
+** 菌の相性計算
+
+** 菌の変異確率計算
+
+** medicineによる菌の減少曲線
+   菌数減少量(KDR)
+
+** medicineのFlow rate(洗い流しの影響)
+
+** report graph
+   UIColor* colorRed:green:blue:alpha
+   Red & alpha:amount of kin
+    10^3個以上で
+
+* Class
+** kin Class
+kinの生成
+
+ - type :: kin種(RO, TR, SQ,  EL, ST)
+ - resist :: 菌の薬剤耐性
+ - growthRate :: 増殖速度
+ - mutateFrequency :: 変異確率
+      
+      Growth variant (gv)
+      Resistance variant (rv)
+
+** medicine Class
+medicineの生成
+ + kind :: S, P, C ,L, K
+ + medicin-level(m-level) :: vw, w, m, s, vs
+ + product_cost :: 基本の製造コスト
+ + product_time :: 基本の製造時間 
+
+** viewContorller Class
+各viewを制御する
+
+　+ help_index :: help表示のため
+　+ view_index :: view 切り替えのため
+
+** kinController Class
+kinの状態を管理する
+菌の種類、菌数を保持する
+菌の相性を計算する
+
+** experimental Class
+kinとmedicinの時間的、空間的相互作用を管理、計算する
+時間、コストを計算する
+
+** medicinceControll Class
+medicinの状態を管理する
+medicinの種類、濃度を保持する
+medicineの相性を計算する
+
+** report Class
+結果、条件を表示する
+時間、コストを表示する
+
+** researcher Class
+      - レベル
+      - コスト
+      - 合成時間
+　　　 - 報告技能
+　　　 - 報告時間
+      - 復帰時間
+      - speciality 
+        (ex.sの合成速度は速くなる)
+        
+
+* idea 保留
+** title 候補
+   virus Crisis
+   Virus lab crisis
+   Out Break
+** Description
+   テキストシュミレーションゲーム
+     - Level: medicine level setting:
+       vw < w < m < s < vs
+**** graphic view
+     + 表示画面の大きさ：310ｘ256 pixl
+     + total pixl = 79360
+     + kinの上限10＾9コ
+     

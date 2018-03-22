@@ -1,0 +1,453 @@
+VirusCrusader concept 
+| 2011/6/13 | ver 2.0 | game concept change      |
+| 2011/6/16 |     2.1 | setting view was removed |
+|           |         |                          |
+* Concept
+  テーブルリアルタイムシュミュレーションゲーム
+
+* TODO 
+ 1) Tableのデザインを変更
+ 2) game main view はアニメーションリッチに!
+ 3) Tableのアイコンスペースを考える
+ 4) 菌数はリアルタイムで表示
+ 5) medicine amountを考える
+ 6) medicine 相場を導入考える(medicin costの変動性)
+
+* view
+** start view
+  + title
+  + button
+   - Practice : easy game mode
+   - Play :start game
+   - Record: show record
+
+** game main view
+   + report形式で進行させる.
+     　　reportはリアルタイムに表示する
+   + table view形式で菌の状態を表示する(縦横をきちんと整列させること!) 
+   + medicin conc はセルの色を変化させることによって表現する
+   + medicin選択時、Table contentに情報を表示する(アニメ)
+     - medicin interaction
+     - kin num prediction    
+   + Table content
+     - State:increase or decrease, valiable increase?
+     - medicin level
+     - kin kind
+     - kin num
+     - valiable %
+     - resist%
+     - medicin conc
+   + Medicin 選択後
+     - cell select:挿入位置の表示
+     - cell 長押し：midicin注入
+     
+
+   + button
+    - Medicin:move medicin making view
+    - Help :move Help view
+    - medicin select:
+    - cell:
+    - slider:
+    
+** medicine view
+   medicine makeing
+   
+   + button
+     - Kind: set kind of medicin:
+       S,P,C,L,K
+     - Amount: amount setting
+     - Refresh:Mediun all refresh(すべての薬物濃度を0にする)　=>　必ずアラートを出す
+     - Make: make medicine following setting
+     - Back: back game main view
+     - Help: move Help view
+     - medicin select: invalid
+     - cell:invalid
+     - slider:invaid
+
+** record view
+   
+   + Longest play time
+     - play level
+     - play speed
+     - time
+     -  date
+
+   + Lowest cost play
+     - play level
+     - play speed
+     - cost
+     -  date
+
+   + button
+     - Practice:
+     - Play:
+
+** results view
+  + Clear or not: You are Survivor / You are LIVINGDEAD
+  + Survive Time :
+  + Survive cost : total cost for clear
+  + Survivor Rank
+    1) Returner
+    2) Accidental Survivor
+    3) Big Survivor
+    4) Creative Survivor
+    5) Diamond Survivor
+    6) Energetic Survivor
+    7) Funtasitic Survivor
+    8) Gold Survivor
+    9) Helpful Survivor
+    10) Interigent Survivor
+    11) Jet Survivor
+    12) King Survivor
+    13) Lovely Survivor
+    14) Miracle Suvivor
+    15) Noble Survivor
+    16) Odd Survivor
+    17) Platina Survivor
+    18) Queen Suvivor
+    19) Ruby Survivor
+    20) Silver Survivor
+    21) True Survivor
+    22) Ultimate Survivor
+    23) Virtual Survivor
+    24) Wonderful Survivor
+    25) XX Survivor
+    26) Zealous Survivor
+
+   + button
+     - Practice:
+     - Play:
+     - Record:
+
+** game end view
+   Display "game over" 
+   and " game clear"
+
+** help view
+   各viewに合わせたヘルプを表示する
+   そのためにはstateを設定する。
+   stateによって表示内容を変更する
+
+   + button
+     - Practice:
+
+* Rule
+** game clear and end
+   1) 菌数0でGame Clear
+   2) すべてのkinが耐性を得た場合Game Over
+   3) 予算が0になったらGame Over
+   4) kin数の上限10＾9個以上になったらGame Over ???
+   
+** kinに関して
+   1. 菌数の上限は999,999個,それ以上は別のkinに変異!
+   2. 菌数減少でcost get
+   3. kin数が多いと耐性を得やすい
+   4. 菌は時間経過によって指数対数的に増加する
+   5. 菌は一定の確率で薬剤耐性を得る(変異)
+   6. 菌の減少、増加は非線形で！
+
+*** 変異には2種類ある
+
+    + 増殖速度変異(gv) :: 増殖速度が増加する
+    + 薬剤耐性変異(rv) :: 薬剤耐性を獲得する確率が変化する 
+
+** medicineに関して
+   1. medicineの投入によって菌数は減少
+   2. medicineには種類(type)と強さ(level)が有る
+   3. Levelは重ね合わせで表現する。
+      5unitで100%になる
+      | 　薬物濃度 | 　Level |
+      | 80~100%    |       5 |
+      | 60~79%     |       4 |
+      | 40~59%     |       3 |
+      | 20~39      |       2 |
+      | ~19        |       1 |
+           
+   4. medicineにはcostと時間が必要
+   5. medicineの製造には相場(rate)が存在する
+   6. medicineには相互作用があり、medicineを増強減弱する(Helpに記載)
+   7. medicineは一定時間ごとに洗い流され濃度(量)が減少する(持続時間減)
+   8. refresh :: すべての薬物濃度を消す
+   9. medicineは3つまでしか作れない(消費するまで)
+   10. medicineには作用範囲がある。濃度勾配を生じる。
+
+
+** gameMainに関して
+   1) Animationを多用する
+      + new kin come
+      + new medicin come
+      + kin grow up Quickly or slowly
+      + medicin was decrese quickly
+      + Resistance appear!
+      + Report refresh time notification
+      + Notification!
+   2) Researcher によって更新(update)頻度がことなる
+   3) 薬物濃度・種類によってセルの色、濃度を変える
+   4) すべてのDataはupdate時点で計算する!
+
+* Medicine
+  medicine type
+  + シリン系(S)
+  + ポリン系(P)
+  + コシド系(C)
+  + ライド系(L)
+  + クリン系(K)
+
+* kin(菌)
+** 菌のタイプ(5つ)
+   + 丸型(round,RO)
+   + 三角型(triangle,TR)
+   + 四角型(squre,SQ)
+   + 楕円型(ellipse,EL)
+   + 星形型(star,ST)
+
+** タイプによって薬剤耐性が異なる
+   良く効く>普通>効きにくい 
+
+   + round ::   S>P>C>L>K
+   + triangle ::  P>C>L>K>S
+   + squre ::     C>L>K>S>P
+   + ellipse ::   L>K>S>P>C
+   + star ::      K>S>P>C>L
+
+* calculate
+** kin 減少計算
+
+   1) 各kinに関して計算する
+   2) kin増殖速度
+   3) kin速度変異
+   4) kin-薬剤相性(耐性)
+   5) 薬剤濃度
+   6) 薬剤level
+   7) 薬剤type
+   8) 薬剤間相性
+
+   gv,rvの最大値は99%
+
+   薬剤耐性の最大値は99%
+   
+   + 殺菌力　基本(sakin) :: medicin 1mol = kin 10 /sec ↓
+   + KGU　　　　 :: kin grow up
+   + ME        :: medicine effect
+
+   + time t to t' ::
+     kin(x) の個数 = kin#(t) x KGU x sigma(ME)
+
+     KGU = GrowUp(x) x (kin-kin)inter
+
+     ME = 　sakin x {(kin-med)inter x 薬剤耐性} x (med-med)inter　x level x amount(t-t')　
+** Get Cost計算
+   得られるコストと失うコストの計算
+
+** 菌の増加曲線
+   増加は指数関数的
+   菌の種類、バリアントにより変わる
+
+** 薬剤耐性
+** 菌の相性計算
+** 菌の変異確率計算
+** medicineによる菌の減少曲線
+  + 菌数減少量(KDR)
+  + level vs kin
+  + type vs kin
+
+** medicineのFlow rate(減衰曲線)
+** medicin間の相性
+
+* Class
+  model (data)
+  1) expCondition
+      1) identifer       
+      2) date
+      3) PlayTime
+      4) cost
+  2) cell_kin
+     1) identifer
+     2) kin_num
+     3) kin_kind
+     4) gv
+     5) rv
+     6) resist_S
+     7) resist_P
+     8) resist_C
+     9) resist_L
+     10) resist_K
+  3) cell_medicine
+     1) identifer
+     2) medicin_conc
+     3) medicin_kind
+
+** kin Class
+kinの生成
+
+ - type :: kin種(RO, TR, SQ,  EL, ST)
+ - resist :: 菌の薬剤耐性
+ - growthRate :: 増殖速度
+ - mutateFrequency :: 変異確率
+      
+      Growth variant (gv)
+      Resistance variant (rv)
+
+** medicine Class
+medicineの生成
+ + kind :: S, P, C ,L, K
+ + medicin-level(m-level) :: vw, w, m, s, vs
+ + product_cost :: 基本の製造コスト
+ + product_time :: 基本の製造時間 
+
+** viewContorller Class
+各viewを制御する
+
+　+ help_index :: help表示のため
+　+ view_index :: view 切り替えのため
+
+** kinController Class
+kinの状態を管理する
+菌の種類、菌数を保持する
+菌の相性を計算する
+
+** experimental Class
+   kinとmedicinの時間的、空間的相互作用を管理、計算する
+   時間、コストを計算する
+
+** medicinceController Class
+   medicinの状態を管理する
+   medicinの種類、濃度を保持する
+   medicineの相性を計算する
+
+** expCondition Class
+   結果、条件を表示する
+   時間、コストを表示する
+
+* idea 保留
+** title 候補
+   virus Crisis
+   Virus lab crisis
+   Out Break
+** Description
+   テキストシュミレーションゲーム
+     - Level: medicine level setting:
+       vw < w < m < s < vs
+**** graphic view
+     + 表示画面の大きさ：310ｘ256 pixl
+     + total pixl = 79360
+     + kinの上限10＾9コ
+     
+** setting view
+  + button
+   - Set:setting value
+   - Play :start game
+   - Record: show record
+   
+*** game speed
+    | slow   | 1 splitting / min |
+    | normal | 2 splitting / min |
+    | fast   | 3 splitting / min |
+    
+*** game level
+    | level    | speed           | stage | variant |
+    |----------+-----------------+-------+---------|
+    | practice | slow            |     1 | none    |
+    | normal   | slow and normal |     2 | +       |
+    | random   | normal and fast |    10 | ++      |
+
+** report graph
+   UIColor* colorRed:green:blue:alpha
+   Red & alpha:amount of kin
+    10^3個以上で
+
+** 菌同士の相性
+   隣り合わせの相性
+   + R>>T>>SQ>>E>>ST
+   例)　R1個あると一定時間ごとにT10を減らす
+   
+   + 一つ置きの相性
+    - R>SQ
+    - T>E
+    - SQ>ST
+    - E>R
+    - ST>T
+
+   例)
+   R1個あると一定時間ごとにSQ5個減らす
+** resercher view
+   Researcher setting
+
+   + button
+     - researcher:
+     - set:set researcher
+     - Back:back game main view
+     - Help: move Help view
+     - medicin select: invalid
+     - cell:invalid
+     - slider:invaid
+
+** researcherに関して
+   reportはresearcher(キャラクター)に依存する。
+    + researcherを何人か用意する。
+    + researcher によって製造コストと製造時間と製造復帰時間が異なる。
+    + 一度reportを作成したresearcherは少し休暇が必要(復帰時間)。
+    + researcherによっては得意分野がある。
+      ex) Susumu : speciality of S medicin.
+    + Researcher(まとめ）
+      - 製造コスト
+      - 製造時間
+      - 復帰時間
+      - 得意分野
+      - report  update time
+
+      
+     | name   | cost(yen) | speed(min) | rest time(time) | uptadate(time / min) | Special | description |
+     |--------+-----------+------------+-----------------+----------------------+---------+-------------|
+     | susumu |           |            |                 |                      |         |             |
+     | hideki |           |            |                 |                      |         | normal      |
+     | shin   |           |            |                 |                      |         | normal      |
+     | reo    |           |            |                 |                      |         | normal      |
+     | makoto |           |            |                 |                      |         | normal      |
+     | masu   |           |            |                 |                      |         | rand        |
+     | ken    |           |            |                 |                      |         | rand        |
+     | ryou   |           |            |                 |                      |         | rand        |
+     | kou    |           |            |                 |                      |         | rand        |
+     | akira  |           |            |                 |                      |         | rand        |
+     | eichi  |           |            |                 |                      |         | rand        |
+
+** researcher Class
+      - レベル
+      - コスト
+      - 合成時間
+　　　 - 報告技能
+　　　 - 報告時間
+      - 復帰時間
+      - speciality 
+        (ex.sの合成速度は速くなる)
+        
+** medicine level
+Researcher classがアルゴリズムに従って決定する
+効果は殺菌力(kin / sec)と減衰曲線(どれくらいの速度で消失していくか）で表す
+
+  + very weak(vw)
+  + weak(w)
+  + moderate(m)
+  + strong(s)
+  + very strong(vs)
+
+** 菌の表示方法
+   + shape(gv%,rv%):菌数
+   (S_P_C_L_K)
+
+   + 例1) 丸型タイプでシリン系耐性が50％,100個の場合 ::
+   round(0,0)：100
+   (50_00_00_00_00)
+
+   + 例2）丸型タイプでシリン系耐性50％で増殖速度変異30%upの場合 ::
+   round(gv30):1000
+   (50_00_00_00_00)
+
+   + 例3）丸型タイプでシリン系耐性50％で増殖速度変異30%upが10000個ある場合 ::
+   round(gv50):10^4
+   (50_00_00_00_00)
+
+   + 例4）丸型タイプで全薬剤耐性が10％で増殖変異10%が10000個の場合 ::
+   round(gv10):10^4
+   (10_10_10_10_10)
+   
