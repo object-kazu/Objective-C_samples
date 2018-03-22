@@ -1,0 +1,904 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B5008A718AC3BF600F82C0C /* KSCardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5008A618AC3BF600F82C0C /* KSCardTest.m */; };
+		1B8CA06918CB493500E9C9EB /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B8CA06818CB493500E9C9EB /* Images-2.xcassets */; };
+		1B9DA34B18CB49B50003F7FF /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA33C18CB49B50003F7FF /* Icon-72.png */; };
+		1B9DA34C18CB49B50003F7FF /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA33D18CB49B50003F7FF /* Icon-72@2x.png */; };
+		1B9DA34D18CB49B50003F7FF /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA33E18CB49B50003F7FF /* Icon-76.png */; };
+		1B9DA34E18CB49B50003F7FF /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA33F18CB49B50003F7FF /* Icon-76@2x.png */; };
+		1B9DA34F18CB49B50003F7FF /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA34018CB49B50003F7FF /* Icon-120.png */; };
+		1B9DA35018CB49B50003F7FF /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA34118CB49B50003F7FF /* Icon-iPad-Spotlight-iOS7@2x.png */; };
+		1B9DA35118CB49B50003F7FF /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA34218CB49B50003F7FF /* Icon-Small-50.png */; };
+		1B9DA35218CB49B50003F7FF /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA34318CB49B50003F7FF /* Icon-Small.png */; };
+		1B9DA35318CB49B50003F7FF /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA34418CB49B50003F7FF /* Icon-Small@2x.png */; };
+		1B9DA35418CB49B50003F7FF /* Icon-Spotlight-iOS7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA34518CB49B50003F7FF /* Icon-Spotlight-iOS7.png */; };
+		1B9DA35518CB49B50003F7FF /* Icon-Spotlight-iOS7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA34618CB49B50003F7FF /* Icon-Spotlight-iOS7@2x.png */; };
+		1B9DA35618CB49B50003F7FF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA34718CB49B50003F7FF /* Icon.png */; };
+		1B9DA35718CB49B50003F7FF /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA34818CB49B50003F7FF /* Icon@2x.png */; };
+		1B9DA35818CB49B50003F7FF /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA34918CB49B50003F7FF /* iTunesArtwork */; };
+		1B9DA35918CB49B50003F7FF /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA34A18CB49B50003F7FF /* iTunesArtwork@2x */; };
+		1B9DA35D18CB4A980003F7FF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA35A18CB4A980003F7FF /* Default.png */; };
+		1B9DA35E18CB4A980003F7FF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA35B18CB4A980003F7FF /* Default@2x.png */; };
+		1B9DA35F18CB4A980003F7FF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA35C18CB4A980003F7FF /* Default-568h@2x.png */; };
+		1BA942F218BB65EF003C5FEF /* KSJudgeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA942F118BB65EF003C5FEF /* KSJudgeTest.m */; };
+		1BF65A3A18989A4600B3CA82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF65A3918989A4600B3CA82 /* Foundation.framework */; };
+		1BF65A3C18989A4600B3CA82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF65A3B18989A4600B3CA82 /* CoreGraphics.framework */; };
+		1BF65A3E18989A4600B3CA82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF65A3D18989A4600B3CA82 /* UIKit.framework */; };
+		1BF65A4418989A4600B3CA82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BF65A4218989A4600B3CA82 /* InfoPlist.strings */; };
+		1BF65A4618989A4600B3CA82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF65A4518989A4600B3CA82 /* main.m */; };
+		1BF65A4A18989A4600B3CA82 /* KSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF65A4918989A4600B3CA82 /* KSAppDelegate.m */; };
+		1BF65A4D18989A4600B3CA82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF65A4B18989A4600B3CA82 /* Main.storyboard */; };
+		1BF65A5018989A4600B3CA82 /* KSStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF65A4F18989A4600B3CA82 /* KSStartViewController.m */; };
+		1BF65A5918989A4600B3CA82 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF65A5818989A4600B3CA82 /* XCTest.framework */; };
+		1BF65A5A18989A4600B3CA82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF65A3918989A4600B3CA82 /* Foundation.framework */; };
+		1BF65A5B18989A4600B3CA82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF65A3D18989A4600B3CA82 /* UIKit.framework */; };
+		1BF65A6318989A4600B3CA82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BF65A6118989A4600B3CA82 /* InfoPlist.strings */; };
+		1BF65A6518989A4600B3CA82 /* GameAccordionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF65A6418989A4600B3CA82 /* GameAccordionTests.m */; };
+		1BF65A7418989ACE00B3CA82 /* KSGameMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF65A7318989ACE00B3CA82 /* KSGameMainViewController.m */; };
+		1BF65A7D18989C6F00B3CA82 /* KSHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF65A7C18989C6F00B3CA82 /* KSHelpViewController.m */; };
+		1BF65A8018989C9900B3CA82 /* KSRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF65A7F18989C9900B3CA82 /* KSRecordViewController.m */; };
+		1BF65A8818989FCA00B3CA82 /* KSGlobalConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF65A8718989FCA00B3CA82 /* KSGlobalConst.m */; };
+		1BF65A941898A6BA00B3CA82 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF65A931898A6BA00B3CA82 /* QuartzCore.framework */; };
+		1BF65A961898A6CA00B3CA82 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF65A951898A6CA00B3CA82 /* CoreData.framework */; };
+		1BF65A981898A6D500B3CA82 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF65A971898A6D500B3CA82 /* CoreImage.framework */; };
+		1BF65A9B1898B1E000B3CA82 /* KSDiviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF65A9A1898B1E000B3CA82 /* KSDiviceHelper.m */; };
+		1BF65AA118992E9200B3CA82 /* KSMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF65AA018992E9200B3CA82 /* KSMenuButton.m */; };
+		1BF65AA71899DD4100B3CA82 /* KSDataFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF65AA61899DD4100B3CA82 /* KSDataFormatter.m */; };
+		1BF65AAA1899DF9700B3CA82 /* KSMenuAnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF65AA91899DF9700B3CA82 /* KSMenuAnimationHelper.m */; };
+		1BF65AAD1899E91300B3CA82 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BF65AAB1899E91300B3CA82 /* Model.xcdatamodeld */; };
+		1BF65AB01899EA0600B3CA82 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF65AAF1899EA0600B3CA82 /* Data.m */; };
+		1BF65AB31899EB0500B3CA82 /* KSCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF65AB21899EB0500B3CA82 /* KSCoreDataController.m */; };
+		1BF65AB6189A4B9400B3CA82 /* KSGameField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF65AB5189A4B9400B3CA82 /* KSGameField.m */; };
+		6C11B3FE18A1CE3400A73DAB /* KSCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C11B3FD18A1CE3400A73DAB /* KSCard.m */; };
+		6C11B40218A20E6900A73DAB /* KSCardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C11B40118A20E6900A73DAB /* KSCardManager.m */; };
+		6C1357A118C5CC2300E74542 /* KSModeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1357A018C5CC2300E74542 /* KSModeButton.m */; };
+		6C17095618BB1BD500D7B4F1 /* KSJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C17095518BB1BD500D7B4F1 /* KSJudge.m */; };
+		6C2CA4A918ADDEA300358B78 /* KSCardManagerContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2CA4A818ADDEA300358B78 /* KSCardManagerContext.m */; };
+		6C2CA4AC18ADDED200358B78 /* KSCardManagerState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2CA4AB18ADDED200358B78 /* KSCardManagerState.m */; };
+		6C2CA4AF18ADDF0100358B78 /* KSCardManagerForSeven.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2CA4AE18ADDF0100358B78 /* KSCardManagerForSeven.m */; };
+		6C2CA4B218ADDF2200358B78 /* KSCardManagerForFourteen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2CA4B118ADDF2200358B78 /* KSCardManagerForFourteen.m */; };
+		6C2CA4B518ADDF3600358B78 /* KSCardManagerForTwentyone.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2CA4B418ADDF3600358B78 /* KSCardManagerForTwentyone.m */; };
+		6C2CA4B718AE060C00358B78 /* KSCardMangerContexTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2CA4B618AE060C00358B78 /* KSCardMangerContexTest.m */; };
+		6C4BF39718B7168700FF9618 /* KSMasuManagerContex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4BF39618B7168700FF9618 /* KSMasuManagerContex.m */; };
+		6C4BF39A18B716CF00FF9618 /* KSMasuManagerState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4BF39918B716CF00FF9618 /* KSMasuManagerState.m */; };
+		6C4BF39D18B7170600FF9618 /* KSMasuStateForseven.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4BF39C18B7170600FF9618 /* KSMasuStateForseven.m */; };
+		6C4BF3A018B7172400FF9618 /* KSMasuStateForFourteen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4BF39F18B7172400FF9618 /* KSMasuStateForFourteen.m */; };
+		6C4BF3A318B7174600FF9618 /* KSMasuStateForTwentyone.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4BF3A218B7174600FF9618 /* KSMasuStateForTwentyone.m */; };
+		6C65D5BA18A3352500726EB8 /* KSCardManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C65D5B918A3352500726EB8 /* KSCardManagerTest.m */; };
+		6CA4EF9C18A5CDEA0085A379 /* KSMasu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA4EF9918A5CDEA0085A379 /* KSMasu.m */; };
+		6CA4EF9D18A5CDEA0085A379 /* KSMasuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA4EF9B18A5CDEA0085A379 /* KSMasuManager.m */; };
+		6CA4EF9F18A5D98D0085A379 /* KSMasuTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA4EF9E18A5D98D0085A379 /* KSMasuTest.m */; };
+		6CAE7509189F63180073DC22 /* KSModeContex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE7508189F63180073DC22 /* KSModeContex.m */; };
+		6CAE750C189F669B0073DC22 /* KSModeState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE750B189F669B0073DC22 /* KSModeState.m */; };
+		6CAE750F189F66B70073DC22 /* KSModeSeven.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE750E189F66B70073DC22 /* KSModeSeven.m */; };
+		6CAE7512189F66DE0073DC22 /* KSModeForteen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE7511189F66DE0073DC22 /* KSModeForteen.m */; };
+		6CAE7518189F67170073DC22 /* KSModeTwentyOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE7517189F67170073DC22 /* KSModeTwentyOne.m */; };
+		6CCBF79718C7F9ED00ABE0EB /* RNGridMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBF79618C7F9ED00ABE0EB /* RNGridMenu.m */; };
+		6CCBF79918C7FABA00ABE0EB /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCBF79818C7FABA00ABE0EB /* Accelerate.framework */; };
+		6CDA422C18AAE96200E09D3E /* KSEyeCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDA422B18AAE96200E09D3E /* KSEyeCatch.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BF65A5C18989A4600B3CA82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BF65A2E18989A4600B3CA82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BF65A3518989A4600B3CA82;
+			remoteInfo = GameAccordion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B5008A618AC3BF600F82C0C /* KSCardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCardTest.m; sourceTree = "<group>"; };
+		1B8CA06818CB493500E9C9EB /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		1B9DA33C18CB49B50003F7FF /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		1B9DA33D18CB49B50003F7FF /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		1B9DA33E18CB49B50003F7FF /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		1B9DA33F18CB49B50003F7FF /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		1B9DA34018CB49B50003F7FF /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
+		1B9DA34118CB49B50003F7FF /* Icon-iPad-Spotlight-iOS7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad-Spotlight-iOS7@2x.png"; sourceTree = "<group>"; };
+		1B9DA34218CB49B50003F7FF /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		1B9DA34318CB49B50003F7FF /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		1B9DA34418CB49B50003F7FF /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		1B9DA34518CB49B50003F7FF /* Icon-Spotlight-iOS7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-iOS7.png"; sourceTree = "<group>"; };
+		1B9DA34618CB49B50003F7FF /* Icon-Spotlight-iOS7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-iOS7@2x.png"; sourceTree = "<group>"; };
+		1B9DA34718CB49B50003F7FF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		1B9DA34818CB49B50003F7FF /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		1B9DA34918CB49B50003F7FF /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		1B9DA34A18CB49B50003F7FF /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		1B9DA35A18CB4A980003F7FF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1B9DA35B18CB4A980003F7FF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1B9DA35C18CB4A980003F7FF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1BA942F118BB65EF003C5FEF /* KSJudgeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSJudgeTest.m; sourceTree = "<group>"; };
+		1BF65A3618989A4600B3CA82 /* GameAccordion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameAccordion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BF65A3918989A4600B3CA82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1BF65A3B18989A4600B3CA82 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1BF65A3D18989A4600B3CA82 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1BF65A4118989A4600B3CA82 /* GameAccordion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameAccordion-Info.plist"; sourceTree = "<group>"; };
+		1BF65A4318989A4600B3CA82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1BF65A4518989A4600B3CA82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BF65A4718989A4600B3CA82 /* GameAccordion-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GameAccordion-Prefix.pch"; sourceTree = "<group>"; };
+		1BF65A4818989A4600B3CA82 /* KSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSAppDelegate.h; sourceTree = "<group>"; };
+		1BF65A4918989A4600B3CA82 /* KSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSAppDelegate.m; sourceTree = "<group>"; };
+		1BF65A4C18989A4600B3CA82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BF65A4E18989A4600B3CA82 /* KSStartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KSStartViewController.h; path = contoller/KSStartViewController.h; sourceTree = "<group>"; };
+		1BF65A4F18989A4600B3CA82 /* KSStartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KSStartViewController.m; path = contoller/KSStartViewController.m; sourceTree = "<group>"; };
+		1BF65A5718989A4600B3CA82 /* GameAccordionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameAccordionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BF65A5818989A4600B3CA82 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1BF65A6018989A4600B3CA82 /* GameAccordionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameAccordionTests-Info.plist"; sourceTree = "<group>"; };
+		1BF65A6218989A4600B3CA82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1BF65A6418989A4600B3CA82 /* GameAccordionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameAccordionTests.m; sourceTree = "<group>"; };
+		1BF65A7218989ACE00B3CA82 /* KSGameMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSGameMainViewController.h; path = contoller/KSGameMainViewController.h; sourceTree = "<group>"; };
+		1BF65A7318989ACE00B3CA82 /* KSGameMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSGameMainViewController.m; path = contoller/KSGameMainViewController.m; sourceTree = "<group>"; };
+		1BF65A7B18989C6F00B3CA82 /* KSHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSHelpViewController.h; path = contoller/KSHelpViewController.h; sourceTree = "<group>"; };
+		1BF65A7C18989C6F00B3CA82 /* KSHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSHelpViewController.m; path = contoller/KSHelpViewController.m; sourceTree = "<group>"; };
+		1BF65A7E18989C9900B3CA82 /* KSRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSRecordViewController.h; path = contoller/KSRecordViewController.h; sourceTree = "<group>"; };
+		1BF65A7F18989C9900B3CA82 /* KSRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSRecordViewController.m; path = contoller/KSRecordViewController.m; sourceTree = "<group>"; };
+		1BF65A8618989FCA00B3CA82 /* KSGlobalConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSGlobalConst.h; path = utility/KSGlobalConst.h; sourceTree = "<group>"; };
+		1BF65A8718989FCA00B3CA82 /* KSGlobalConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSGlobalConst.m; path = utility/KSGlobalConst.m; sourceTree = "<group>"; };
+		1BF65A931898A6BA00B3CA82 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1BF65A951898A6CA00B3CA82 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1BF65A971898A6D500B3CA82 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		1BF65A991898B1E000B3CA82 /* KSDiviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSDiviceHelper.h; path = helper/KSDiviceHelper.h; sourceTree = "<group>"; };
+		1BF65A9A1898B1E000B3CA82 /* KSDiviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSDiviceHelper.m; path = helper/KSDiviceHelper.m; sourceTree = "<group>"; };
+		1BF65A9F18992E9200B3CA82 /* KSMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSMenuButton.h; path = "view/menu&button/KSMenuButton.h"; sourceTree = "<group>"; };
+		1BF65AA018992E9200B3CA82 /* KSMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSMenuButton.m; path = "view/menu&button/KSMenuButton.m"; sourceTree = "<group>"; };
+		1BF65AA31899BFF500B3CA82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = GameAccordion/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BF65AA51899DD4100B3CA82 /* KSDataFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSDataFormatter.h; path = utility/KSDataFormatter.h; sourceTree = "<group>"; };
+		1BF65AA61899DD4100B3CA82 /* KSDataFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSDataFormatter.m; path = utility/KSDataFormatter.m; sourceTree = "<group>"; };
+		1BF65AA81899DF9700B3CA82 /* KSMenuAnimationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSMenuAnimationHelper.h; path = helper/KSMenuAnimationHelper.h; sourceTree = "<group>"; };
+		1BF65AA91899DF9700B3CA82 /* KSMenuAnimationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSMenuAnimationHelper.m; path = helper/KSMenuAnimationHelper.m; sourceTree = "<group>"; };
+		1BF65AAC1899E91300B3CA82 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		1BF65AAE1899EA0600B3CA82 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Data.h; path = model/Data.h; sourceTree = "<group>"; };
+		1BF65AAF1899EA0600B3CA82 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Data.m; path = model/Data.m; sourceTree = "<group>"; };
+		1BF65AB11899EB0500B3CA82 /* KSCoreDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCoreDataController.h; path = contoller/KSCoreDataController.h; sourceTree = "<group>"; };
+		1BF65AB21899EB0500B3CA82 /* KSCoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCoreDataController.m; path = contoller/KSCoreDataController.m; sourceTree = "<group>"; };
+		1BF65AB4189A4B9400B3CA82 /* KSGameField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSGameField.h; path = view/KSGameField.h; sourceTree = "<group>"; };
+		1BF65AB5189A4B9400B3CA82 /* KSGameField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSGameField.m; path = view/KSGameField.m; sourceTree = "<group>"; };
+		6C11B3FC18A1CE3400A73DAB /* KSCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCard.h; path = view/Card/KSCard.h; sourceTree = "<group>"; };
+		6C11B3FD18A1CE3400A73DAB /* KSCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCard.m; path = view/Card/KSCard.m; sourceTree = "<group>"; };
+		6C11B40018A20E6900A73DAB /* KSCardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCardManager.h; path = view/Card/KSCardManager.h; sourceTree = "<group>"; };
+		6C11B40118A20E6900A73DAB /* KSCardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCardManager.m; path = view/Card/KSCardManager.m; sourceTree = "<group>"; };
+		6C13579F18C5CC2300E74542 /* KSModeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSModeButton.h; path = "view/menu&button/KSModeButton.h"; sourceTree = "<group>"; };
+		6C1357A018C5CC2300E74542 /* KSModeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSModeButton.m; path = "view/menu&button/KSModeButton.m"; sourceTree = "<group>"; };
+		6C17095418BB1BD500D7B4F1 /* KSJudge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSJudge.h; path = utility/KSJudge.h; sourceTree = "<group>"; };
+		6C17095518BB1BD500D7B4F1 /* KSJudge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSJudge.m; path = utility/KSJudge.m; sourceTree = "<group>"; };
+		6C2CA4A718ADDEA300358B78 /* KSCardManagerContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCardManagerContext.h; path = view/Card/KSCardManagerContext.h; sourceTree = "<group>"; };
+		6C2CA4A818ADDEA300358B78 /* KSCardManagerContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCardManagerContext.m; path = view/Card/KSCardManagerContext.m; sourceTree = "<group>"; };
+		6C2CA4AA18ADDED200358B78 /* KSCardManagerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCardManagerState.h; path = view/Card/KSCardManagerState.h; sourceTree = "<group>"; };
+		6C2CA4AB18ADDED200358B78 /* KSCardManagerState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCardManagerState.m; path = view/Card/KSCardManagerState.m; sourceTree = "<group>"; };
+		6C2CA4AD18ADDF0100358B78 /* KSCardManagerForSeven.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCardManagerForSeven.h; path = view/Card/KSCardManagerForSeven.h; sourceTree = "<group>"; };
+		6C2CA4AE18ADDF0100358B78 /* KSCardManagerForSeven.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCardManagerForSeven.m; path = view/Card/KSCardManagerForSeven.m; sourceTree = "<group>"; };
+		6C2CA4B018ADDF2200358B78 /* KSCardManagerForFourteen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCardManagerForFourteen.h; path = view/Card/KSCardManagerForFourteen.h; sourceTree = "<group>"; };
+		6C2CA4B118ADDF2200358B78 /* KSCardManagerForFourteen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCardManagerForFourteen.m; path = view/Card/KSCardManagerForFourteen.m; sourceTree = "<group>"; };
+		6C2CA4B318ADDF3600358B78 /* KSCardManagerForTwentyone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCardManagerForTwentyone.h; path = view/Card/KSCardManagerForTwentyone.h; sourceTree = "<group>"; };
+		6C2CA4B418ADDF3600358B78 /* KSCardManagerForTwentyone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCardManagerForTwentyone.m; path = view/Card/KSCardManagerForTwentyone.m; sourceTree = "<group>"; };
+		6C2CA4B618AE060C00358B78 /* KSCardMangerContexTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCardMangerContexTest.m; sourceTree = "<group>"; };
+		6C4BF39518B7168700FF9618 /* KSMasuManagerContex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSMasuManagerContex.h; path = view/masu/KSMasuManagerContex.h; sourceTree = "<group>"; };
+		6C4BF39618B7168700FF9618 /* KSMasuManagerContex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSMasuManagerContex.m; path = view/masu/KSMasuManagerContex.m; sourceTree = "<group>"; };
+		6C4BF39818B716CF00FF9618 /* KSMasuManagerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSMasuManagerState.h; path = view/masu/KSMasuManagerState.h; sourceTree = "<group>"; };
+		6C4BF39918B716CF00FF9618 /* KSMasuManagerState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSMasuManagerState.m; path = view/masu/KSMasuManagerState.m; sourceTree = "<group>"; };
+		6C4BF39B18B7170600FF9618 /* KSMasuStateForseven.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSMasuStateForseven.h; path = view/masu/KSMasuStateForseven.h; sourceTree = "<group>"; };
+		6C4BF39C18B7170600FF9618 /* KSMasuStateForseven.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSMasuStateForseven.m; path = view/masu/KSMasuStateForseven.m; sourceTree = "<group>"; };
+		6C4BF39E18B7172400FF9618 /* KSMasuStateForFourteen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSMasuStateForFourteen.h; path = view/masu/KSMasuStateForFourteen.h; sourceTree = "<group>"; };
+		6C4BF39F18B7172400FF9618 /* KSMasuStateForFourteen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSMasuStateForFourteen.m; path = view/masu/KSMasuStateForFourteen.m; sourceTree = "<group>"; };
+		6C4BF3A118B7174600FF9618 /* KSMasuStateForTwentyone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSMasuStateForTwentyone.h; path = view/masu/KSMasuStateForTwentyone.h; sourceTree = "<group>"; };
+		6C4BF3A218B7174600FF9618 /* KSMasuStateForTwentyone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSMasuStateForTwentyone.m; path = view/masu/KSMasuStateForTwentyone.m; sourceTree = "<group>"; };
+		6C65D5B918A3352500726EB8 /* KSCardManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCardManagerTest.m; sourceTree = "<group>"; };
+		6CA4EF9818A5CDEA0085A379 /* KSMasu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSMasu.h; path = view/masu/KSMasu.h; sourceTree = "<group>"; };
+		6CA4EF9918A5CDEA0085A379 /* KSMasu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSMasu.m; path = view/masu/KSMasu.m; sourceTree = "<group>"; };
+		6CA4EF9A18A5CDEA0085A379 /* KSMasuManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSMasuManager.h; path = view/masu/KSMasuManager.h; sourceTree = "<group>"; };
+		6CA4EF9B18A5CDEA0085A379 /* KSMasuManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSMasuManager.m; path = view/masu/KSMasuManager.m; sourceTree = "<group>"; };
+		6CA4EF9E18A5D98D0085A379 /* KSMasuTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMasuTest.m; sourceTree = "<group>"; };
+		6CAE7507189F63180073DC22 /* KSModeContex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSModeContex.h; path = mode/KSModeContex.h; sourceTree = "<group>"; };
+		6CAE7508189F63180073DC22 /* KSModeContex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSModeContex.m; path = mode/KSModeContex.m; sourceTree = "<group>"; };
+		6CAE750A189F669B0073DC22 /* KSModeState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSModeState.h; path = mode/KSModeState.h; sourceTree = "<group>"; };
+		6CAE750B189F669B0073DC22 /* KSModeState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSModeState.m; path = mode/KSModeState.m; sourceTree = "<group>"; };
+		6CAE750D189F66B70073DC22 /* KSModeSeven.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSModeSeven.h; path = mode/KSModeSeven.h; sourceTree = "<group>"; };
+		6CAE750E189F66B70073DC22 /* KSModeSeven.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSModeSeven.m; path = mode/KSModeSeven.m; sourceTree = "<group>"; };
+		6CAE7510189F66DE0073DC22 /* KSModeForteen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSModeForteen.h; path = mode/KSModeForteen.h; sourceTree = "<group>"; };
+		6CAE7511189F66DE0073DC22 /* KSModeForteen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSModeForteen.m; path = mode/KSModeForteen.m; sourceTree = "<group>"; };
+		6CAE7516189F67170073DC22 /* KSModeTwentyOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSModeTwentyOne.h; path = mode/KSModeTwentyOne.h; sourceTree = "<group>"; };
+		6CAE7517189F67170073DC22 /* KSModeTwentyOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSModeTwentyOne.m; path = mode/KSModeTwentyOne.m; sourceTree = "<group>"; };
+		6CCBF79518C7F9ED00ABE0EB /* RNGridMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGridMenu.h; sourceTree = "<group>"; };
+		6CCBF79618C7F9ED00ABE0EB /* RNGridMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNGridMenu.m; sourceTree = "<group>"; };
+		6CCBF79818C7FABA00ABE0EB /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		6CDA422A18AAE96200E09D3E /* KSEyeCatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSEyeCatch.h; path = view/Card/KSEyeCatch.h; sourceTree = "<group>"; };
+		6CDA422B18AAE96200E09D3E /* KSEyeCatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSEyeCatch.m; path = view/Card/KSEyeCatch.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BF65A3318989A4600B3CA82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CCBF79918C7FABA00ABE0EB /* Accelerate.framework in Frameworks */,
+				1BF65A981898A6D500B3CA82 /* CoreImage.framework in Frameworks */,
+				1BF65A961898A6CA00B3CA82 /* CoreData.framework in Frameworks */,
+				1BF65A941898A6BA00B3CA82 /* QuartzCore.framework in Frameworks */,
+				1BF65A3C18989A4600B3CA82 /* CoreGraphics.framework in Frameworks */,
+				1BF65A3E18989A4600B3CA82 /* UIKit.framework in Frameworks */,
+				1BF65A3A18989A4600B3CA82 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BF65A5418989A4600B3CA82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BF65A5918989A4600B3CA82 /* XCTest.framework in Frameworks */,
+				1BF65A5B18989A4600B3CA82 /* UIKit.framework in Frameworks */,
+				1BF65A5A18989A4600B3CA82 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BF65A2D18989A4600B3CA82 = {
+			isa = PBXGroup;
+			children = (
+				1BF65A6F18989A6400B3CA82 /* controller */,
+				1BF65A8218989F3500B3CA82 /* helper */,
+				1BF65A8118989F2400B3CA82 /* utility */,
+				1BF65A7118989A7700B3CA82 /* model */,
+				6CAE7506189F5D140073DC22 /* mode */,
+				1BF65A7018989A7000B3CA82 /* view */,
+				1BF65A6E18989A5400B3CA82 /* image */,
+				1BF65A3F18989A4600B3CA82 /* GameAccordion */,
+				1BF65A5E18989A4600B3CA82 /* GameAccordionTests */,
+				1BF65A3818989A4600B3CA82 /* Frameworks */,
+				1BF65A3718989A4600B3CA82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BF65A3718989A4600B3CA82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BF65A3618989A4600B3CA82 /* GameAccordion.app */,
+				1BF65A5718989A4600B3CA82 /* GameAccordionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BF65A3818989A4600B3CA82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CCBF79818C7FABA00ABE0EB /* Accelerate.framework */,
+				1BF65A971898A6D500B3CA82 /* CoreImage.framework */,
+				1BF65A951898A6CA00B3CA82 /* CoreData.framework */,
+				1BF65A931898A6BA00B3CA82 /* QuartzCore.framework */,
+				1BF65A3918989A4600B3CA82 /* Foundation.framework */,
+				1BF65A3B18989A4600B3CA82 /* CoreGraphics.framework */,
+				1BF65A3D18989A4600B3CA82 /* UIKit.framework */,
+				1BF65A5818989A4600B3CA82 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BF65A3F18989A4600B3CA82 /* GameAccordion */ = {
+			isa = PBXGroup;
+			children = (
+				1BF65AA21899BFF500B3CA82 /* Main.storyboard */,
+				1BF65A4818989A4600B3CA82 /* KSAppDelegate.h */,
+				1BF65A4918989A4600B3CA82 /* KSAppDelegate.m */,
+				1BF65A4B18989A4600B3CA82 /* Main.storyboard */,
+				1B8CA06818CB493500E9C9EB /* Images-2.xcassets */,
+				1BF65A4018989A4600B3CA82 /* Supporting Files */,
+			);
+			path = GameAccordion;
+			sourceTree = "<group>";
+		};
+		1BF65A4018989A4600B3CA82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BF65A4118989A4600B3CA82 /* GameAccordion-Info.plist */,
+				1BF65A4218989A4600B3CA82 /* InfoPlist.strings */,
+				1BF65A4518989A4600B3CA82 /* main.m */,
+				1BF65A4718989A4600B3CA82 /* GameAccordion-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BF65A5E18989A4600B3CA82 /* GameAccordionTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BF65A6418989A4600B3CA82 /* GameAccordionTests.m */,
+				1BF65A5F18989A4600B3CA82 /* Supporting Files */,
+				6C65D5B918A3352500726EB8 /* KSCardManagerTest.m */,
+				6CA4EF9E18A5D98D0085A379 /* KSMasuTest.m */,
+				1B5008A618AC3BF600F82C0C /* KSCardTest.m */,
+				6C2CA4B618AE060C00358B78 /* KSCardMangerContexTest.m */,
+				1BA942F118BB65EF003C5FEF /* KSJudgeTest.m */,
+			);
+			path = GameAccordionTests;
+			sourceTree = "<group>";
+		};
+		1BF65A5F18989A4600B3CA82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BF65A6018989A4600B3CA82 /* GameAccordionTests-Info.plist */,
+				1BF65A6118989A4600B3CA82 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BF65A6E18989A5400B3CA82 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				1B9DA33C18CB49B50003F7FF /* Icon-72.png */,
+				1B9DA33D18CB49B50003F7FF /* Icon-72@2x.png */,
+				1B9DA33E18CB49B50003F7FF /* Icon-76.png */,
+				1B9DA33F18CB49B50003F7FF /* Icon-76@2x.png */,
+				1B9DA34018CB49B50003F7FF /* Icon-120.png */,
+				1B9DA34118CB49B50003F7FF /* Icon-iPad-Spotlight-iOS7@2x.png */,
+				1B9DA34218CB49B50003F7FF /* Icon-Small-50.png */,
+				1B9DA34318CB49B50003F7FF /* Icon-Small.png */,
+				1B9DA34418CB49B50003F7FF /* Icon-Small@2x.png */,
+				1B9DA34518CB49B50003F7FF /* Icon-Spotlight-iOS7.png */,
+				1B9DA34618CB49B50003F7FF /* Icon-Spotlight-iOS7@2x.png */,
+				1B9DA34718CB49B50003F7FF /* Icon.png */,
+				1B9DA34818CB49B50003F7FF /* Icon@2x.png */,
+				1B9DA34918CB49B50003F7FF /* iTunesArtwork */,
+				1B9DA34A18CB49B50003F7FF /* iTunesArtwork@2x */,
+				1B9DA35A18CB4A980003F7FF /* Default.png */,
+				1B9DA35B18CB4A980003F7FF /* Default@2x.png */,
+				1B9DA35C18CB4A980003F7FF /* Default-568h@2x.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		1BF65A6F18989A6400B3CA82 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				1BF65A7218989ACE00B3CA82 /* KSGameMainViewController.h */,
+				1BF65A7318989ACE00B3CA82 /* KSGameMainViewController.m */,
+				1BF65A4E18989A4600B3CA82 /* KSStartViewController.h */,
+				1BF65A4F18989A4600B3CA82 /* KSStartViewController.m */,
+				1BF65A7E18989C9900B3CA82 /* KSRecordViewController.h */,
+				1BF65A7F18989C9900B3CA82 /* KSRecordViewController.m */,
+				1BF65A7B18989C6F00B3CA82 /* KSHelpViewController.h */,
+				1BF65A7C18989C6F00B3CA82 /* KSHelpViewController.m */,
+				1BF65AB11899EB0500B3CA82 /* KSCoreDataController.h */,
+				1BF65AB21899EB0500B3CA82 /* KSCoreDataController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		1BF65A7018989A7000B3CA82 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6CA4EF8818A5B0610085A379 /* masu */,
+				6C11B3FF18A1CE3D00A73DAB /* card */,
+				1BF65AB4189A4B9400B3CA82 /* KSGameField.h */,
+				1BF65AB5189A4B9400B3CA82 /* KSGameField.m */,
+				1BF65A891898A55D00B3CA82 /* menu&Button */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		1BF65A7118989A7700B3CA82 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1BF65AAB1899E91300B3CA82 /* Model.xcdatamodeld */,
+				1BF65AAE1899EA0600B3CA82 /* Data.h */,
+				1BF65AAF1899EA0600B3CA82 /* Data.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		1BF65A8118989F2400B3CA82 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				1BF65A8618989FCA00B3CA82 /* KSGlobalConst.h */,
+				1BF65A8718989FCA00B3CA82 /* KSGlobalConst.m */,
+				1BF65AA51899DD4100B3CA82 /* KSDataFormatter.h */,
+				1BF65AA61899DD4100B3CA82 /* KSDataFormatter.m */,
+				6C17095418BB1BD500D7B4F1 /* KSJudge.h */,
+				6C17095518BB1BD500D7B4F1 /* KSJudge.m */,
+			);
+			name = utility;
+			sourceTree = "<group>";
+		};
+		1BF65A8218989F3500B3CA82 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				1BF65A991898B1E000B3CA82 /* KSDiviceHelper.h */,
+				1BF65A9A1898B1E000B3CA82 /* KSDiviceHelper.m */,
+				1BF65AA81899DF9700B3CA82 /* KSMenuAnimationHelper.h */,
+				1BF65AA91899DF9700B3CA82 /* KSMenuAnimationHelper.m */,
+				6CCBF79518C7F9ED00ABE0EB /* RNGridMenu.h */,
+				6CCBF79618C7F9ED00ABE0EB /* RNGridMenu.m */,
+			);
+			name = helper;
+			sourceTree = "<group>";
+		};
+		1BF65A891898A55D00B3CA82 /* menu&Button */ = {
+			isa = PBXGroup;
+			children = (
+				1BF65A9F18992E9200B3CA82 /* KSMenuButton.h */,
+				1BF65AA018992E9200B3CA82 /* KSMenuButton.m */,
+				6C13579F18C5CC2300E74542 /* KSModeButton.h */,
+				6C1357A018C5CC2300E74542 /* KSModeButton.m */,
+			);
+			name = "menu&Button";
+			sourceTree = "<group>";
+		};
+		6C11B3FF18A1CE3D00A73DAB /* card */ = {
+			isa = PBXGroup;
+			children = (
+				6C11B40018A20E6900A73DAB /* KSCardManager.h */,
+				6C11B40118A20E6900A73DAB /* KSCardManager.m */,
+				6C11B3FC18A1CE3400A73DAB /* KSCard.h */,
+				6C11B3FD18A1CE3400A73DAB /* KSCard.m */,
+				6CDA422A18AAE96200E09D3E /* KSEyeCatch.h */,
+				6CDA422B18AAE96200E09D3E /* KSEyeCatch.m */,
+				6C2CA4A718ADDEA300358B78 /* KSCardManagerContext.h */,
+				6C2CA4A818ADDEA300358B78 /* KSCardManagerContext.m */,
+				6C2CA4AA18ADDED200358B78 /* KSCardManagerState.h */,
+				6C2CA4AB18ADDED200358B78 /* KSCardManagerState.m */,
+				6C2CA4AD18ADDF0100358B78 /* KSCardManagerForSeven.h */,
+				6C2CA4AE18ADDF0100358B78 /* KSCardManagerForSeven.m */,
+				6C2CA4B018ADDF2200358B78 /* KSCardManagerForFourteen.h */,
+				6C2CA4B118ADDF2200358B78 /* KSCardManagerForFourteen.m */,
+				6C2CA4B318ADDF3600358B78 /* KSCardManagerForTwentyone.h */,
+				6C2CA4B418ADDF3600358B78 /* KSCardManagerForTwentyone.m */,
+			);
+			name = card;
+			sourceTree = "<group>";
+		};
+		6CA4EF8818A5B0610085A379 /* masu */ = {
+			isa = PBXGroup;
+			children = (
+				6CA4EF9A18A5CDEA0085A379 /* KSMasuManager.h */,
+				6CA4EF9B18A5CDEA0085A379 /* KSMasuManager.m */,
+				6CA4EF9818A5CDEA0085A379 /* KSMasu.h */,
+				6CA4EF9918A5CDEA0085A379 /* KSMasu.m */,
+				6C4BF39518B7168700FF9618 /* KSMasuManagerContex.h */,
+				6C4BF39618B7168700FF9618 /* KSMasuManagerContex.m */,
+				6C4BF39818B716CF00FF9618 /* KSMasuManagerState.h */,
+				6C4BF39918B716CF00FF9618 /* KSMasuManagerState.m */,
+				6C4BF39B18B7170600FF9618 /* KSMasuStateForseven.h */,
+				6C4BF39C18B7170600FF9618 /* KSMasuStateForseven.m */,
+				6C4BF39E18B7172400FF9618 /* KSMasuStateForFourteen.h */,
+				6C4BF39F18B7172400FF9618 /* KSMasuStateForFourteen.m */,
+				6C4BF3A118B7174600FF9618 /* KSMasuStateForTwentyone.h */,
+				6C4BF3A218B7174600FF9618 /* KSMasuStateForTwentyone.m */,
+			);
+			name = masu;
+			sourceTree = "<group>";
+		};
+		6CAE7506189F5D140073DC22 /* mode */ = {
+			isa = PBXGroup;
+			children = (
+				6CAE7507189F63180073DC22 /* KSModeContex.h */,
+				6CAE7508189F63180073DC22 /* KSModeContex.m */,
+				6CAE750A189F669B0073DC22 /* KSModeState.h */,
+				6CAE750B189F669B0073DC22 /* KSModeState.m */,
+				6CAE750D189F66B70073DC22 /* KSModeSeven.h */,
+				6CAE750E189F66B70073DC22 /* KSModeSeven.m */,
+				6CAE7510189F66DE0073DC22 /* KSModeForteen.h */,
+				6CAE7511189F66DE0073DC22 /* KSModeForteen.m */,
+				6CAE7516189F67170073DC22 /* KSModeTwentyOne.h */,
+				6CAE7517189F67170073DC22 /* KSModeTwentyOne.m */,
+			);
+			name = mode;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BF65A3518989A4600B3CA82 /* GameAccordion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BF65A6818989A4600B3CA82 /* Build configuration list for PBXNativeTarget "GameAccordion" */;
+			buildPhases = (
+				1BF65A3218989A4600B3CA82 /* Sources */,
+				1BF65A3318989A4600B3CA82 /* Frameworks */,
+				1BF65A3418989A4600B3CA82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameAccordion;
+			productName = GameAccordion;
+			productReference = 1BF65A3618989A4600B3CA82 /* GameAccordion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BF65A5618989A4600B3CA82 /* GameAccordionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BF65A6B18989A4600B3CA82 /* Build configuration list for PBXNativeTarget "GameAccordionTests" */;
+			buildPhases = (
+				1BF65A5318989A4600B3CA82 /* Sources */,
+				1BF65A5418989A4600B3CA82 /* Frameworks */,
+				1BF65A5518989A4600B3CA82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BF65A5D18989A4600B3CA82 /* PBXTargetDependency */,
+			);
+			name = GameAccordionTests;
+			productName = GameAccordionTests;
+			productReference = 1BF65A5718989A4600B3CA82 /* GameAccordionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BF65A2E18989A4600B3CA82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "momiji-mac";
+				TargetAttributes = {
+					1BF65A3518989A4600B3CA82 = {
+						DevelopmentTeam = CSUJW2XS9K;
+					};
+					1BF65A5618989A4600B3CA82 = {
+						TestTargetID = 1BF65A3518989A4600B3CA82;
+					};
+				};
+			};
+			buildConfigurationList = 1BF65A3118989A4600B3CA82 /* Build configuration list for PBXProject "GameAccordion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BF65A2D18989A4600B3CA82;
+			productRefGroup = 1BF65A3718989A4600B3CA82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BF65A3518989A4600B3CA82 /* GameAccordion */,
+				1BF65A5618989A4600B3CA82 /* GameAccordionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BF65A3418989A4600B3CA82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9DA35018CB49B50003F7FF /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */,
+				1B9DA35718CB49B50003F7FF /* Icon@2x.png in Resources */,
+				1B9DA35218CB49B50003F7FF /* Icon-Small.png in Resources */,
+				1B9DA34F18CB49B50003F7FF /* Icon-120.png in Resources */,
+				1B8CA06918CB493500E9C9EB /* Images-2.xcassets in Resources */,
+				1B9DA35F18CB4A980003F7FF /* Default-568h@2x.png in Resources */,
+				1B9DA34B18CB49B50003F7FF /* Icon-72.png in Resources */,
+				1B9DA34C18CB49B50003F7FF /* Icon-72@2x.png in Resources */,
+				1BF65A4418989A4600B3CA82 /* InfoPlist.strings in Resources */,
+				1B9DA34E18CB49B50003F7FF /* Icon-76@2x.png in Resources */,
+				1B9DA35118CB49B50003F7FF /* Icon-Small-50.png in Resources */,
+				1B9DA35318CB49B50003F7FF /* Icon-Small@2x.png in Resources */,
+				1B9DA35D18CB4A980003F7FF /* Default.png in Resources */,
+				1B9DA35E18CB4A980003F7FF /* Default@2x.png in Resources */,
+				1B9DA35518CB49B50003F7FF /* Icon-Spotlight-iOS7@2x.png in Resources */,
+				1B9DA35918CB49B50003F7FF /* iTunesArtwork@2x in Resources */,
+				1BF65A4D18989A4600B3CA82 /* Main.storyboard in Resources */,
+				1B9DA35618CB49B50003F7FF /* Icon.png in Resources */,
+				1B9DA35418CB49B50003F7FF /* Icon-Spotlight-iOS7.png in Resources */,
+				1B9DA34D18CB49B50003F7FF /* Icon-76.png in Resources */,
+				1B9DA35818CB49B50003F7FF /* iTunesArtwork in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BF65A5518989A4600B3CA82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BF65A6318989A4600B3CA82 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BF65A3218989A4600B3CA82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BF65AB01899EA0600B3CA82 /* Data.m in Sources */,
+				6C2CA4A918ADDEA300358B78 /* KSCardManagerContext.m in Sources */,
+				6C2CA4AC18ADDED200358B78 /* KSCardManagerState.m in Sources */,
+				1BF65AB6189A4B9400B3CA82 /* KSGameField.m in Sources */,
+				6C4BF3A318B7174600FF9618 /* KSMasuStateForTwentyone.m in Sources */,
+				6CAE750F189F66B70073DC22 /* KSModeSeven.m in Sources */,
+				1BF65AAA1899DF9700B3CA82 /* KSMenuAnimationHelper.m in Sources */,
+				6CAE7518189F67170073DC22 /* KSModeTwentyOne.m in Sources */,
+				6C2CA4AF18ADDF0100358B78 /* KSCardManagerForSeven.m in Sources */,
+				6C1357A118C5CC2300E74542 /* KSModeButton.m in Sources */,
+				6C17095618BB1BD500D7B4F1 /* KSJudge.m in Sources */,
+				1BF65AA71899DD4100B3CA82 /* KSDataFormatter.m in Sources */,
+				1BF65A5018989A4600B3CA82 /* KSStartViewController.m in Sources */,
+				1BF65AB31899EB0500B3CA82 /* KSCoreDataController.m in Sources */,
+				6CCBF79718C7F9ED00ABE0EB /* RNGridMenu.m in Sources */,
+				1BF65A7418989ACE00B3CA82 /* KSGameMainViewController.m in Sources */,
+				6CA4EF9D18A5CDEA0085A379 /* KSMasuManager.m in Sources */,
+				6CA4EF9C18A5CDEA0085A379 /* KSMasu.m in Sources */,
+				6CAE7512189F66DE0073DC22 /* KSModeForteen.m in Sources */,
+				6CAE750C189F669B0073DC22 /* KSModeState.m in Sources */,
+				1BF65AA118992E9200B3CA82 /* KSMenuButton.m in Sources */,
+				6C4BF3A018B7172400FF9618 /* KSMasuStateForFourteen.m in Sources */,
+				1BF65A4A18989A4600B3CA82 /* KSAppDelegate.m in Sources */,
+				6C2CA4B218ADDF2200358B78 /* KSCardManagerForFourteen.m in Sources */,
+				6C11B40218A20E6900A73DAB /* KSCardManager.m in Sources */,
+				1BF65A8018989C9900B3CA82 /* KSRecordViewController.m in Sources */,
+				6C2CA4B518ADDF3600358B78 /* KSCardManagerForTwentyone.m in Sources */,
+				1BF65A8818989FCA00B3CA82 /* KSGlobalConst.m in Sources */,
+				1BF65A9B1898B1E000B3CA82 /* KSDiviceHelper.m in Sources */,
+				1BF65A7D18989C6F00B3CA82 /* KSHelpViewController.m in Sources */,
+				6CAE7509189F63180073DC22 /* KSModeContex.m in Sources */,
+				1BF65A4618989A4600B3CA82 /* main.m in Sources */,
+				6CDA422C18AAE96200E09D3E /* KSEyeCatch.m in Sources */,
+				6C4BF39D18B7170600FF9618 /* KSMasuStateForseven.m in Sources */,
+				6C11B3FE18A1CE3400A73DAB /* KSCard.m in Sources */,
+				6C4BF39718B7168700FF9618 /* KSMasuManagerContex.m in Sources */,
+				1BF65AAD1899E91300B3CA82 /* Model.xcdatamodeld in Sources */,
+				6C4BF39A18B716CF00FF9618 /* KSMasuManagerState.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BF65A5318989A4600B3CA82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BF65A6518989A4600B3CA82 /* GameAccordionTests.m in Sources */,
+				6CA4EF9F18A5D98D0085A379 /* KSMasuTest.m in Sources */,
+				6C2CA4B718AE060C00358B78 /* KSCardMangerContexTest.m in Sources */,
+				1BA942F218BB65EF003C5FEF /* KSJudgeTest.m in Sources */,
+				6C65D5BA18A3352500726EB8 /* KSCardManagerTest.m in Sources */,
+				1B5008A718AC3BF600F82C0C /* KSCardTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BF65A5D18989A4600B3CA82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BF65A3518989A4600B3CA82 /* GameAccordion */;
+			targetProxy = 1BF65A5C18989A4600B3CA82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BF65A4218989A4600B3CA82 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BF65A4318989A4600B3CA82 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1BF65A4B18989A4600B3CA82 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BF65A4C18989A4600B3CA82 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BF65A6118989A4600B3CA82 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BF65A6218989A4600B3CA82 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1BF65AA21899BFF500B3CA82 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BF65AA31899BFF500B3CA82 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BF65A6618989A4600B3CA82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1BF65A6718989A4600B3CA82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BF65A6918989A4600B3CA82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameAccordion/GameAccordion-Prefix.pch";
+				INFOPLIST_FILE = "GameAccordion/GameAccordion-Info.plist";
+				PRODUCT_NAME = GameAccordion;
+				PROVISIONING_PROFILE = "7E0FA21C-ADC9-45D6-9972-9D500AEDE5D0";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1BF65A6A18989A4600B3CA82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameAccordion/GameAccordion-Prefix.pch";
+				INFOPLIST_FILE = "GameAccordion/GameAccordion-Info.plist";
+				PRODUCT_NAME = GameAccordion;
+				PROVISIONING_PROFILE = "7E0FA21C-ADC9-45D6-9972-9D500AEDE5D0";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1BF65A6C18989A4600B3CA82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GameAccordion.app/GameAccordion";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameAccordion/GameAccordion-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GameAccordionTests/GameAccordionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1BF65A6D18989A4600B3CA82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GameAccordion.app/GameAccordion";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameAccordion/GameAccordion-Prefix.pch";
+				INFOPLIST_FILE = "GameAccordionTests/GameAccordionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BF65A3118989A4600B3CA82 /* Build configuration list for PBXProject "GameAccordion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BF65A6618989A4600B3CA82 /* Debug */,
+				1BF65A6718989A4600B3CA82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BF65A6818989A4600B3CA82 /* Build configuration list for PBXNativeTarget "GameAccordion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BF65A6918989A4600B3CA82 /* Debug */,
+				1BF65A6A18989A4600B3CA82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BF65A6B18989A4600B3CA82 /* Build configuration list for PBXNativeTarget "GameAccordionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BF65A6C18989A4600B3CA82 /* Debug */,
+				1BF65A6D18989A4600B3CA82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1BF65AAB1899E91300B3CA82 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1BF65AAC1899E91300B3CA82 /* Model.xcdatamodel */,
+			);
+			currentVersion = 1BF65AAC1899E91300B3CA82 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = model/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1BF65A2E18989A4600B3CA82 /* Project object */;
+}

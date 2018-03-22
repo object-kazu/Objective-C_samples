@@ -1,0 +1,921 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B0A2D491A0DFEA100D438DB /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B0A2D481A0DFEA100D438DB /* Icon-60@2x.png */; };
+		1B9A032618CC3A450008E203 /* allow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A032518CC3A450008E203 /* allow.png */; };
+		1B9DA36D18CBEDDA0003F7FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9DA36C18CBEDDA0003F7FF /* Foundation.framework */; };
+		1B9DA36F18CBEDDA0003F7FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9DA36E18CBEDDA0003F7FF /* CoreGraphics.framework */; };
+		1B9DA37118CBEDDA0003F7FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9DA37018CBEDDA0003F7FF /* UIKit.framework */; };
+		1B9DA37718CBEDDA0003F7FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA37518CBEDDA0003F7FF /* InfoPlist.strings */; };
+		1B9DA37918CBEDDA0003F7FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA37818CBEDDA0003F7FF /* main.m */; };
+		1B9DA37D18CBEDDA0003F7FF /* KSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA37C18CBEDDA0003F7FF /* KSAppDelegate.m */; };
+		1B9DA38018CBEDDA0003F7FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA37E18CBEDDA0003F7FF /* Main.storyboard */; };
+		1B9DA38518CBEDDA0003F7FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA38418CBEDDA0003F7FF /* Images.xcassets */; };
+		1B9DA38C18CBEDDB0003F7FF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9DA38B18CBEDDB0003F7FF /* XCTest.framework */; };
+		1B9DA38D18CBEDDB0003F7FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9DA36C18CBEDDA0003F7FF /* Foundation.framework */; };
+		1B9DA38E18CBEDDB0003F7FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9DA37018CBEDDA0003F7FF /* UIKit.framework */; };
+		1B9DA39618CBEDDB0003F7FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA39418CBEDDB0003F7FF /* InfoPlist.strings */; };
+		1B9DA39818CBEDDB0003F7FF /* gameaccordionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA39718CBEDDB0003F7FF /* gameaccordionTests.m */; };
+		1B9DA3B118CBF0750003F7FF /* KSCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3A818CBF0750003F7FF /* KSCoreDataController.m */; };
+		1B9DA3B218CBF0750003F7FF /* KSGameMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3AA18CBF0750003F7FF /* KSGameMainViewController.m */; };
+		1B9DA3B318CBF0750003F7FF /* KSHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3AC18CBF0750003F7FF /* KSHelpViewController.m */; };
+		1B9DA3B418CBF0750003F7FF /* KSRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3AE18CBF0750003F7FF /* KSRecordViewController.m */; };
+		1B9DA3B518CBF0750003F7FF /* KSStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3B018CBF0750003F7FF /* KSStartViewController.m */; };
+		1B9DA3BA18CBF09A0003F7FF /* KSDiviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3B718CBF09A0003F7FF /* KSDiviceHelper.m */; };
+		1B9DA3BB18CBF09A0003F7FF /* KSMenuAnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3B918CBF09A0003F7FF /* KSMenuAnimationHelper.m */; };
+		1B9DA3C218CBF0C30003F7FF /* KSDataFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3BD18CBF0C30003F7FF /* KSDataFormatter.m */; };
+		1B9DA3C318CBF0C30003F7FF /* KSGlobalConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3BF18CBF0C30003F7FF /* KSGlobalConst.m */; };
+		1B9DA3C418CBF0C30003F7FF /* KSJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3C118CBF0C30003F7FF /* KSJudge.m */; };
+		1B9DA3D018CBF1010003F7FF /* KSModeContex.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3C718CBF1010003F7FF /* KSModeContex.m */; };
+		1B9DA3D118CBF1010003F7FF /* KSModeForteen.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3C918CBF1010003F7FF /* KSModeForteen.m */; };
+		1B9DA3D218CBF1010003F7FF /* KSModeSeven.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3CB18CBF1010003F7FF /* KSModeSeven.m */; };
+		1B9DA3D318CBF1010003F7FF /* KSModeState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3CD18CBF1010003F7FF /* KSModeState.m */; };
+		1B9DA3D418CBF1010003F7FF /* KSModeTwentyOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3CF18CBF1010003F7FF /* KSModeTwentyOne.m */; };
+		1B9DA3DC18CBF1E50003F7FF /* KSMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3D918CBF1E50003F7FF /* KSMenuButton.m */; };
+		1B9DA3DD18CBF1E50003F7FF /* KSModeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3DB18CBF1E50003F7FF /* KSModeButton.m */; };
+		1B9DA3EE18CBF2010003F7FF /* KSCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3DF18CBF2010003F7FF /* KSCard.m */; };
+		1B9DA3EF18CBF2010003F7FF /* KSCardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3E118CBF2010003F7FF /* KSCardManager.m */; };
+		1B9DA3F018CBF2010003F7FF /* KSCardManagerContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3E318CBF2010003F7FF /* KSCardManagerContext.m */; };
+		1B9DA3F118CBF2010003F7FF /* KSCardManagerForFourteen.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3E518CBF2010003F7FF /* KSCardManagerForFourteen.m */; };
+		1B9DA3F218CBF2010003F7FF /* KSCardManagerForSeven.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3E718CBF2010003F7FF /* KSCardManagerForSeven.m */; };
+		1B9DA3F318CBF2010003F7FF /* KSCardManagerForTwentyone.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3E918CBF2010003F7FF /* KSCardManagerForTwentyone.m */; };
+		1B9DA3F418CBF2010003F7FF /* KSCardManagerState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3EB18CBF2010003F7FF /* KSCardManagerState.m */; };
+		1B9DA3F518CBF2010003F7FF /* KSEyeCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3ED18CBF2010003F7FF /* KSEyeCatch.m */; };
+		1B9DA40418CBF2170003F7FF /* KSMasu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3F718CBF2170003F7FF /* KSMasu.m */; };
+		1B9DA40518CBF2170003F7FF /* KSMasuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3F918CBF2170003F7FF /* KSMasuManager.m */; };
+		1B9DA40618CBF2170003F7FF /* KSMasuManagerContex.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3FB18CBF2170003F7FF /* KSMasuManagerContex.m */; };
+		1B9DA40718CBF2170003F7FF /* KSMasuManagerState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3FD18CBF2170003F7FF /* KSMasuManagerState.m */; };
+		1B9DA40818CBF2170003F7FF /* KSMasuStateForFourteen.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA3FF18CBF2170003F7FF /* KSMasuStateForFourteen.m */; };
+		1B9DA40918CBF2170003F7FF /* KSMasuStateForseven.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA40118CBF2170003F7FF /* KSMasuStateForseven.m */; };
+		1B9DA40A18CBF2170003F7FF /* KSMasuStateForTwentyone.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA40318CBF2170003F7FF /* KSMasuStateForTwentyone.m */; };
+		1B9DA40E18CBF2390003F7FF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA40B18CBF2390003F7FF /* Default-568h@2x.png */; };
+		1B9DA40F18CBF2390003F7FF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA40C18CBF2390003F7FF /* Default.png */; };
+		1B9DA41018CBF2390003F7FF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA40D18CBF2390003F7FF /* Default@2x.png */; };
+		1B9DA41E18CBF24C0003F7FF /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA41118CBF24B0003F7FF /* Icon-72.png */; };
+		1B9DA41F18CBF24C0003F7FF /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA41218CBF24B0003F7FF /* Icon-72@2x.png */; };
+		1B9DA42018CBF24C0003F7FF /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA41318CBF24B0003F7FF /* Icon-76.png */; };
+		1B9DA42118CBF24C0003F7FF /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA41418CBF24B0003F7FF /* Icon-76@2x.png */; };
+		1B9DA42218CBF24C0003F7FF /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA41518CBF24B0003F7FF /* Icon-120.png */; };
+		1B9DA42318CBF24C0003F7FF /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA41618CBF24B0003F7FF /* Icon-iPad-Spotlight-iOS7@2x.png */; };
+		1B9DA42418CBF24C0003F7FF /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA41718CBF24B0003F7FF /* Icon-Small-50.png */; };
+		1B9DA42518CBF24C0003F7FF /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA41818CBF24B0003F7FF /* Icon-Small.png */; };
+		1B9DA42618CBF24C0003F7FF /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA41918CBF24B0003F7FF /* Icon-Small@2x.png */; };
+		1B9DA42718CBF24C0003F7FF /* Icon-Spotlight-iOS7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA41A18CBF24B0003F7FF /* Icon-Spotlight-iOS7.png */; };
+		1B9DA42818CBF24C0003F7FF /* Icon-Spotlight-iOS7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA41B18CBF24B0003F7FF /* Icon-Spotlight-iOS7@2x.png */; };
+		1B9DA42918CBF24C0003F7FF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA41C18CBF24B0003F7FF /* Icon.png */; };
+		1B9DA42A18CBF24C0003F7FF /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA41D18CBF24B0003F7FF /* Icon@2x.png */; };
+		1B9DA42D18CBF2620003F7FF /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA42B18CBF2620003F7FF /* iTunesArtwork */; };
+		1B9DA42E18CBF2620003F7FF /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 1B9DA42C18CBF2620003F7FF /* iTunesArtwork@2x */; };
+		1B9DA43118CBF90A0003F7FF /* RNGridMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DA43018CBF90A0003F7FF /* RNGridMenu.m */; };
+		1B9DA43318CBFBBA0003F7FF /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9DA43218CBFBBA0003F7FF /* Accelerate.framework */; };
+		1B9DA43518CBFBC30003F7FF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9DA43418CBFBC30003F7FF /* QuartzCore.framework */; };
+		1B9DA43718CBFBE00003F7FF /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9DA43618CBFBE00003F7FF /* CoreImage.framework */; };
+		1B9DA43918CBFBF10003F7FF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9DA43818CBFBF10003F7FF /* CoreData.framework */; };
+		1BA482F318CF1AE500BF0273 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BA482F118CF1AE500BF0273 /* Model.xcdatamodeld */; };
+		1BA482F618CF246200BF0273 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA482F518CF246200BF0273 /* Data.m */; };
+		1BEDFD3A18D1B54500D81874 /* KSPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEDFD3918D1B54500D81874 /* KSPageView.m */; };
+		1BFE946619B1D99B00B4BD97 /* SVSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE946319B1D99B00B4BD97 /* SVSegmentedControl.m */; };
+		1BFE946719B1D99B00B4BD97 /* SVSegmentedThumb.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE946519B1D99B00B4BD97 /* SVSegmentedThumb.m */; };
+		6CB4E8C118D2C4F000716E9F /* KSPageViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB4E8C018D2C4F000716E9F /* KSPageViewTest.m */; };
+		6CC21BD918CEBC15009E7929 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CC21BD818CEBC15009E7929 /* sample.png */; };
+		6CC21BDB18CEEE43009E7929 /* backAllow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CC21BDA18CEEE43009E7929 /* backAllow.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B9DA38F18CBEDDB0003F7FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B9DA36118CBEDDA0003F7FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B9DA36818CBEDDA0003F7FF;
+			remoteInfo = gameaccordion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B0A2D481A0DFEA100D438DB /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60@2x.png"; path = "imgs/Icon-60@2x.png"; sourceTree = SOURCE_ROOT; };
+		1B9A032518CC3A450008E203 /* allow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = allow.png; path = ../imgs/allow.png; sourceTree = "<group>"; };
+		1B9DA36918CBEDDA0003F7FF /* gameaccordion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gameaccordion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B9DA36C18CBEDDA0003F7FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1B9DA36E18CBEDDA0003F7FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1B9DA37018CBEDDA0003F7FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1B9DA37418CBEDDA0003F7FF /* gameaccordion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gameaccordion-Info.plist"; sourceTree = "<group>"; };
+		1B9DA37618CBEDDA0003F7FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1B9DA37818CBEDDA0003F7FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B9DA37A18CBEDDA0003F7FF /* gameaccordion-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gameaccordion-Prefix.pch"; sourceTree = "<group>"; };
+		1B9DA37B18CBEDDA0003F7FF /* KSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSAppDelegate.h; sourceTree = "<group>"; };
+		1B9DA37C18CBEDDA0003F7FF /* KSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSAppDelegate.m; sourceTree = "<group>"; };
+		1B9DA37F18CBEDDA0003F7FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B9DA38418CBEDDA0003F7FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1B9DA38A18CBEDDB0003F7FF /* gameaccordionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gameaccordionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B9DA38B18CBEDDB0003F7FF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1B9DA39318CBEDDB0003F7FF /* gameaccordionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gameaccordionTests-Info.plist"; sourceTree = "<group>"; };
+		1B9DA39518CBEDDB0003F7FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1B9DA39718CBEDDB0003F7FF /* gameaccordionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gameaccordionTests.m; sourceTree = "<group>"; };
+		1B9DA3A718CBF0750003F7FF /* KSCoreDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCoreDataController.h; path = ../contoller/KSCoreDataController.h; sourceTree = "<group>"; };
+		1B9DA3A818CBF0750003F7FF /* KSCoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCoreDataController.m; path = ../contoller/KSCoreDataController.m; sourceTree = "<group>"; };
+		1B9DA3A918CBF0750003F7FF /* KSGameMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSGameMainViewController.h; path = ../contoller/KSGameMainViewController.h; sourceTree = "<group>"; };
+		1B9DA3AA18CBF0750003F7FF /* KSGameMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSGameMainViewController.m; path = ../contoller/KSGameMainViewController.m; sourceTree = "<group>"; };
+		1B9DA3AB18CBF0750003F7FF /* KSHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSHelpViewController.h; path = ../contoller/KSHelpViewController.h; sourceTree = "<group>"; };
+		1B9DA3AC18CBF0750003F7FF /* KSHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSHelpViewController.m; path = ../contoller/KSHelpViewController.m; sourceTree = "<group>"; };
+		1B9DA3AD18CBF0750003F7FF /* KSRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSRecordViewController.h; path = ../contoller/KSRecordViewController.h; sourceTree = "<group>"; };
+		1B9DA3AE18CBF0750003F7FF /* KSRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSRecordViewController.m; path = ../contoller/KSRecordViewController.m; sourceTree = "<group>"; };
+		1B9DA3AF18CBF0750003F7FF /* KSStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSStartViewController.h; path = ../contoller/KSStartViewController.h; sourceTree = "<group>"; };
+		1B9DA3B018CBF0750003F7FF /* KSStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSStartViewController.m; path = ../contoller/KSStartViewController.m; sourceTree = "<group>"; };
+		1B9DA3B618CBF09A0003F7FF /* KSDiviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSDiviceHelper.h; path = ../helper/KSDiviceHelper.h; sourceTree = "<group>"; };
+		1B9DA3B718CBF09A0003F7FF /* KSDiviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSDiviceHelper.m; path = ../helper/KSDiviceHelper.m; sourceTree = "<group>"; };
+		1B9DA3B818CBF09A0003F7FF /* KSMenuAnimationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSMenuAnimationHelper.h; path = ../helper/KSMenuAnimationHelper.h; sourceTree = "<group>"; };
+		1B9DA3B918CBF09A0003F7FF /* KSMenuAnimationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSMenuAnimationHelper.m; path = ../helper/KSMenuAnimationHelper.m; sourceTree = "<group>"; };
+		1B9DA3BC18CBF0C30003F7FF /* KSDataFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSDataFormatter.h; path = ../utility/KSDataFormatter.h; sourceTree = "<group>"; };
+		1B9DA3BD18CBF0C30003F7FF /* KSDataFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSDataFormatter.m; path = ../utility/KSDataFormatter.m; sourceTree = "<group>"; };
+		1B9DA3BE18CBF0C30003F7FF /* KSGlobalConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSGlobalConst.h; path = ../utility/KSGlobalConst.h; sourceTree = "<group>"; };
+		1B9DA3BF18CBF0C30003F7FF /* KSGlobalConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSGlobalConst.m; path = ../utility/KSGlobalConst.m; sourceTree = "<group>"; };
+		1B9DA3C018CBF0C30003F7FF /* KSJudge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSJudge.h; path = ../utility/KSJudge.h; sourceTree = "<group>"; };
+		1B9DA3C118CBF0C30003F7FF /* KSJudge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSJudge.m; path = ../utility/KSJudge.m; sourceTree = "<group>"; };
+		1B9DA3C618CBF1010003F7FF /* KSModeContex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSModeContex.h; path = mode/KSModeContex.h; sourceTree = "<group>"; };
+		1B9DA3C718CBF1010003F7FF /* KSModeContex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSModeContex.m; path = mode/KSModeContex.m; sourceTree = "<group>"; };
+		1B9DA3C818CBF1010003F7FF /* KSModeForteen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSModeForteen.h; path = mode/KSModeForteen.h; sourceTree = "<group>"; };
+		1B9DA3C918CBF1010003F7FF /* KSModeForteen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSModeForteen.m; path = mode/KSModeForteen.m; sourceTree = "<group>"; };
+		1B9DA3CA18CBF1010003F7FF /* KSModeSeven.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSModeSeven.h; path = mode/KSModeSeven.h; sourceTree = "<group>"; };
+		1B9DA3CB18CBF1010003F7FF /* KSModeSeven.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSModeSeven.m; path = mode/KSModeSeven.m; sourceTree = "<group>"; };
+		1B9DA3CC18CBF1010003F7FF /* KSModeState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSModeState.h; path = mode/KSModeState.h; sourceTree = "<group>"; };
+		1B9DA3CD18CBF1010003F7FF /* KSModeState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSModeState.m; path = mode/KSModeState.m; sourceTree = "<group>"; };
+		1B9DA3CE18CBF1010003F7FF /* KSModeTwentyOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSModeTwentyOne.h; path = mode/KSModeTwentyOne.h; sourceTree = "<group>"; };
+		1B9DA3CF18CBF1010003F7FF /* KSModeTwentyOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSModeTwentyOne.m; path = mode/KSModeTwentyOne.m; sourceTree = "<group>"; };
+		1B9DA3D818CBF1E50003F7FF /* KSMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSMenuButton.h; path = "../view/menu&button/KSMenuButton.h"; sourceTree = "<group>"; };
+		1B9DA3D918CBF1E50003F7FF /* KSMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSMenuButton.m; path = "../view/menu&button/KSMenuButton.m"; sourceTree = "<group>"; };
+		1B9DA3DA18CBF1E50003F7FF /* KSModeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSModeButton.h; path = "../view/menu&button/KSModeButton.h"; sourceTree = "<group>"; };
+		1B9DA3DB18CBF1E50003F7FF /* KSModeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSModeButton.m; path = "../view/menu&button/KSModeButton.m"; sourceTree = "<group>"; };
+		1B9DA3DE18CBF2010003F7FF /* KSCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCard.h; path = ../view/Card/KSCard.h; sourceTree = "<group>"; };
+		1B9DA3DF18CBF2010003F7FF /* KSCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCard.m; path = ../view/Card/KSCard.m; sourceTree = "<group>"; };
+		1B9DA3E018CBF2010003F7FF /* KSCardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCardManager.h; path = ../view/Card/KSCardManager.h; sourceTree = "<group>"; };
+		1B9DA3E118CBF2010003F7FF /* KSCardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCardManager.m; path = ../view/Card/KSCardManager.m; sourceTree = "<group>"; };
+		1B9DA3E218CBF2010003F7FF /* KSCardManagerContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCardManagerContext.h; path = ../view/Card/KSCardManagerContext.h; sourceTree = "<group>"; };
+		1B9DA3E318CBF2010003F7FF /* KSCardManagerContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCardManagerContext.m; path = ../view/Card/KSCardManagerContext.m; sourceTree = "<group>"; };
+		1B9DA3E418CBF2010003F7FF /* KSCardManagerForFourteen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCardManagerForFourteen.h; path = ../view/Card/KSCardManagerForFourteen.h; sourceTree = "<group>"; };
+		1B9DA3E518CBF2010003F7FF /* KSCardManagerForFourteen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCardManagerForFourteen.m; path = ../view/Card/KSCardManagerForFourteen.m; sourceTree = "<group>"; };
+		1B9DA3E618CBF2010003F7FF /* KSCardManagerForSeven.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCardManagerForSeven.h; path = ../view/Card/KSCardManagerForSeven.h; sourceTree = "<group>"; };
+		1B9DA3E718CBF2010003F7FF /* KSCardManagerForSeven.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCardManagerForSeven.m; path = ../view/Card/KSCardManagerForSeven.m; sourceTree = "<group>"; };
+		1B9DA3E818CBF2010003F7FF /* KSCardManagerForTwentyone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCardManagerForTwentyone.h; path = ../view/Card/KSCardManagerForTwentyone.h; sourceTree = "<group>"; };
+		1B9DA3E918CBF2010003F7FF /* KSCardManagerForTwentyone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCardManagerForTwentyone.m; path = ../view/Card/KSCardManagerForTwentyone.m; sourceTree = "<group>"; };
+		1B9DA3EA18CBF2010003F7FF /* KSCardManagerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCardManagerState.h; path = ../view/Card/KSCardManagerState.h; sourceTree = "<group>"; };
+		1B9DA3EB18CBF2010003F7FF /* KSCardManagerState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSCardManagerState.m; path = ../view/Card/KSCardManagerState.m; sourceTree = "<group>"; };
+		1B9DA3EC18CBF2010003F7FF /* KSEyeCatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSEyeCatch.h; path = ../view/Card/KSEyeCatch.h; sourceTree = "<group>"; };
+		1B9DA3ED18CBF2010003F7FF /* KSEyeCatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSEyeCatch.m; path = ../view/Card/KSEyeCatch.m; sourceTree = "<group>"; };
+		1B9DA3F618CBF2170003F7FF /* KSMasu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSMasu.h; path = ../view/masu/KSMasu.h; sourceTree = "<group>"; };
+		1B9DA3F718CBF2170003F7FF /* KSMasu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSMasu.m; path = ../view/masu/KSMasu.m; sourceTree = "<group>"; };
+		1B9DA3F818CBF2170003F7FF /* KSMasuManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSMasuManager.h; path = ../view/masu/KSMasuManager.h; sourceTree = "<group>"; };
+		1B9DA3F918CBF2170003F7FF /* KSMasuManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSMasuManager.m; path = ../view/masu/KSMasuManager.m; sourceTree = "<group>"; };
+		1B9DA3FA18CBF2170003F7FF /* KSMasuManagerContex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSMasuManagerContex.h; path = ../view/masu/KSMasuManagerContex.h; sourceTree = "<group>"; };
+		1B9DA3FB18CBF2170003F7FF /* KSMasuManagerContex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSMasuManagerContex.m; path = ../view/masu/KSMasuManagerContex.m; sourceTree = "<group>"; };
+		1B9DA3FC18CBF2170003F7FF /* KSMasuManagerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSMasuManagerState.h; path = ../view/masu/KSMasuManagerState.h; sourceTree = "<group>"; };
+		1B9DA3FD18CBF2170003F7FF /* KSMasuManagerState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSMasuManagerState.m; path = ../view/masu/KSMasuManagerState.m; sourceTree = "<group>"; };
+		1B9DA3FE18CBF2170003F7FF /* KSMasuStateForFourteen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSMasuStateForFourteen.h; path = ../view/masu/KSMasuStateForFourteen.h; sourceTree = "<group>"; };
+		1B9DA3FF18CBF2170003F7FF /* KSMasuStateForFourteen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSMasuStateForFourteen.m; path = ../view/masu/KSMasuStateForFourteen.m; sourceTree = "<group>"; };
+		1B9DA40018CBF2170003F7FF /* KSMasuStateForseven.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSMasuStateForseven.h; path = ../view/masu/KSMasuStateForseven.h; sourceTree = "<group>"; };
+		1B9DA40118CBF2170003F7FF /* KSMasuStateForseven.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSMasuStateForseven.m; path = ../view/masu/KSMasuStateForseven.m; sourceTree = "<group>"; };
+		1B9DA40218CBF2170003F7FF /* KSMasuStateForTwentyone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSMasuStateForTwentyone.h; path = ../view/masu/KSMasuStateForTwentyone.h; sourceTree = "<group>"; };
+		1B9DA40318CBF2170003F7FF /* KSMasuStateForTwentyone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSMasuStateForTwentyone.m; path = ../view/masu/KSMasuStateForTwentyone.m; sourceTree = "<group>"; };
+		1B9DA40B18CBF2390003F7FF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../imgs/Default-568h@2x.png"; sourceTree = "<group>"; };
+		1B9DA40C18CBF2390003F7FF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../imgs/Default.png; sourceTree = "<group>"; };
+		1B9DA40D18CBF2390003F7FF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../imgs/Default@2x.png"; sourceTree = "<group>"; };
+		1B9DA41118CBF24B0003F7FF /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "../imgs/Icon-72.png"; sourceTree = "<group>"; };
+		1B9DA41218CBF24B0003F7FF /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "../imgs/Icon-72@2x.png"; sourceTree = "<group>"; };
+		1B9DA41318CBF24B0003F7FF /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76.png"; path = "../imgs/Icon-76.png"; sourceTree = "<group>"; };
+		1B9DA41418CBF24B0003F7FF /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76@2x.png"; path = "../imgs/Icon-76@2x.png"; sourceTree = "<group>"; };
+		1B9DA41518CBF24B0003F7FF /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-120.png"; path = "../imgs/Icon-120.png"; sourceTree = "<group>"; };
+		1B9DA41618CBF24B0003F7FF /* Icon-iPad-Spotlight-iOS7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-iPad-Spotlight-iOS7@2x.png"; path = "../imgs/Icon-iPad-Spotlight-iOS7@2x.png"; sourceTree = "<group>"; };
+		1B9DA41718CBF24B0003F7FF /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "../imgs/Icon-Small-50.png"; sourceTree = "<group>"; };
+		1B9DA41818CBF24B0003F7FF /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "../imgs/Icon-Small.png"; sourceTree = "<group>"; };
+		1B9DA41918CBF24B0003F7FF /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "../imgs/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		1B9DA41A18CBF24B0003F7FF /* Icon-Spotlight-iOS7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Spotlight-iOS7.png"; path = "../imgs/Icon-Spotlight-iOS7.png"; sourceTree = "<group>"; };
+		1B9DA41B18CBF24B0003F7FF /* Icon-Spotlight-iOS7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Spotlight-iOS7@2x.png"; path = "../imgs/Icon-Spotlight-iOS7@2x.png"; sourceTree = "<group>"; };
+		1B9DA41C18CBF24B0003F7FF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../imgs/Icon.png; sourceTree = "<group>"; };
+		1B9DA41D18CBF24B0003F7FF /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../imgs/Icon@2x.png"; sourceTree = "<group>"; };
+		1B9DA42B18CBF2620003F7FF /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = ../imgs/iTunesArtwork; sourceTree = "<group>"; };
+		1B9DA42C18CBF2620003F7FF /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; name = "iTunesArtwork@2x"; path = "../imgs/iTunesArtwork@2x"; sourceTree = "<group>"; };
+		1B9DA42F18CBF90A0003F7FF /* RNGridMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNGridMenu.h; path = ../helper/RNGridMenu.h; sourceTree = "<group>"; };
+		1B9DA43018CBF90A0003F7FF /* RNGridMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNGridMenu.m; path = ../helper/RNGridMenu.m; sourceTree = "<group>"; };
+		1B9DA43218CBFBBA0003F7FF /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		1B9DA43418CBFBC30003F7FF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1B9DA43618CBFBE00003F7FF /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		1B9DA43818CBFBF10003F7FF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1BA482F218CF1AE500BF0273 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		1BA482F418CF246200BF0273 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Data.h; path = model/Data.h; sourceTree = SOURCE_ROOT; };
+		1BA482F518CF246200BF0273 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Data.m; path = model/Data.m; sourceTree = SOURCE_ROOT; };
+		1BEDFD3818D1B54500D81874 /* KSPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSPageView.h; path = view/KSPageView.h; sourceTree = SOURCE_ROOT; };
+		1BEDFD3918D1B54500D81874 /* KSPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSPageView.m; path = view/KSPageView.m; sourceTree = SOURCE_ROOT; };
+		1BFE946219B1D99B00B4BD97 /* SVSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSegmentedControl.h; sourceTree = "<group>"; };
+		1BFE946319B1D99B00B4BD97 /* SVSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSegmentedControl.m; sourceTree = "<group>"; };
+		1BFE946419B1D99B00B4BD97 /* SVSegmentedThumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSegmentedThumb.h; sourceTree = "<group>"; };
+		1BFE946519B1D99B00B4BD97 /* SVSegmentedThumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSegmentedThumb.m; sourceTree = "<group>"; };
+		6CB4E8C018D2C4F000716E9F /* KSPageViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPageViewTest.m; sourceTree = "<group>"; };
+		6CBDD1C519B85BD30037B829 /* ModelAddGameLevel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelAddGameLevel.xcdatamodel; sourceTree = "<group>"; };
+		6CC21BD818CEBC15009E7929 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
+		6CC21BDA18CEEE43009E7929 /* backAllow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backAllow.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B9DA36618CBEDDA0003F7FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9DA43918CBFBF10003F7FF /* CoreData.framework in Frameworks */,
+				1B9DA43718CBFBE00003F7FF /* CoreImage.framework in Frameworks */,
+				1B9DA43518CBFBC30003F7FF /* QuartzCore.framework in Frameworks */,
+				1B9DA43318CBFBBA0003F7FF /* Accelerate.framework in Frameworks */,
+				1B9DA36F18CBEDDA0003F7FF /* CoreGraphics.framework in Frameworks */,
+				1B9DA37118CBEDDA0003F7FF /* UIKit.framework in Frameworks */,
+				1B9DA36D18CBEDDA0003F7FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B9DA38718CBEDDB0003F7FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9DA38C18CBEDDB0003F7FF /* XCTest.framework in Frameworks */,
+				1B9DA38E18CBEDDB0003F7FF /* UIKit.framework in Frameworks */,
+				1B9DA38D18CBEDDB0003F7FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B9DA36018CBEDDA0003F7FF = {
+			isa = PBXGroup;
+			children = (
+				1B9DA3A118CBF00C0003F7FF /* controller */,
+				1B9DA3A218CBF0170003F7FF /* helper */,
+				1B9DA3A318CBF0210003F7FF /* utility */,
+				1B9DA3A618CBF0390003F7FF /* img */,
+				1B9DA3A518CBF0310003F7FF /* view */,
+				1B9DA3A418CBF02A0003F7FF /* model */,
+				1B9DA3C518CBF0DF0003F7FF /* mode */,
+				1B9DA37218CBEDDA0003F7FF /* gameaccordion */,
+				1B9DA39118CBEDDB0003F7FF /* gameaccordionTests */,
+				1B9DA36B18CBEDDA0003F7FF /* Frameworks */,
+				1B9DA36A18CBEDDA0003F7FF /* Products */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		1B9DA36A18CBEDDA0003F7FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B9DA36918CBEDDA0003F7FF /* gameaccordion.app */,
+				1B9DA38A18CBEDDB0003F7FF /* gameaccordionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B9DA36B18CBEDDA0003F7FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B9DA43818CBFBF10003F7FF /* CoreData.framework */,
+				1B9DA43618CBFBE00003F7FF /* CoreImage.framework */,
+				1B9DA43418CBFBC30003F7FF /* QuartzCore.framework */,
+				1B9DA43218CBFBBA0003F7FF /* Accelerate.framework */,
+				1B9DA36C18CBEDDA0003F7FF /* Foundation.framework */,
+				1B9DA36E18CBEDDA0003F7FF /* CoreGraphics.framework */,
+				1B9DA37018CBEDDA0003F7FF /* UIKit.framework */,
+				1B9DA38B18CBEDDB0003F7FF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B9DA37218CBEDDA0003F7FF /* gameaccordion */ = {
+			isa = PBXGroup;
+			children = (
+				1B9DA37B18CBEDDA0003F7FF /* KSAppDelegate.h */,
+				1B9DA37C18CBEDDA0003F7FF /* KSAppDelegate.m */,
+				1B9DA37E18CBEDDA0003F7FF /* Main.storyboard */,
+				1B9DA38418CBEDDA0003F7FF /* Images.xcassets */,
+				1B9DA37318CBEDDA0003F7FF /* Supporting Files */,
+			);
+			path = gameaccordion;
+			sourceTree = "<group>";
+		};
+		1B9DA37318CBEDDA0003F7FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B9DA37418CBEDDA0003F7FF /* gameaccordion-Info.plist */,
+				1B9DA37518CBEDDA0003F7FF /* InfoPlist.strings */,
+				1B9DA37818CBEDDA0003F7FF /* main.m */,
+				1B9DA37A18CBEDDA0003F7FF /* gameaccordion-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B9DA39118CBEDDB0003F7FF /* gameaccordionTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B9DA39718CBEDDB0003F7FF /* gameaccordionTests.m */,
+				1B9DA39218CBEDDB0003F7FF /* Supporting Files */,
+				6CB4E8C018D2C4F000716E9F /* KSPageViewTest.m */,
+			);
+			path = gameaccordionTests;
+			sourceTree = "<group>";
+		};
+		1B9DA39218CBEDDB0003F7FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B9DA39318CBEDDB0003F7FF /* gameaccordionTests-Info.plist */,
+				1B9DA39418CBEDDB0003F7FF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B9DA3A118CBF00C0003F7FF /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B9DA3A718CBF0750003F7FF /* KSCoreDataController.h */,
+				1B9DA3A818CBF0750003F7FF /* KSCoreDataController.m */,
+				1B9DA3A918CBF0750003F7FF /* KSGameMainViewController.h */,
+				1B9DA3AA18CBF0750003F7FF /* KSGameMainViewController.m */,
+				1B9DA3AB18CBF0750003F7FF /* KSHelpViewController.h */,
+				1B9DA3AC18CBF0750003F7FF /* KSHelpViewController.m */,
+				1B9DA3AD18CBF0750003F7FF /* KSRecordViewController.h */,
+				1B9DA3AE18CBF0750003F7FF /* KSRecordViewController.m */,
+				1B9DA3AF18CBF0750003F7FF /* KSStartViewController.h */,
+				1B9DA3B018CBF0750003F7FF /* KSStartViewController.m */,
+			);
+			name = controller;
+			path = gameaccordion;
+			sourceTree = "<group>";
+		};
+		1B9DA3A218CBF0170003F7FF /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				1B9DA42F18CBF90A0003F7FF /* RNGridMenu.h */,
+				1B9DA43018CBF90A0003F7FF /* RNGridMenu.m */,
+				1B9DA3B618CBF09A0003F7FF /* KSDiviceHelper.h */,
+				1B9DA3B718CBF09A0003F7FF /* KSDiviceHelper.m */,
+				1B9DA3B818CBF09A0003F7FF /* KSMenuAnimationHelper.h */,
+				1B9DA3B918CBF09A0003F7FF /* KSMenuAnimationHelper.m */,
+			);
+			name = helper;
+			path = gameaccordion;
+			sourceTree = "<group>";
+		};
+		1B9DA3A318CBF0210003F7FF /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				1B9DA3BC18CBF0C30003F7FF /* KSDataFormatter.h */,
+				1B9DA3BD18CBF0C30003F7FF /* KSDataFormatter.m */,
+				1B9DA3BE18CBF0C30003F7FF /* KSGlobalConst.h */,
+				1B9DA3BF18CBF0C30003F7FF /* KSGlobalConst.m */,
+				1B9DA3C018CBF0C30003F7FF /* KSJudge.h */,
+				1B9DA3C118CBF0C30003F7FF /* KSJudge.m */,
+			);
+			name = utility;
+			path = gameaccordion;
+			sourceTree = "<group>";
+		};
+		1B9DA3A418CBF02A0003F7FF /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1BA482F118CF1AE500BF0273 /* Model.xcdatamodeld */,
+				1BA482F418CF246200BF0273 /* Data.h */,
+				1BA482F518CF246200BF0273 /* Data.m */,
+			);
+			name = model;
+			path = gameaccordion;
+			sourceTree = "<group>";
+		};
+		1B9DA3A518CBF0310003F7FF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1BFE946119B1D93B00B4BD97 /* svsegment */,
+				1B9DA3D718CBF1230003F7FF /* menu&Button */,
+				1B9DA3D618CBF11B0003F7FF /* card */,
+				1B9DA3D518CBF1140003F7FF /* masu */,
+				1BEDFD3818D1B54500D81874 /* KSPageView.h */,
+				1BEDFD3918D1B54500D81874 /* KSPageView.m */,
+			);
+			name = view;
+			path = gameaccordion;
+			sourceTree = "<group>";
+		};
+		1B9DA3A618CBF0390003F7FF /* img */ = {
+			isa = PBXGroup;
+			children = (
+				1B0A2D481A0DFEA100D438DB /* Icon-60@2x.png */,
+				6CC21BDA18CEEE43009E7929 /* backAllow.png */,
+				6CC21BD818CEBC15009E7929 /* sample.png */,
+				1B9A032518CC3A450008E203 /* allow.png */,
+				1B9DA42B18CBF2620003F7FF /* iTunesArtwork */,
+				1B9DA42C18CBF2620003F7FF /* iTunesArtwork@2x */,
+				1B9DA41118CBF24B0003F7FF /* Icon-72.png */,
+				1B9DA41218CBF24B0003F7FF /* Icon-72@2x.png */,
+				1B9DA41318CBF24B0003F7FF /* Icon-76.png */,
+				1B9DA41418CBF24B0003F7FF /* Icon-76@2x.png */,
+				1B9DA41518CBF24B0003F7FF /* Icon-120.png */,
+				1B9DA41618CBF24B0003F7FF /* Icon-iPad-Spotlight-iOS7@2x.png */,
+				1B9DA41718CBF24B0003F7FF /* Icon-Small-50.png */,
+				1B9DA41818CBF24B0003F7FF /* Icon-Small.png */,
+				1B9DA41918CBF24B0003F7FF /* Icon-Small@2x.png */,
+				1B9DA41A18CBF24B0003F7FF /* Icon-Spotlight-iOS7.png */,
+				1B9DA41B18CBF24B0003F7FF /* Icon-Spotlight-iOS7@2x.png */,
+				1B9DA41C18CBF24B0003F7FF /* Icon.png */,
+				1B9DA41D18CBF24B0003F7FF /* Icon@2x.png */,
+				1B9DA40B18CBF2390003F7FF /* Default-568h@2x.png */,
+				1B9DA40C18CBF2390003F7FF /* Default.png */,
+				1B9DA40D18CBF2390003F7FF /* Default@2x.png */,
+			);
+			name = img;
+			path = gameaccordion;
+			sourceTree = "<group>";
+		};
+		1B9DA3C518CBF0DF0003F7FF /* mode */ = {
+			isa = PBXGroup;
+			children = (
+				1B9DA3C618CBF1010003F7FF /* KSModeContex.h */,
+				1B9DA3C718CBF1010003F7FF /* KSModeContex.m */,
+				1B9DA3C818CBF1010003F7FF /* KSModeForteen.h */,
+				1B9DA3C918CBF1010003F7FF /* KSModeForteen.m */,
+				1B9DA3CA18CBF1010003F7FF /* KSModeSeven.h */,
+				1B9DA3CB18CBF1010003F7FF /* KSModeSeven.m */,
+				1B9DA3CC18CBF1010003F7FF /* KSModeState.h */,
+				1B9DA3CD18CBF1010003F7FF /* KSModeState.m */,
+				1B9DA3CE18CBF1010003F7FF /* KSModeTwentyOne.h */,
+				1B9DA3CF18CBF1010003F7FF /* KSModeTwentyOne.m */,
+			);
+			name = mode;
+			sourceTree = "<group>";
+		};
+		1B9DA3D518CBF1140003F7FF /* masu */ = {
+			isa = PBXGroup;
+			children = (
+				1B9DA3F618CBF2170003F7FF /* KSMasu.h */,
+				1B9DA3F718CBF2170003F7FF /* KSMasu.m */,
+				1B9DA3F818CBF2170003F7FF /* KSMasuManager.h */,
+				1B9DA3F918CBF2170003F7FF /* KSMasuManager.m */,
+				1B9DA3FA18CBF2170003F7FF /* KSMasuManagerContex.h */,
+				1B9DA3FB18CBF2170003F7FF /* KSMasuManagerContex.m */,
+				1B9DA3FC18CBF2170003F7FF /* KSMasuManagerState.h */,
+				1B9DA3FD18CBF2170003F7FF /* KSMasuManagerState.m */,
+				1B9DA3FE18CBF2170003F7FF /* KSMasuStateForFourteen.h */,
+				1B9DA3FF18CBF2170003F7FF /* KSMasuStateForFourteen.m */,
+				1B9DA40018CBF2170003F7FF /* KSMasuStateForseven.h */,
+				1B9DA40118CBF2170003F7FF /* KSMasuStateForseven.m */,
+				1B9DA40218CBF2170003F7FF /* KSMasuStateForTwentyone.h */,
+				1B9DA40318CBF2170003F7FF /* KSMasuStateForTwentyone.m */,
+			);
+			name = masu;
+			sourceTree = "<group>";
+		};
+		1B9DA3D618CBF11B0003F7FF /* card */ = {
+			isa = PBXGroup;
+			children = (
+				1B9DA3DE18CBF2010003F7FF /* KSCard.h */,
+				1B9DA3DF18CBF2010003F7FF /* KSCard.m */,
+				1B9DA3E018CBF2010003F7FF /* KSCardManager.h */,
+				1B9DA3E118CBF2010003F7FF /* KSCardManager.m */,
+				1B9DA3E218CBF2010003F7FF /* KSCardManagerContext.h */,
+				1B9DA3E318CBF2010003F7FF /* KSCardManagerContext.m */,
+				1B9DA3E418CBF2010003F7FF /* KSCardManagerForFourteen.h */,
+				1B9DA3E518CBF2010003F7FF /* KSCardManagerForFourteen.m */,
+				1B9DA3E618CBF2010003F7FF /* KSCardManagerForSeven.h */,
+				1B9DA3E718CBF2010003F7FF /* KSCardManagerForSeven.m */,
+				1B9DA3E818CBF2010003F7FF /* KSCardManagerForTwentyone.h */,
+				1B9DA3E918CBF2010003F7FF /* KSCardManagerForTwentyone.m */,
+				1B9DA3EA18CBF2010003F7FF /* KSCardManagerState.h */,
+				1B9DA3EB18CBF2010003F7FF /* KSCardManagerState.m */,
+				1B9DA3EC18CBF2010003F7FF /* KSEyeCatch.h */,
+				1B9DA3ED18CBF2010003F7FF /* KSEyeCatch.m */,
+			);
+			name = card;
+			sourceTree = "<group>";
+		};
+		1B9DA3D718CBF1230003F7FF /* menu&Button */ = {
+			isa = PBXGroup;
+			children = (
+				1B9DA3D818CBF1E50003F7FF /* KSMenuButton.h */,
+				1B9DA3D918CBF1E50003F7FF /* KSMenuButton.m */,
+				1B9DA3DA18CBF1E50003F7FF /* KSModeButton.h */,
+				1B9DA3DB18CBF1E50003F7FF /* KSModeButton.m */,
+			);
+			name = "menu&Button";
+			sourceTree = "<group>";
+		};
+		1BFE946119B1D93B00B4BD97 /* svsegment */ = {
+			isa = PBXGroup;
+			children = (
+				1BFE946219B1D99B00B4BD97 /* SVSegmentedControl.h */,
+				1BFE946319B1D99B00B4BD97 /* SVSegmentedControl.m */,
+				1BFE946419B1D99B00B4BD97 /* SVSegmentedThumb.h */,
+				1BFE946519B1D99B00B4BD97 /* SVSegmentedThumb.m */,
+			);
+			name = svsegment;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B9DA36818CBEDDA0003F7FF /* gameaccordion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B9DA39B18CBEDDB0003F7FF /* Build configuration list for PBXNativeTarget "gameaccordion" */;
+			buildPhases = (
+				1B9DA36518CBEDDA0003F7FF /* Sources */,
+				1B9DA36618CBEDDA0003F7FF /* Frameworks */,
+				1B9DA36718CBEDDA0003F7FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gameaccordion;
+			productName = gameaccordion;
+			productReference = 1B9DA36918CBEDDA0003F7FF /* gameaccordion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B9DA38918CBEDDB0003F7FF /* gameaccordionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B9DA39E18CBEDDB0003F7FF /* Build configuration list for PBXNativeTarget "gameaccordionTests" */;
+			buildPhases = (
+				1B9DA38618CBEDDB0003F7FF /* Sources */,
+				1B9DA38718CBEDDB0003F7FF /* Frameworks */,
+				1B9DA38818CBEDDB0003F7FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B9DA39018CBEDDB0003F7FF /* PBXTargetDependency */,
+			);
+			name = gameaccordionTests;
+			productName = gameaccordionTests;
+			productReference = 1B9DA38A18CBEDDB0003F7FF /* gameaccordionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B9DA36118CBEDDA0003F7FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "momiji-mac";
+				TargetAttributes = {
+					1B9DA36818CBEDDA0003F7FF = {
+						DevelopmentTeam = CSUJW2XS9K;
+					};
+					1B9DA38918CBEDDB0003F7FF = {
+						TestTargetID = 1B9DA36818CBEDDA0003F7FF;
+					};
+				};
+			};
+			buildConfigurationList = 1B9DA36418CBEDDA0003F7FF /* Build configuration list for PBXProject "gameaccordion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B9DA36018CBEDDA0003F7FF;
+			productRefGroup = 1B9DA36A18CBEDDA0003F7FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B9DA36818CBEDDA0003F7FF /* gameaccordion */,
+				1B9DA38918CBEDDB0003F7FF /* gameaccordionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B9DA36718CBEDDA0003F7FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CC21BDB18CEEE43009E7929 /* backAllow.png in Resources */,
+				1B9DA42918CBF24C0003F7FF /* Icon.png in Resources */,
+				1B9A032618CC3A450008E203 /* allow.png in Resources */,
+				1B9DA41018CBF2390003F7FF /* Default@2x.png in Resources */,
+				1B9DA42218CBF24C0003F7FF /* Icon-120.png in Resources */,
+				1B9DA42D18CBF2620003F7FF /* iTunesArtwork in Resources */,
+				1B0A2D491A0DFEA100D438DB /* Icon-60@2x.png in Resources */,
+				1B9DA38518CBEDDA0003F7FF /* Images.xcassets in Resources */,
+				1B9DA42618CBF24C0003F7FF /* Icon-Small@2x.png in Resources */,
+				1B9DA41F18CBF24C0003F7FF /* Icon-72@2x.png in Resources */,
+				1B9DA40E18CBF2390003F7FF /* Default-568h@2x.png in Resources */,
+				1B9DA37718CBEDDA0003F7FF /* InfoPlist.strings in Resources */,
+				1B9DA42E18CBF2620003F7FF /* iTunesArtwork@2x in Resources */,
+				1B9DA42318CBF24C0003F7FF /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */,
+				1B9DA38018CBEDDA0003F7FF /* Main.storyboard in Resources */,
+				1B9DA42518CBF24C0003F7FF /* Icon-Small.png in Resources */,
+				1B9DA42418CBF24C0003F7FF /* Icon-Small-50.png in Resources */,
+				1B9DA41E18CBF24C0003F7FF /* Icon-72.png in Resources */,
+				1B9DA40F18CBF2390003F7FF /* Default.png in Resources */,
+				1B9DA42718CBF24C0003F7FF /* Icon-Spotlight-iOS7.png in Resources */,
+				1B9DA42A18CBF24C0003F7FF /* Icon@2x.png in Resources */,
+				1B9DA42118CBF24C0003F7FF /* Icon-76@2x.png in Resources */,
+				1B9DA42818CBF24C0003F7FF /* Icon-Spotlight-iOS7@2x.png in Resources */,
+				1B9DA42018CBF24C0003F7FF /* Icon-76.png in Resources */,
+				6CC21BD918CEBC15009E7929 /* sample.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B9DA38818CBEDDB0003F7FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9DA39618CBEDDB0003F7FF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B9DA36518CBEDDA0003F7FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9DA3D118CBF1010003F7FF /* KSModeForteen.m in Sources */,
+				1B9DA3C318CBF0C30003F7FF /* KSGlobalConst.m in Sources */,
+				1B9DA3F118CBF2010003F7FF /* KSCardManagerForFourteen.m in Sources */,
+				1B9DA40A18CBF2170003F7FF /* KSMasuStateForTwentyone.m in Sources */,
+				1B9DA3F418CBF2010003F7FF /* KSCardManagerState.m in Sources */,
+				1B9DA3EF18CBF2010003F7FF /* KSCardManager.m in Sources */,
+				1B9DA3DC18CBF1E50003F7FF /* KSMenuButton.m in Sources */,
+				1B9DA3C218CBF0C30003F7FF /* KSDataFormatter.m in Sources */,
+				1B9DA40518CBF2170003F7FF /* KSMasuManager.m in Sources */,
+				1B9DA40618CBF2170003F7FF /* KSMasuManagerContex.m in Sources */,
+				1BFE946719B1D99B00B4BD97 /* SVSegmentedThumb.m in Sources */,
+				1B9DA3D018CBF1010003F7FF /* KSModeContex.m in Sources */,
+				1BEDFD3A18D1B54500D81874 /* KSPageView.m in Sources */,
+				1B9DA3F518CBF2010003F7FF /* KSEyeCatch.m in Sources */,
+				1B9DA3B518CBF0750003F7FF /* KSStartViewController.m in Sources */,
+				1B9DA37D18CBEDDA0003F7FF /* KSAppDelegate.m in Sources */,
+				1B9DA3B218CBF0750003F7FF /* KSGameMainViewController.m in Sources */,
+				1B9DA3F018CBF2010003F7FF /* KSCardManagerContext.m in Sources */,
+				1B9DA3B118CBF0750003F7FF /* KSCoreDataController.m in Sources */,
+				1BA482F618CF246200BF0273 /* Data.m in Sources */,
+				1B9DA3B418CBF0750003F7FF /* KSRecordViewController.m in Sources */,
+				1B9DA40418CBF2170003F7FF /* KSMasu.m in Sources */,
+				1B9DA3BA18CBF09A0003F7FF /* KSDiviceHelper.m in Sources */,
+				1BFE946619B1D99B00B4BD97 /* SVSegmentedControl.m in Sources */,
+				1B9DA3B318CBF0750003F7FF /* KSHelpViewController.m in Sources */,
+				1B9DA43118CBF90A0003F7FF /* RNGridMenu.m in Sources */,
+				1B9DA3F318CBF2010003F7FF /* KSCardManagerForTwentyone.m in Sources */,
+				1BA482F318CF1AE500BF0273 /* Model.xcdatamodeld in Sources */,
+				1B9DA3C418CBF0C30003F7FF /* KSJudge.m in Sources */,
+				1B9DA3D418CBF1010003F7FF /* KSModeTwentyOne.m in Sources */,
+				1B9DA40818CBF2170003F7FF /* KSMasuStateForFourteen.m in Sources */,
+				1B9DA3D318CBF1010003F7FF /* KSModeState.m in Sources */,
+				1B9DA3EE18CBF2010003F7FF /* KSCard.m in Sources */,
+				1B9DA40718CBF2170003F7FF /* KSMasuManagerState.m in Sources */,
+				1B9DA3BB18CBF09A0003F7FF /* KSMenuAnimationHelper.m in Sources */,
+				1B9DA40918CBF2170003F7FF /* KSMasuStateForseven.m in Sources */,
+				1B9DA37918CBEDDA0003F7FF /* main.m in Sources */,
+				1B9DA3F218CBF2010003F7FF /* KSCardManagerForSeven.m in Sources */,
+				1B9DA3DD18CBF1E50003F7FF /* KSModeButton.m in Sources */,
+				1B9DA3D218CBF1010003F7FF /* KSModeSeven.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B9DA38618CBEDDB0003F7FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9DA39818CBEDDB0003F7FF /* gameaccordionTests.m in Sources */,
+				6CB4E8C118D2C4F000716E9F /* KSPageViewTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B9DA39018CBEDDB0003F7FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B9DA36818CBEDDA0003F7FF /* gameaccordion */;
+			targetProxy = 1B9DA38F18CBEDDB0003F7FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B9DA37518CBEDDA0003F7FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B9DA37618CBEDDA0003F7FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1B9DA37E18CBEDDA0003F7FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B9DA37F18CBEDDA0003F7FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B9DA39418CBEDDB0003F7FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B9DA39518CBEDDB0003F7FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B9DA39918CBEDDB0003F7FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1B9DA39A18CBEDDB0003F7FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B9DA39C18CBEDDB0003F7FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gameaccordion/gameaccordion-Prefix.pch";
+				INFOPLIST_FILE = "gameaccordion/gameaccordion-Info.plist";
+				PRODUCT_NAME = gameaccordion;
+				PROVISIONING_PROFILE = "FDBE93EF-CDD4-47C5-8FD0-BFF225F9811C";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1B9DA39D18CBEDDB0003F7FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: kazuyuki shimizu (CSUJW2XS9K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: kazuyuki shimizu (CSUJW2XS9K)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gameaccordion/gameaccordion-Prefix.pch";
+				INFOPLIST_FILE = "gameaccordion/gameaccordion-Info.plist";
+				PRODUCT_NAME = gameaccordion;
+				PROVISIONING_PROFILE = "7E0FA21C-ADC9-45D6-9972-9D500AEDE5D0";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1B9DA39F18CBEDDB0003F7FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/gameaccordion.app/gameaccordion";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gameaccordion/gameaccordion-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "gameaccordionTests/gameaccordionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1B9DA3A018CBEDDB0003F7FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/gameaccordion.app/gameaccordion";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gameaccordion/gameaccordion-Prefix.pch";
+				INFOPLIST_FILE = "gameaccordionTests/gameaccordionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B9DA36418CBEDDA0003F7FF /* Build configuration list for PBXProject "gameaccordion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B9DA39918CBEDDB0003F7FF /* Debug */,
+				1B9DA39A18CBEDDB0003F7FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B9DA39B18CBEDDB0003F7FF /* Build configuration list for PBXNativeTarget "gameaccordion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B9DA39C18CBEDDB0003F7FF /* Debug */,
+				1B9DA39D18CBEDDB0003F7FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B9DA39E18CBEDDB0003F7FF /* Build configuration list for PBXNativeTarget "gameaccordionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B9DA39F18CBEDDB0003F7FF /* Debug */,
+				1B9DA3A018CBEDDB0003F7FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1BA482F118CF1AE500BF0273 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6CBDD1C519B85BD30037B829 /* ModelAddGameLevel.xcdatamodel */,
+				1BA482F218CF1AE500BF0273 /* Model.xcdatamodel */,
+			);
+			currentVersion = 6CBDD1C519B85BD30037B829 /* ModelAddGameLevel.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../model/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1B9DA36118CBEDDA0003F7FF /* Project object */;
+}
